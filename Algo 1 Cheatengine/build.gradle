@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id "com.github.johnrengelman.shadow" version "7.1.2"
+}
+
+group 'jp.tengopapa'
+version '1.0-SNAPSHOT'
+
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+
+    implementation "com.formdev:flatlaf:2.1"
+    implementation "com.formdev:flatlaf-intellij-themes:2.1"
+    implementation "net.sf.jung:jung-api:2.1.1"
+    implementation "net.sf.jung:jung-graph-impl:2.1.1"
+    implementation "net.sf.jung:jung-visualization:2.1.1"
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jar {
+    manifest {
+        attributes("Main-Class": "jp.tengopapa.algo.Main")
+    }
+}

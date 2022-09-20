@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\Gerber Lóránt Viktor\Documents\Projects\AlgoZhCheatengine\build\libs\AlgoZhCheatengine-1.0-SNAPSHOT-all.jar</jar>
+  <outfile>C:\Users\Gerber Lóránt Viktor\Documents\Projects\AlgoZhCheatengine\build\libs\AlgoZhCheatengine.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>true</stayAlive>
+  <restartOnCrash>true</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\Gerber Lóránt Viktor\Documents\Projects\AlgoZhCheatengine\icon.ico</icon>
+  <jre>
+    <path></path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion>1.8</minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+  </jre>
+  <versionInfo>
+    <fileVersion>1.0.0.0</fileVersion>
+    <txtFileVersion>v6.4-DOMA</txtFileVersion>
+    <fileDescription>Bármilyen segédanyag</fileDescription>
+    <copyright>(c) 2022 TengopapA_</copyright>
+    <productVersion>1.0.0.0</productVersion>
+    <txtProductVersion>v6.4-DOMA</txtProductVersion>
+    <productName>Bármilyen segédanyag</productName>
+    <companyName>TengopapA_</companyName>
+    <internalName>AlgoZhCheatengine</internalName>
+    <originalFilename>AlgoZhCheatengine.exe</originalFilename>
+    <trademarks></trademarks>
+    <language>HUNGARIAN</language>
+  </versionInfo>
+</launch4jConfig>
