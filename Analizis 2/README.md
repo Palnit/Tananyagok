@@ -1,1 +1,2 @@
-Analizis 2 Gyakorlat heti quizekhez hetente általában szombatonként lesz updatolva
+Analízis 2 Gyakorlat tételei kidolgozva heti számonkérésre hetente.
+általában szombatonként lesz update.
