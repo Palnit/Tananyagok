@@ -1,0 +1,114 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[magyar]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage[pdfusetitle]{hyperref}
+\usepackage{titling}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\date{\today}
+\author{Petrányi Bálint}
+\title{%
+	\textbf{Analízis 2.} \\
+	\textbf{Programtervező informatikus A. szakirány} \\
+	\medskip
+	Definíciók és tételek\\
+	\large 2022-2023. tanév 1. félév
+}
+\setcounter{secnumdepth}{0}
+\begin{document}
+
+\maketitle
+\textbf{Remélem nem írtam el semmit illetve hogy jól értelmeztem a kérdéseket ha mégis írjatok hogy mit hibáztam és kijavítom.}
+
+\tableofcontents
+\newpage
+
+
+
+\section{2. Gyakorlat elméleti kérdései}
+\paragraph{1.}
+Mi a belső pont definíciója? \\
+\\
+Legyen $\emptyset \neq A \subset \mathbb{R}$. Azt mondjuk, hogy az $a \subset 	\mathbb{R}$ pont az $A$ halmaz egyes belső pontja, ha $\exists \delta > 0$ olyan, hogy $k_{\delta} \subset A$. \\ \\
+Emlékeztető: $k_{\delta}(a)=(a-\delta , a+\delta)$ \\ \\
+jelölés: az $A$ belső pontjainak halmazát az $A$ belsejének hívjuk és int $A$-val jelöljük. 
+
+\paragraph{2.}
+Mikor mondjuk azt, hogy egy $f \in \mathbb{R} \rightarrow \mathbb{R}$ függvény differenciálható valamely $a \in$ int $\mathcal{D}_f$ \\
+\\ 
+Akkor ha
+\[
+\exists \lim_{h \rightarrow 0}{ \frac{f(a+h)-f(a)}{h}} \in \mathbb{R}
+\]
+Jelölése: $f \in \mathcal{D} \{a\}$
+
+\paragraph{3.}
+Mi a kapcsolat a pontbeli differenciálhatóság és a folytonosság között?\\
+\\
+\[
+f \in \mathbb{R} \rightarrow \mathbb{R}, \quad f \in D\{a\} \quad \Longrightarrow \quad  f \in C\{a\}
+\]
+Szóban: Ha egy valós-valós függvény differenciálható egy pontban, akkor folytonos abban a pontban.
+\paragraph{4.}
+Milyen ekvivalens átfogalmazást ismer a pontbeli deriválhatóságra lineáris közelítéssel? \\
+\\
+Legyen $f \in \mathbb{R} \rightarrow \mathbb{R}, a \in \text{int } \mathcal{D}_f$. Ekkor
+\[
+\begin{split}
+f \in & \; D\{a\} \\
+& \Updownarrow \\
+\exists A \in \mathbb{R}, \; \text{és} \; \epsilon : \mathcal{D}_f \rightarrow \mathbb{R}, \lim_a{\epsilon} = 0 \quad \text{úgy, hogy } & \; f(x)- f(a) = A(x-a)+\epsilon (x)(x-a)
+\end{split}
+\]
+\paragraph{5.}
+Mi az érintő definíciója? \\ \\
+Legyen $f \in D\{a\}$. Ekkor az 
+\[
+e_af:\mathbb{R} \rightarrow \mathbb{R}, \quad	 e_af(x) =f'(x)(x-a)+f(a)
+\]
+egyenesest az $f$ függvény $a$ pontbeli érintőjének hívjuk .
+\paragraph{6.}
+Milyen tételt ismer két függvény szorzatának valamely pontbeli differenciálhatóságáról és a deriváltjáról? \\ \\
+\[
+f,g \in D\{a\} \quad \Longrightarrow \quad f \cdot g \in D\{a\}, \; \text{és} \; (f \cdot g)'(a) =f'(a)g(a)+f(a)g'(a)
+\]
+\paragraph{7.}
+Milyen tételt ismer két függvény hányadosának valamely pontbeli differenciálhatóságáról és a deriváltjáról? \\ \\
+\[
+f,g \in D\{a\}  \; \text{és} \; g(a) \neq 0 \quad \Longrightarrow \quad \frac{f}{g} \in D\{a\}, \; \text{és} \; \Big( \frac{f}{g} \Big) '(a) = \frac{f'(a)g(a)-f(a)g'(a)}{g^2(a)}  
+\]
+\paragraph{8.}
+Milyen tételt ismer két függvény kompozíciójának valamely pontbeli differenciálhatóságáról és a deriváltjáról? \\ \\
+Legyen $f,g \in \mathbb{R} \rightarrow \mathbb{R}$, Tegyük fel, hogy az $a$ int $\mathcal{D}_g$ pontban $g \in D\{a\}$, továbbá $f\in D\{g(a)\}$. Ekkor:
+\[
+f \circ g \in D\{a\}, \; \text{és} \; (f \circ g)' (a) = f'(g(a)) \cdot g'(a)
+\]
+\paragraph{9.}
+Mi az exp, sin, cos függvények derivált függvénye? \\
+
+\begin{itemize}
+\item $(e^x)' = e^x$
+\item $\sin ' = \cos$
+\item $\cos ' = -\sin$ 
+\end{itemize}
+\newpage
+
+\section{3. Gyakorlat elméleti kérdései}
+
+
+
+
+\end{document}

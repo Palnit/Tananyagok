@@ -1,0 +1,11 @@
+\select@language {magyar} \contentsline {section}{2. Gyakorlat elméleti kérdései}{2}{section*.2}%
+\select@language {magyar} \contentsline {paragraph}{1.}{2}{section*.3}%
+\select@language {magyar} \contentsline {paragraph}{2.}{2}{section*.4}%
+\select@language {magyar} \contentsline {paragraph}{3.}{2}{section*.5}%
+\select@language {magyar} \contentsline {paragraph}{4.}{2}{section*.6}%
+\select@language {magyar} \contentsline {paragraph}{5.}{2}{section*.7}%
+\select@language {magyar} \contentsline {paragraph}{6.}{2}{section*.8}%
+\select@language {magyar} \contentsline {paragraph}{7.}{3}{section*.9}%
+\select@language {magyar} \contentsline {paragraph}{8.}{3}{section*.10}%
+\select@language {magyar} \contentsline {paragraph}{9.}{3}{section*.11}%
+\select@language {magyar} \contentsline {section}{3. Gyakorlat elméleti kérdései}{4}{section*.12}%
