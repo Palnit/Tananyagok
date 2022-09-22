@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  22 SEP 2022 13:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  22 SEP 2022 14:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -440,6 +440,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--78
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--78
+
+ []
+
+
+Overfull \hbox (101.09132pt too wide) in paragraph at lines 79--85
+[][] 
+ []
+
 [4] (Bizonyitások.aux)
 Package rerunfilecheck Info: File `Bizonyitások.out' has not changed.
 (rerunfilecheck)             Checksum: 239CA0AE8B9E096388E7F08237E609AC;717.
@@ -465,13 +475,15 @@ ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/User
 s/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 ><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmr10.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr7.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/palint/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Bizonyitások.pdf (4 pages, 151265 bytes).
+fonts/cm/cmr5.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/palint/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/palint/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/palint/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Bizonyitások.pdf (4 pages, 168239 bytes).
 PDF statistics:
- 295 PDF objects out of 1000 (max. 8388607)
+ 305 PDF objects out of 1000 (max. 8388607)
  9 named destinations out of 1000 (max. 500000)
  25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
