@@ -58,4 +58,28 @@ $\Longleftarrow$ Ha az $A$ szám és az $\epsilon$ függvény teljesítik az ál
 \[
 \frac{f(x)-f(a)}{x-a} = A + \epsilon (x), és \lim\limits_{x-a} \frac{f(x)-f(a)}{x-a} = A = f'(a) \in \mathbb{R}
 \]
+\newpage
+\section{A folytonosság és a differenciálhatóság kapcsolata}
+\textbf{Tétel:}
+\[
+f \in \mathbb{R} \rightarrow \mathbb{R}, \quad f \in D\{a\} \quad \Longrightarrow \quad  f \in C\{a\}
+\]
+\textbf{Szóban:} Ha egy valós-valós függvény differenciálható egy pontban, akkor folytonos abban a pontban. \\ \\
+\textit{Megjegyzés:} Fordítva nem igaz. Az abszolútérték függvény folytonos a $0$ pontban de nem deriválható $0$-ban. Kompatibilitási probléma is van: folytonosság esetében nem szükséges, hogy a pont az értelmezési tartomány belső pontja legye. \\ \\
+\textbf{Bizonyítás:} \\ \\
+Nyilván $f(x)=\frac{f(x)-f(a)}{x-a}(x-a)+f(a). \; f$ differenciálhatósága miatt, ezért
+\[
+\lim_a f= \lim_{x\rightarrow a } \Big(\frac{f(x)-f(a)}{x-a}(x-a)+f(a)\Big) 	= f'(a)\cdot 0 + f(a)=f(a)
+\]
+\newpage
+\section{Deriválási szabályok}
+\textbf{Tételek:} \\ \\
+$f,g \in \mathbb{R} \rightarrow \mathbb{R}$
+
+\begin{align*}
+f\in D\{a\} \: \text{és} \: c \in \mathbb{R} \: &\Longrightarrow \: c\cdot f \in D\{a\}, \: \text{és} \: (c \cdot f)'(a)=c\cdot f'(a) \\
+f\in D\{a\} &\Longrightarrow  f+g\in D\{a\},\: \text{és} \: (f+g)'(a) =f'(a) + g'(a)   \\
+f\in D\{a\}  &\Longrightarrow  f\cdot g \in D\{a\}, \:  \text{és} \: (f\cdot g)'(a) = f'(a)g(a)+ f(a)g'(a) \\
+f\in D\{a\} \: \text{és} \:  g(a)\neq 0  &\Longrightarrow  \frac{f}{g} \in D\{a\}, \: \text{és} \: \Big(\frac{f}{g} \Big)' (a) = \frac{f'(a)g(a)-f(a)g'(a)}{g^2(a)}
+\end{align*}
 \end{document}
