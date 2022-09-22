@@ -27,7 +27,35 @@
 	Bizonyítások\\
 	\large 2022-2023. tanév 1. félév
 }
+
 \begin{document}
 \maketitle
-\paragraph{1. valami}
+\tableofcontents
+\newpage
+\section{A differenciálhatóság átfogalmazása}
+\textbf{Tétel:} \\ 
+Legyen $f \in \mathbb{R} \rightarrow \mathbb{R}, a \in \text{int } \mathcal{D}_f$. Ekkor
+\[
+\begin{split}
+f \in & \; D\{a\} \\
+& \Updownarrow \\
+\exists A \in \mathbb{R}, \; \text{és} \; \epsilon : \mathcal{D}_f \rightarrow \mathbb{R}, \lim_a{\epsilon} = 0 \quad \text{úgy, hogy } & \; f(x)- f(a) = A(x-a)+\epsilon (x)(x-a)
+\end{split}
+\]
+\textbf{Bizonyítás:}
+\[
+\Longrightarrow f \in D\{a\} \; \text{esetén legyen} \; A:=f'(a), \; \text{és} \epsilon (x) := \frac{f(x)-f(a)}{x-a} -f'(a).
+\]
+Ezzel a választással egyrészt
+\[
+A(x-a) + \epsilon (x)(x-a) =f'(a)(x-a)+\Big(\frac{f(x)-f(a)}{x-a}-f'(a)\Big)(x-a) =f(x)-f(a),
+\]
+másrészt a differenciálhatóság miatt
+\[
+\lim\limits_{x\rightarrow a} \epsilon (x) = \lim\limits_{x\rightarrow a} \frac{f(x)-f(a)}{x-a}-f'(a)=0.
+\]
+$\Longleftarrow$ Ha az $A$ szám és az $\epsilon$ függvény teljesítik az állítást feltételeit, akkor 
+\[
+\frac{f(x)-f(a)}{x-a} = A + \epsilon (x), és \lim\limits_{x-a} \frac{f(x)-f(a)}{x-a} = A = f'(a) \in \mathbb{R}
+\]
 \end{document}

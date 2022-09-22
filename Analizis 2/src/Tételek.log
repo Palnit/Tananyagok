@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  22 SEP 2022 08:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  22 SEP 2022 08:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -502,7 +502,7 @@ Package rerunfilecheck Info: File `Tételek.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  11559 strings out of 478582
- 185699 string characters out of 2843872
+ 185860 string characters out of 2843872
  490124 words of memory out of 3000000
  29576 multiletter control sequences out of 15000+600000
  482863 words of font info for 64 fonts, out of 8000000 for 9000

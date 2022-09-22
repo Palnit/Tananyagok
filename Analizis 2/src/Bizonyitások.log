@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  20 SEP 2022 14:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  22 SEP 2022 09:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -305,24 +305,24 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 ) (Bizonyitások.aux)
 \openout1 = `Bizonyitások.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
@@ -357,7 +357,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
 )
-Package hyperref Info: Link coloring ON on input line 30.
+Package hyperref Info: Link coloring ON on input line 31.
 
 (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -371,9 +371,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count292
 )
-LaTeX Info: Redefining \ref on input line 30.
-LaTeX Info: Redefining \pageref on input line 30.
-LaTeX Info: Redefining \nameref on input line 30.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
  (Bizonyitások.out) (Bizonyitások.out)
 \@outlinefile=\write3
 \openout3 = `Bizonyitások.out'.
@@ -383,51 +383,73 @@ LaTeX Info: Redefining \nameref on input line 30.
 LaTeX Info: Redefining \cal on input line 497.
 LaTeX Info: Redefining \mit on input line 498.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
 
 
 (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
 
 
 (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+(Bizonyitások.toc)
+\tf@toc=\write4
+\openout4 = `Bizonyitások.toc'.
+
+
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 33.
+(hyperref)                removing `\new@ifnextchar' on input line 34.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\medskipamount' on input line 33.
+(hyperref)                removing `\medskipamount' on input line 34.
 
 [1
 
 
 {C:/Users/palint/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-(Bizonyitások.aux)
+Overfull \hbox (17.72185pt too wide) detected at line 44
+[]
+ []
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 59.
+
+Missing character: There is no � in font cmr10!
+[2] (Bizonyitások.aux)
 Package rerunfilecheck Info: File `Bizonyitások.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: E280DBAD89167D78D8E576475A6E74C3;239.
  ) 
 Here is how much of TeX's memory you used:
- 11515 strings out of 478582
- 185297 string characters out of 2843872
- 483101 words of memory out of 3000000
- 29556 multiletter control sequences out of 15000+600000
- 477752 words of font info for 51 fonts, out of 8000000 for 9000
+ 11543 strings out of 478582
+ 185805 string characters out of 2843872
+ 486114 words of memory out of 3000000
+ 29573 multiletter control sequences out of 15000+600000
+ 482528 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,63p,274b,363s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 60i,17n,63p,289b,363s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecr
 m1000.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
 600\ecbx1000.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
-/ec/dpi600\ecrm1200.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/j
-knappen/ec/dpi600\ecrm1728.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/l
-jfour/jknappen/ec/dpi600\ecbx1728.pk>
-Output written on Bizonyitások.pdf (1 page, 29545 bytes).
+/ec/dpi600\ecbx1440.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/j
+knappen/ec/dpi600\ecrm1200.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/l
+jfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\palint\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Users/palint/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/palint/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/palin
+t/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Us
+ers/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmsy7.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Bizonyitások.pdf (2 pages, 124143 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 3 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 231 PDF objects out of 1000 (max. 8388607)
+ 5 named destinations out of 1000 (max. 500000)
+ 9 words of extra memory for PDF output out of 10000 (max. 10000000)
 

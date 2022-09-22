@@ -1,0 +1,1 @@
+\select@language {magyar} \contentsline {section}{\numberline {1}A differenciálhatóság átfogalmazása}{2}{section.1}%
