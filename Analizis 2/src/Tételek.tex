@@ -107,8 +107,58 @@ Mi az exp, sin, cos függvények derivált függvénye? \\
 \newpage
 
 \section{3. Gyakorlat elméleti kérdései}
-
-
-
-
+\paragraph{1.}
+Írja fel az $\exp, \; \text{ln}x,\; \sin,\; \cos,\; \text{tg},\; a^x (a>0, x\in\mathbb{R})$ függvények derivált függvényét.  \\
+\begin{itemize}
+\item $(e^x)' = e^x$
+\item $\text{ln}x'=\frac{1}{x}$
+\item $\sin ' = \cos$
+\item $\cos ' = -\sin$ 
+\item $ a^{x'} \cdot a^{x-1} $
+\end{itemize}
+\paragraph{2.}
+Adjon példát olyan függvényre, ami az $a \in \mathbb{R}$ pontban folytonos, de nem differenciálható! \\
+\\
+Az abszolút érték függvény folytonos a 0 pontban, de
+nem differenciálható 0-ban.
+\paragraph{3.}
+Mi a jobb oldali derivált definíciója?
+\\ \\
+Legyen $f\in\mathbb{R}\rightarrow\mathbb{R}, a \in \mathcal{D}_f$ és tegyük fel hogy az $f$ függvény jobbról deriválható (differenciálható), ha 
+\[
+\exists \quad \text{és véges a} \quad \lim\limits_{x\rightarrow a+0} \frac{f(x)-f(a)}{x-a} \text{határérték}
+\] 
+Ezt a határértéket nevezzük az $f$ függvény $a$ pontbeli jobb oldal deriváltjának és $f'_+(a)$-val jelöljük 
+\paragraph{4.}
+Mi az érintő definíciója? \\ \\
+Legyen $f \in D\{a\}$. Ekkor az 
+\[
+e_af:\mathbb{R} \rightarrow \mathbb{R}, \quad	 e_af(x) =f'(x)(x-a)+f(a)
+\]
+egyenesest az $f$ függvény $a$ pontbeli érintőjének hívjuk .
+\paragraph{5.}
+Írja le az inverz függvény differenciálszámításáról szóló tételt!
+\\ \\
+Legyen $I\in\mathbb{R}$ nyílt intervallum és $f: I \rightarrow \mathbb{R}$.
+Tegyük fel, hogy
+\begin{enumerate}
+\item $f$ szigorúan monoton és folytonos $I$-n,
+\item $f$ differenciálható az $a \in I$ és $f'(a)\neq 0$.
+\end{enumerate} 
+Ekkor az $f^{-1}$ inverz függvény deriválható a $b:=f(a)$ pontban, és
+\[
+\Big( f^{-1} \Big) '(b) = \frac{1}{f'(a)} = \frac{1}{f'(f^{-1}(b))}
+\]  
+\paragraph{6.}
+Milyen tételt hatványsor összegfüggvényének differenciálhatóságáról és a deriváltjáról? \\ \\
+Tegyük fel, hogy a $\sum (\alpha_n(x-a)^n) \; (x\in\mathbb{R})$ hatványsor $R$ konvergenciasugara pozitív. Legyen
+\[
+f(x):= \sum\limits^{+\infty}_{n=0} \alpha_n(x-a)^n \quad (x\in K_R(a))
+\] 
+a hatványsor összegfügevénye. \\
+Ekkor minden $x\in K_R(a)$ pontban $f\in D\{x\}$ és 
+\[
+f'(x) = \sum\limits^{+\infty}_{n=1} n\alpha_n(x-a)^{n-1} \quad (\forall x \in K_R(a))
+\] 
+\newpage
 \end{document}

@@ -9,3 +9,9 @@
 \select@language {magyar} \contentsline {paragraph}{8.}{3}{section*.10}%
 \select@language {magyar} \contentsline {paragraph}{9.}{3}{section*.11}%
 \select@language {magyar} \contentsline {section}{3. Gyakorlat elméleti kérdései}{4}{section*.12}%
+\select@language {magyar} \contentsline {paragraph}{1.}{4}{section*.13}%
+\select@language {magyar} \contentsline {paragraph}{2.}{4}{section*.14}%
+\select@language {magyar} \contentsline {paragraph}{3.}{4}{section*.15}%
+\select@language {magyar} \contentsline {paragraph}{4.}{4}{section*.16}%
+\select@language {magyar} \contentsline {paragraph}{5.}{4}{section*.17}%
+\select@language {magyar} \contentsline {paragraph}{6.}{5}{section*.18}%
