@@ -9,6 +9,7 @@
 \usepackage{graphicx}
 \usepackage[pdfusetitle]{hyperref}
 \usepackage{titling}
+\usepackage{scrextend}
 
 \hypersetup{
     colorlinks,
@@ -28,6 +29,10 @@
 	\large 2022-2023. tanév 1. félév
 }
 \setcounter{secnumdepth}{0}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\fR}{f\in\R\rightarrow\R}
+
 \begin{document}
 
 \maketitle
@@ -162,4 +167,27 @@ Ekkor minden $x\in K_R(a)$ pontban $f\in D\{x\}$ és
 f'(x) = \sum\limits^{+\infty}_{n=1} n\alpha_n(x-a)^{n-1} \quad (\forall x \in K_R(a))
 \] 
 \newpage
+\section{4. Gyakorlat elméleti kérdései}
+\paragraph{1.}
+Milyen szükséges és elégséges feltételt ismer differenciálható függvény monoton növekedésével kapcsolatban?\footnote{(Ha nem jó valaki javítson ki mert nem tudom ere mi lenne a pontos válasz)\label{refnote}} \\ \\
+Legyen $I \subset \R $ nyílt intervallum. Tegyük fel hogy $f : I \rightarrow \R, \; f\in D(I)$\\ Ekkor:
+\[
+f\nearrow \quad \Longleftrightarrow \quad f'\geq 0.
+\] 
+\textbf{Megjegyzés:} az $f'\geq 0$ feltétel azt jelenti, hogy minden $x\in I$ pontban $f'(x)\geq 0$, aminek geometriai interpretációja az, hogy az érintő meredeksége minden pontban
+nem negatív. 
+\paragraph{2.}
+Milyen elégséges feltételt ismer differenciálható függvény szigorú monoton növekedésével kapcsolatban?\footref{refnote}\\\\
+Legyen $I \subset \R $ nyílt intervallum. Tegyük fel hogy $f : I \rightarrow \R, \; f\in D(I)$\\ Ekkor:
+\[
+f'>0 \quad \Rightarrow \quad f\uparrow
+\]
+\textbf{Megjegyzés:} Az állítás fordítottja nem igaz. Az $f(x)=x^3 \; (x\in\R)$ függvény szigorúan monoton növekedő, de $f'(0)=0$
+\paragraph{3.}
+Mit ért azon hogy az $f\in\R\rightarrow\R$ függvény valamely helyen lokális minimuma van? \\\\
+\paragraph{4.}
+Hogyan szól a lokális szélsőértékre vonatkozó elsőrendű szükséges feltétel?\\\\
+\paragraph{5.}
+Adjon  példát olyan $\fR$ függvényre, amelyre valamely $a\in\R$ esetén $f\in D\{a\} , f'(a)=0$ teljesül, de az $f$ függvénynek az $a$ pontjában nincs lokális szélsőértéke \\\\
+
 \end{document}

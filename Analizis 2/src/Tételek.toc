@@ -15,3 +15,9 @@
 \select@language {magyar} \contentsline {paragraph}{4.}{4}{section*.16}%
 \select@language {magyar} \contentsline {paragraph}{5.}{4}{section*.17}%
 \select@language {magyar} \contentsline {paragraph}{6.}{5}{section*.18}%
+\select@language {magyar} \contentsline {section}{4. Gyakorlat elméleti kérdései}{6}{section*.19}%
+\select@language {magyar} \contentsline {paragraph}{1.}{6}{section*.20}%
+\select@language {magyar} \contentsline {paragraph}{2.}{6}{section*.21}%
+\select@language {magyar} \contentsline {paragraph}{3.}{6}{section*.22}%
+\select@language {magyar} \contentsline {paragraph}{4.}{6}{section*.23}%
+\select@language {magyar} \contentsline {paragraph}{5.}{6}{section*.24}%

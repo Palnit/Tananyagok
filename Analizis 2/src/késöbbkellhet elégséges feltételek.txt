@@ -1,0 +1,20 @@
+\paragraph{3.}
+Mit ért azon hogy az $f\in\R\rightarrow\R$ függvény valamely helyen lokális minimuma van? \\\\
+Legyen $f \in \R \rightarrow \R$, $a\in \text{int } \D_f$\\
+Tegyük fel hogy:
+\begin{enumerate}
+\item $f\in D^2\{a\}$
+\item $f'(a)=0 \quad \text{és} \quad f''(a)\neq 0$  
+\end{enumerate}
+Ekkor az $a$ pont a szigorú lokális szélsőértékhelye az $f$. függvénynek $f''(a)>0$ esetén minimum \\
+\textbf{Megjegyzés:} $f''(a)<0 $ esetén maximum
+
+
+
+
+\paragraph{4.}
+Hogyan szól a lokális szélsőértékre vonatkozó elsőrendű szükséges feltétel?\\\\
+Legyen $\fR$, és a $a\in \text{int }\D_f$.\\
+Tegyük fel hogy $\exists \delta >0$, amelyre $f\in D((a-\delta ,a+\delta )) $ és $f'$ előjelet vált $a$-ban \\
+Ekkor $f$-nek szigorú lokális szélsőértéke van az $a$-ban \\
+($-,+$) jelváltás esetén minimum, ($+,-$) jelváltás esetén pedig maximum.

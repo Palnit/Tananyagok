@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  27 SEP 2022 09:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  29 SEP 2022 13:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -295,7 +295,44 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmargin=\skip54
 \droptitle=\skip55
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 19.
+(C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrextend.
+sty
+Package: scrextend 2022/07/04 v3.37 KOMA-Script package (extend other classes w
+ith features of KOMA-Script classes)
+
+(C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrkbase.s
+ty
+Package: scrkbase 2022/07/04 v3.37 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbase.st
+y
+Package: scrbase 2022/07/04 v3.37 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.s
+ty
+Package: scrlfile 2022/07/04 v3.37 KOMA-Script package (file load hooks)
+
+(C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-h
+ook.sty
+Package: scrlfile-hook 2022/07/04 v3.37 KOMA-Script package (using LaTeX hooks)
+
+
+(C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.st
+y
+Package: scrlogo 2022/07/04 v3.37 KOMA-Script package (logo)
+)))
+Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line
+ 368.
+))
+
+LaTeX Warning: Command \@footnotemark  has changed.
+               Check if current package is valid.
+
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 20.
 
 (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
 ftex.def
@@ -305,24 +342,24 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 ) (Tételek.aux)
 \openout1 = `Tételek.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
 
 (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
@@ -357,7 +394,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
 )
-Package hyperref Info: Link coloring ON on input line 31.
+Package hyperref Info: Link coloring ON on input line 36.
 
 (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -371,9 +408,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count292
 )
-LaTeX Info: Redefining \ref on input line 31.
-LaTeX Info: Redefining \pageref on input line 31.
-LaTeX Info: Redefining \nameref on input line 31.
+LaTeX Info: Redefining \ref on input line 36.
+LaTeX Info: Redefining \pageref on input line 36.
+LaTeX Info: Redefining \nameref on input line 36.
  (Tételek.out) (Tételek.out)
 \@outlinefile=\write3
 \openout3 = `Tételek.out'.
@@ -383,13 +420,13 @@ LaTeX Info: Redefining \nameref on input line 31.
 LaTeX Info: Redefining \cal on input line 497.
 LaTeX Info: Redefining \mit on input line 498.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
 
 
 (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
 
 
 (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -402,67 +439,57 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\new@ifnextchar' on input line 37.
+(hyperref)                removing `\new@ifnextchar' on input line 42.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\medskipamount' on input line 37.
+(hyperref)                removing `\medskipamount' on input line 42.
 
 [1
 
 
 {C:/Users/palint/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 43--48
+Underfull \hbox (badness 10000) in paragraph at lines 48--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--48
+Underfull \hbox (badness 10000) in paragraph at lines 48--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--48
+Underfull \hbox (badness 10000) in paragraph at lines 48--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--53
+Underfull \hbox (badness 10000) in paragraph at lines 55--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--61
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--61
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--69
+Underfull \hbox (badness 10000) in paragraph at lines 71--74
 
  []
 
 
-Overfull \hbox (17.72185pt too wide) detected at line 75
+Overfull \hbox (17.72185pt too wide) detected at line 80
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--79
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
@@ -473,11 +500,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 89--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
  []
 
 [2]
-Overfull \hbox (5.21646pt too wide) detected at line 92
+Overfull \hbox (5.21646pt too wide) detected at line 97
 \OML/cmm/m/it/10 f; g \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 D\OMS/cmsy/m/n/10 f\O
 ML/cmm/m/it/10 a\OMS/cmsy/m/n/10 g [] \OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/c
 mm/m/it/10 a\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 = 0  =[]\OMS/cm
@@ -487,79 +524,103 @@ T1/cmr/m/n/10 ) = []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--96
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 121--125
+Underfull \hbox (badness 10000) in paragraph at lines 126--130
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--129
+Underfull \hbox (badness 10000) in paragraph at lines 131--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--136
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--145
+Underfull \hbox (badness 10000) in paragraph at lines 146--150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--156
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
 
-[4] [5] (Tételek.aux)
+[4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--190
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--202
+
+ []
+
+[6] (Tételek.aux)
 Package rerunfilecheck Info: File `Tételek.out' has not changed.
-(rerunfilecheck)             Checksum: 64EBE4BF642B2A694FFBD978FB4D002F;425.
+(rerunfilecheck)             Checksum: F41B322F37959502491F3879132BA16E;638.
  ) 
 Here is how much of TeX's memory you used:
- 11568 strings out of 478582
- 185944 string characters out of 2843872
- 491124 words of memory out of 3000000
- 29576 multiletter control sequences out of 15000+600000
- 482863 words of font info for 64 fonts, out of 8000000 for 9000
+ 12443 strings out of 478582
+ 203559 string characters out of 2843872
+ 532013 words of memory out of 3000000
+ 30420 multiletter control sequences out of 15000+600000
+ 484393 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,17n,63p,269b,365s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
-m1000.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
-600\ecrm1000.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
-/ec/dpi600\ecbx1440.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/j
-knappen/ec/dpi600\ecbx1000.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/l
-jfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\palint\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\palint\AppData\Local\MiK
-TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Users/palint/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/palint/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/User
-s/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmr10.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr5.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr7.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/palint/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/palint/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/palint/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Tételek.pdf (5 pages, 178438 bytes).
+ 108i,17n,106p,274b,365s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecr
+m0800.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
+600\ecrm0600.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
+/ec/dpi600\ecrm0700.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/j
+knappen/ec/dpi600\tcrm1000.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/l
+jfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\palint\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\palint\AppData\Local\MiK
+TeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\palint\AppData\Lo
+cal\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\palint\App
+Data\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk> <C:\Users\pal
+int\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Use
+rs/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.p
+fb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmmi7.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmr10.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/palint/AppData/Local/Programs/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/palint/AppData/Local/P
+rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/palint/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/pal
+int/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/
+Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/
+msbm10.pfb>
+Output written on Tételek.pdf (6 pages, 195231 bytes).
 PDF statistics:
- 317 PDF objects out of 1000 (max. 8388607)
- 26 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 379 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
