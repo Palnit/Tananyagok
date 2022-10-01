@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.23)  1 OCT 2022 13:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.23)  1 OCT 2022 13:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -584,22 +584,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--197
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--203
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--208
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 208--210
+Underfull \hbox (badness 10000) in paragraph at lines 213--219
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--221
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 222--225
+Underfull \hbox (badness 10000) in paragraph at lines 220--223
 
  []
 
@@ -608,13 +613,13 @@ Package rerunfilecheck Info: File `Tételek.out' has not changed.
 (rerunfilecheck)             Checksum: F41B322F37959502491F3879132BA16E;638.
  ) 
 Here is how much of TeX's memory you used:
- 12456 strings out of 478582
- 203692 string characters out of 2843872
+ 12454 strings out of 478582
+ 203678 string characters out of 2843872
  532010 words of memory out of 3000000
  30420 multiletter control sequences out of 15000+600000
  484393 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,17n,106p,274b,431s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 108i,17n,106p,274b,365s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\Balint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecr
 m0800.pk> <C:\Users\Balint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
 600\ecrm0600.pk> <C:\Users\Balint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
@@ -638,9 +643,9 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/Bal
 int/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/
 Users/Balint/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb>
-Output written on Tételek.pdf (7 pages, 201491 bytes).
+Output written on Tételek.pdf (7 pages, 201030 bytes).
 PDF statistics:
- 404 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
+ 401 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 500000)
  25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
