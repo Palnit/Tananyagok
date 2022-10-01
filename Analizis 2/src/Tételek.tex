@@ -185,9 +185,71 @@ f'>0 \quad \Rightarrow \quad f\uparrow
 \textbf{Megjegyzés:} Az állítás fordítottja nem igaz. Az $f(x)=x^3 \; (x\in\R)$ függvény szigorúan monoton növekedő, de $f'(0)=0$
 \paragraph{3.}
 Mit ért azon hogy az $f\in\R\rightarrow\R$ függvény valamely helyen lokális minimuma van? \\\\
+Az  $\fR$ függvénynek az $a\in \text{int } \D_f$ pontban lokális minimuma van ha 
+\[
+\exists K(a), \quad \text{hogy} \quad \forall x \in K(a)\cap \D_f \quad \text{esetén} \quad f(x)\geq f(a)
+\]
+Ekkor az $a\in\D_f$ pontot az $f$ lokális minimumhelyének nevezzük, $f(a)$ pedig az $f$ lokális maximuma.
 \paragraph{4.}
 Hogyan szól a lokális szélsőértékre vonatkozó elsőrendű szükséges feltétel?\\\\
+Tegyük fel, hogy az $f:\R\rightarrow\R$ függvénynek az $a\in\D_f$ pontban lokális szélsőértéke van és $f\in D\{a\}$ \\
+Ekkor:
+\[
+f'(a)=0
+\]
 \paragraph{5.}
 Adjon  példát olyan $\fR$ függvényre, amelyre valamely $a\in\R$ esetén $f\in D\{a\} , f'(a)=0$ teljesül, de az $f$ függvénynek az $a$ pontjában nincs lokális szélsőértéke \\\\
-
+\textbf{Megjegyzés:} fogalmam nincs melyik jó lehet választani majd kiderül kis zh-n :)
+\begin{enumerate}
+\item $f(x)=x^3$ esetén $f'(x)=3x^2$ ami csak a $0$ pontban $0$ egyértelműen nem lokális szélsőérték $x<0$ esetén $x^3 < 0$ és $x>0$ esetén $x^3>0$
+\item $f(x)=3$ (bármilyen konstans függvény) ugyanis $f'(x)=0$ ezáltal ez minden $a$-ra teljesül.
+\end{enumerate}
+\paragraph{6.}
+Mit ért azon, hogy egy függvény valamely helyen jelet vált? \\\\
+Azt mondjuk hogy $\fR$ függvény az $a \in \text{int }\D_f$ pontban (-,+) előjelet vált ha $f(a)=0$, és van olyan $\delta >0$, hogy
+\[
+f(x)<0 \: (a-\delta <x < a), \quad f(x)>0 \: (a>x>a+\delta)
+\]
+A (+,-) jelváltás értelem szerűen  definiálható
+\paragraph{7.}
+Hogyan szól a lokális maximumra vonatkozó elsőrendű elégséges feltétel? \\\\
+Legyen $\fR$, és a $a\in \text{int }\D_f$.\\
+Tegyük fel hogy $\exists \delta >0$, amelyre $f\in D((a-\delta ,a+\delta )) $ és $f'$ előjelet vált $a$-ban \\
+Ekkor $f$-nek szigorú lokális szélsőértéke van az $a$-ban \\
+($+,-$) jelváltás esetén maximum. \\
+\textbf{Megjegyzés:} ($-,+$) jelváltás esetén minimum,
+\paragraph{8.}
+Írja le a lokális minimumra vonatkozó másodrendű elégséges feltételt. \\\\
+Legyen $f \in \R \rightarrow \R$, $a\in \text{int } \D_f$\\
+Tegyük fel hogy:
+\begin{enumerate}
+\item $f\in D^2\{a\}$
+\item $f'(a)=0 \quad \text{és} \quad f''(a)\neq 0$  
+\end{enumerate}
+Ekkor az $a$ pont a szigorú lokális szélsőértékhelye az $f$. függvénynek $f''(a)>0$ esetén minimum \\
+\textbf{Megjegyzés:} $f''(a)<0 $ esetén maximum
+\paragraph{9.}
+Mondja ki a Lagrange-féle középértéktételt! \\
+Legyen $a,b\in\R$ és $a<b$. Tegyük fel hogy 
+\begin{enumerate}
+\item $f\in C [a,b]$
+\item $f\in D(a,b)$
+\end{enumerate}
+Ekkor:
+\[
+\exists \varepsilon \in (a,b) \quad \text{hogy} \quad f'(\varepsilon) = \frac{f(b)-f(a)}{b-a}
+\]
+\paragraph{10.}
+Mondja ki a Cauchy-féle középértéktételt! \\
+Legyen $a,b\in\R$ és $a<b$. Tegyük fel hogy 
+\begin{enumerate}
+\item $f,g\in C[a,b]$
+\item $f,g\in D(a,b)$
+\item $g'(x)\neq 0 (x\in (a,b))$
+\end{enumerate}
+Ekkor:
+\[
+\exists \varepsilon \in (a,b), \quad \text{hogy} \quad \frac{f'(\varepsilon)}{g'(\varepsilon)} = \frac{f(b)-f(a)}{g(b)-g(a)}
+\]
+\newpage
 \end{document}
