@@ -32,6 +32,8 @@
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\D}{\mathcal{D}}
 \newcommand{\fR}{f\in\R\rightarrow\R}
+\newcommand{\pf}{+\infty}
+\newcommand{\nf}{-\infty}
 
 \begin{document}
 
@@ -250,4 +252,53 @@ Ekkor:
 \exists \varepsilon \in (a,b), \quad \text{hogy} \quad \frac{f'(\varepsilon)}{g'(\varepsilon)} = \frac{f(b)-f(a)}{g(b)-g(a)}
 \]
 \newpage
-\end{document}
+\section{5. Gyakorlat elméleti kérdései}
+\paragraph{1.}
+Definiálja az inflexiós pont fogalmát. \\
+Legye $I$ nyílt intervallumon, $\fR, I \subset \D_f$ \\
+Azt mondjuk hogy az $a\in I$ pont az $f$ függvénynek inflexiós pontja ha:
+\begin{gather*}
+\exists \delta > 0 \; k_\delta (a) \subset I \text{ olyan hogy} \\
+f \text{ konvex az } (a-\delta , a] \text{ intervallumon és }\\ \text{konkáv az } [a,a+\delta)\text{-n intervallumon vagy fordítva}  
+\end{gather*} 
+\paragraph{2.}
+Mondja ki az inflexiós pont létezésére vonatkozó másodrendű szükséges feltételt. \\
+Legye $\fR, \; a \in \text{int } \D_f$ \\
+Ha $f\in C^2\{a\}$ és $f$-nek az a pontjában inflexiója van akkor $f''(a)=0$
+\paragraph{3.}
+Mikor mondjuk, hogy egy függvénynek aszimptotája van a $+\infty$-ben? \\
+Legyen $a\in R $ és $f : (a,\pf) \rightarrow \R.$ Azt mondjuk hogy $f$-nek van aszimptotája $(\pf)$-ben, ha:
+\[
+\exists l(x)=Ax+B \quad (x\in\R)
+\]
+elsőfokú függvény, amelyre:
+\[
+\lim\limits_{x\rightarrow\pf}(f(x)-l(x)) = 0
+\] 
+Ekkor az $l(x) \: (x\in\R)$ egyenes az $f$ aszimptotája $(\pf)$-ben
+\paragraph{4.}
+Hogyan szól a $(\pf)$-beli aszimptota létezésére vonatkozó tétel?\\
+Az $f:(a,\pf)\rightarrow\R$ függvénynek akkor és csak akkor van aszimptotája $(\pf)$-ben, ha léteznek és végesek az alábbi határértékek:
+\[
+\lim\limits_{x\rightarrow\pf} \frac{f(x)}{x} =: A \in \R \quad \lim\limits_{x\rightarrow\pf} (f(x)-Ax) =: B \in \R
+\]
+Ekkor az
+\[
+l(x)=Ax+B \quad (x\in\R)
+\]
+Egyenes az $f$ függvény aszimptotája $(\pf)$-ben
+\paragraph{5.}
+Írja le a jobboldali határérték $\frac{0}{0}$ esetére vonatkozó L'Hospital-szabályt. \\
+Legyen $\nf \leq a < b < \pf $ és $f,g\in D(a,b).$ Tegyük fel hogy:
+\begin{itemize}
+\item $\exists \lim\limits_{a+0}f=\lim\limits_{a+0}g=0 $
+\item $g(x)\neq$ és $g'(x)\neq 0 \quad \forall x \in (a,b)$
+\item $\exists \lim\limits_{a+0} \frac{f'}{g'} \in \overline{\R}$
+\end{itemize}
+Ekkor
+\[
+\exists 	\lim\limits_{a+0} \frac{f}{g} \quad \text{ és } \quad \lim\limits_{a+0}\frac{f}{g} = \lim\limits_{a+0}\frac{f'}{g'} \in \overline{\R}
+\]
+\paragraph{6.}
+Írja le a baloldali határérték $\frac{\pf}{\pf}$ esetére vonatkozó L'Hospital-szabályt. \\
+\end{document} 
