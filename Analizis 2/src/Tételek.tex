@@ -255,7 +255,7 @@ Ekkor:
 \section{5. Gyakorlat elméleti kérdései}
 \paragraph{1.}
 Definiálja az inflexiós pont fogalmát. \\
-Legye $I$ nyílt intervallumon, $\fR, I \subset \D_f$ \\
+Legyen $I$ nyílt intervallumon, $\fR, I \subset \D_f$ \\
 Azt mondjuk hogy az $a\in I$ pont az $f$ függvénynek inflexiós pontja ha:
 \begin{gather*}
 \exists \delta > 0 \; k_\delta (a) \subset I \text{ olyan hogy} \\
@@ -267,7 +267,7 @@ Legye $\fR, \; a \in \text{int } \D_f$ \\
 Ha $f\in C^2\{a\}$ és $f$-nek az a pontjában inflexiója van akkor $f''(a)=0$
 \paragraph{3.}
 Mikor mondjuk, hogy egy függvénynek aszimptotája van a $+\infty$-ben? \\
-Legyen $a\in R $ és $f : (a,\pf) \rightarrow \R.$ Azt mondjuk hogy $f$-nek van aszimptotája $(\pf)$-ben, ha:
+Legyen $a\in \R $ és $f : (a,\pf) \rightarrow \R.$ Azt mondjuk hogy $f$-nek van aszimptotája $(\pf)$-ben, ha:
 \[
 \exists l(x)=Ax+B \quad (x\in\R)
 \]
@@ -292,7 +292,7 @@ Egyenes az $f$ függvény aszimptotája $(\pf)$-ben
 Legyen $\nf \leq a < b < \pf $ és $f,g\in D(a,b).$ Tegyük fel hogy:
 \begin{itemize}
 \item $\exists \lim\limits_{a+0}f=\lim\limits_{a+0}g=0 $
-\item $g(x)\neq$ és $g'(x)\neq 0 \quad \forall x \in (a,b)$
+\item $g(x)\neq$ 0 és $g'(x)\neq 0 \quad \forall x \in (a,b)$
 \item $\exists \lim\limits_{a+0} \frac{f'}{g'} \in \overline{\R}$
 \end{itemize}
 Ekkor
@@ -301,4 +301,14 @@ Ekkor
 \]
 \paragraph{6.}
 Írja le a baloldali határérték $\frac{\pf}{\pf}$ esetére vonatkozó L'Hospital-szabályt. \\
+Legyen $\nf < a<b\leq \pf$ és $f,g\in D(a,b)$ Tegyük fel hogy:
+\begin{itemize}
+\item $\exists \lim\limits_{a-0}f=\lim\limits_{a-0} g = \pf$
+\item $g(x)\neq 0 \text{ és } g'(x)\neq 0 \quad \forall x \in(a,b)$
+\item $\exists \lim\limits_{a-0} \frac{f'}{g'} \in \overline{\R}$
+\end{itemize}
+Ekkor
+\[
+\exists \lim\limits_{a-0}\frac{f}{g} \in \overline{\R} \quad \text{és} \quad \lim\limits_{a-0}\frac{f}{g} = \lim\limits_{a-0} \frac{f'}{g'} \in \overline{\R}
+\]
 \end{document} 

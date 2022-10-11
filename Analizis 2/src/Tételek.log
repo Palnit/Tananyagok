@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  6 OCT 2022 12:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  11 OCT 2022 12:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -608,23 +608,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 222--225
 
  []
 
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
-
- []
-
-[8] (Tételek.aux)
+[7] [8] [9] (Tételek.aux)
 Package rerunfilecheck Info: File `Tételek.out' has not changed.
 (rerunfilecheck)             Checksum: DA7D9BA6F052DB92691F74529A5F9D72;851.
  ) 
 Here is how much of TeX's memory you used:
- 12465 strings out of 478582
- 203750 string characters out of 2843872
- 533018 words of memory out of 3000000
+ 12466 strings out of 478582
+ 203756 string characters out of 2843872
+ 534019 words of memory out of 3000000
  30423 multiletter control sequences out of 15000+600000
  484393 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,17n,106p,274b,365s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 108i,17n,106p,274b,407s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecr
 m0800.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
 600\ecrm0600.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
@@ -648,9 +643,9 @@ ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/pal
 int/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/
 Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb>
-Output written on Tételek.pdf (8 pages, 208631 bytes).
+Output written on Tételek.pdf (9 pages, 210132 bytes).
 PDF statistics:
- 424 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
+ 428 PDF objects out of 1000 (max. 8388607)
+ 56 named destinations out of 1000 (max. 500000)
  33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

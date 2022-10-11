@@ -32,4 +32,4 @@
 \select@language {magyar} \contentsline {paragraph}{3.}{8}{section*.33}%
 \select@language {magyar} \contentsline {paragraph}{4.}{8}{section*.34}%
 \select@language {magyar} \contentsline {paragraph}{5.}{8}{section*.35}%
-\select@language {magyar} \contentsline {paragraph}{6.}{8}{section*.36}%
+\select@language {magyar} \contentsline {paragraph}{6.}{9}{section*.36}%
