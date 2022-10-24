@@ -311,4 +311,53 @@ Ekkor
 \[
 \exists \lim\limits_{a-0}\frac{f}{g} \in \overline{\R} \quad \text{és} \quad \lim\limits_{a-0}\frac{f}{g} = \lim\limits_{a-0} \frac{f'}{g'} \in \overline{\R}
 \]
+\newpage
+\section{6. Gyakorlat elméleti kérdései}
+\newpage
+\section{7. Gyakorlat elméleti kérdései}
+\paragraph{1.}
+Definiálja a primitív függvény fogalmát!
+\\ \\
+Legyen $I \subset \R$ nyílt intervallumon és $f : I \rightarrow \R$ egy adott függvény. \\ Azt mondjuk, hogy a $F : I \rightarrow \R$ függvény az $f$ egy primitív függvénye ha,
+\[
+F \in D(i) \text{ és } F'(x) = f(x)  \quad (\forall x \in i)
+\] 
+\paragraph{2.} 
+Mit nevezünk egy függvény határozatlan integráljának? \\ \\
+Legyen $I \subset \R$ nyílt intervallumon és $f : I \rightarrow \R$
+\\
+Az $f$ függvény primitív függvényeinek halmazát az $f$ határozatlan integráljának nevezzük. \\
+Jelölések : $\int{f}, \int{f(x) dx}$
+\paragraph{3.}
+Mikor mondjuk, hogy egy függvény Darboux-tulajdonságú? \\ \\
+Legyen $I$ nyílt intervallumon, $\fR , \quad	I \subset \D_f$
+ \\ \\ Azt mondjuk, hogy az $f$ függvény Daroux-tulajdonságú az $I$ intervallumon, ha tetszőleges $a,b\in I, a<b$ és bármely $f(a)$ és $f(b)$ közé eső $c$ esetén van olyan $\varepsilon \in [a,b]$, hogy $f(\varepsilon) = c$ \\  \\
+\textbf{Megjegyzés:} Ha $f:I\rightarrow \R$ folytonos akkor $f$ Daroux-tulajdonságú az $I$-n
+\paragraph{4.}
+Mit mond ki a primitív függvényekkel kapcsolatos parciális integrálás tétele?
+ \\ \\
+Legyen $I$ nyílt intervallum. \\ \\
+Tegyük fel, hogy $f,g \in D(I)$ és az $f'g$ függvénynek létezik függvénye $I$-n \\
+Ekkor az $fg'$ függvénynek is van primitív függvénye és 
+\[
+\int{f(x)g'(x)dx} = f(x)g(x)-\int{f'(x)g(x)dx} \quad (x\in I)
+\]
+\paragraph{5.}
+Hogyan szól a primitív függvényekkel kapcsolatos első helyettesítési szabály? \\\\
+Legyenek adottak az $I,J$ nyílt intervallumok és a $g: I \rightarrow \R ,f: J \rightarrow \R $ függvények. \\\\
+Tegyük fel hogy $g\in D(I), \mathcal{R}_g \subset J $ és az $f$ függvénynek van primitív függvénye. Ekkor az $(f \circ g) \cdot g'$ függvénynek is van primitív függvénye és 
+\[
+\int{f(g(x))\cdot g'(x)dx} = F(g(x))+C \quad (x\in I)
+\] 
+ahol $F$ a $f$ függvénynek egy primitív függvénye
+\paragraph{6.}
+Adja meg az alábbi függvények egy primitív függvényét: \\
+exp, $x^a \; (x>0, a \in \R \setminus \{-1\})$ , sin, $\frac{1}{1+x^2} \; (x\in\R)$ \\\\
+\begin{itemize}
+\item $f(x) = e^x, F(x) = e^x$
+\item $f(x) = x^a, F(x) = \frac{x^{a+1}}{a+1}$
+\item $f(x) = \sin{x}, F(x) = -\cos{x} $ 
+\item $f(x) = \frac{1}{1+x^2}, F(x) = \frac{1}{2} \text{ln} \big\lvert \frac{x+1}{x-1}\big\rvert$
+\end{itemize} 
+
 \end{document} 

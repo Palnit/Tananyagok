@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  11 OCT 2022 14:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  24 OCT 2022 09:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -608,15 +608,70 @@ Underfull \hbox (badness 10000) in paragraph at lines 222--225
 
  []
 
-[7] [8] [9] (Tételek.aux)
+[7] [8] [9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 319--322
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 326--331
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--336
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--336
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 332--336
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--342
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--342
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--349
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--356
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 354--356
+
+ []
+
+[11] [12] (Tételek.aux)
 Package rerunfilecheck Info: File `Tételek.out' has not changed.
-(rerunfilecheck)             Checksum: DA7D9BA6F052DB92691F74529A5F9D72;851.
+(rerunfilecheck)             Checksum: 52209B7FDE1734745594F9C148C4C4BC;1277.
  ) 
 Here is how much of TeX's memory you used:
- 12466 strings out of 478582
- 203756 string characters out of 2843872
- 534019 words of memory out of 3000000
- 30423 multiletter control sequences out of 15000+600000
+ 12479 strings out of 478582
+ 203891 string characters out of 2843872
+ 534022 words of memory out of 3000000
+ 30425 multiletter control sequences out of 15000+600000
  484393 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,17n,106p,274b,407s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -634,18 +689,19 @@ int\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk><C:/Use
 rs/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.p
 fb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
 m/cmmi10.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmmi7.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmr10.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/palint/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/palint/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/palint/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/pal
-int/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/
-Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/
-msbm10.pfb>
-Output written on Tételek.pdf (9 pages, 210149 bytes).
+amsfonts/cm/cmmi5.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmmi7.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/palint/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/palint/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/palint/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pal
+int/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/
+Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7
+.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/symbols/msbm10.pfb>
+Output written on Tételek.pdf (12 pages, 229177 bytes).
 PDF statistics:
- 428 PDF objects out of 1000 (max. 8388607)
- 56 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 466 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
