@@ -1,0 +1,115 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[magyar]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage[pdfusetitle]{hyperref}
+\usepackage{titling}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\date{\today}
+\author{Petrányi Bálint}
+\title{%
+	\textbf{Analízis 2.} \\
+	\textbf{Programtervező informatikus A. szakirány} \\
+	\medskip
+	Bizonyítások\\
+	\large 2022-2023. tanév 1. félév
+}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\fR}{f\in\R\rightarrow\R}
+\newcommand{\pf}{+\infty}
+\newcommand{\nf}{-\infty}
+\newcommand{\f}[1][x]{f(#1)}
+\newcommand{\g}[1][x]{g(#1)}
+\newcommand{\fg}{\Big(\frac{f}{g}\Big)}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{A differenciálhatóság átfogalmazása}
+\textbf{Tétel:} \\ 
+Legyen $f \in \mathbb{R} \rightarrow \mathbb{R}, a \in \text{int } \mathcal{D}_f$. Ekkor
+\[
+\begin{split}
+f \in & \; D\{a\} \\
+& \Updownarrow \\
+\exists A \in \mathbb{R}, \; \text{és} \; \epsilon : \mathcal{D}_f \rightarrow \mathbb{R}, \lim_a{\epsilon} = 0 \quad \text{úgy, hogy } & \; f(x)- f(a) = A(x-a)+\epsilon (x)(x-a)
+\end{split}
+\]
+\textbf{Bizonyítás:}
+\[
+\Longrightarrow f \in D\{a\} \; \text{esetén legyen} \; A:=f'(a), \; \text{és} \epsilon (x) := \frac{f(x)-f(a)}{x-a} -f'(a).
+\]
+Ezzel a választással egyrészt
+\[
+A(x-a) + \epsilon (x)(x-a) =f'(a)(x-a)+\Big(\frac{f(x)-f(a)}{x-a}-f'(a)\Big)(x-a) =f(x)-f(a),
+\]
+másrészt a differenciálhatóság miatt
+\[
+\lim\limits_{x\rightarrow a} \epsilon (x) = \lim\limits_{x\rightarrow a} \frac{f(x)-f(a)}{x-a}-f'(a)=0.
+\]
+$\Longleftarrow$ Ha az $A$ szám és az $\epsilon$ függvény teljesítik az állítást feltételeit, akkor 
+\[
+\frac{f(x)-f(a)}{x-a} = A + \epsilon (x), és \lim\limits_{x-a} \frac{f(x)-f(a)}{x-a} = A = f'(a) \in \mathbb{R}
+\]
+\newpage
+\section{A szorzat függvény deriválása}
+\textbf{Tétel:}
+\[
+f\in D\{a\} \Longrightarrow    f\cdot g \in D\{a\},  \text{és}  (f\cdot g)'(a) =f'(a)g(a)+ f(a)g'(a)
+\]
+\textbf{Bizonyítás:}
+\begin{align*}
+\frac{(fg)(x)-(fg)(a)}{x-a} &= \frac{f(x)\cdot g(x)-f(a)\cdot g(a)}{x-a}\\
+ &= \frac{\f\cdot\g-\f[a]\cdot\g-\f[a]\cdot\g[a]+\f[a]\cdot\g}{x-a} \\
+ &= \frac{\f-\f[a]}{x-a}\cdot\g + \f[a] \cdot \frac{\g-\g[a]}{x-a} \quad (x\in\D_{f\cdot g} \setminus \{a\})
+\end{align*}
+következés képen 
+\[
+\triangle_a f \cdot\g = \g \cdot \triangle_a\f\cdot + \f[a] \cdot \triangle_a\g \quad (x\in\D_{f\cdot g} \setminus \{a\})
+\]
+Mivel $g\in D \{a\}$ , ezét $g\in C\{a\}$ és így $\lim_a g = \g[a]$
+\\ Ezek alapján:
+\begin{align*}
+(f\cdot g)'(a) & = \lim\limits_a \triangle_a (f\cdot g) = \lim\limits_a (g\cdot \triangle_a f ) + \lim\limits_a (\f[a]\cdot\triangle_a g ) \\
+& =\g[a]\cdot f'(a) + \f[a]\cdot g'(a)
+\end{align*}
+\newpage
+\section{A hányados függvény deriváltja}
+\textbf{Tétel:}
+\[
+f\in D\{a\} \text{ és }  g(a)\neq 0 \Longrightarrow  \frac{f}{g} \in D\{a\},  \text{és}  \Big(\frac{f}{g} \Big)' (a) = \frac{f'(a)g(a)-f(a)g'(a)}{g^2(a)}
+\]
+\textbf{Bizonyítás:} \\
+kifejezzük a hányadosfüggvényt különbségi hányados függvényt a számláló és a nevező különbségi hányados függvényével 
+\begin{align*}
+\triangle_a\fg (x) &= \frac{\fg (x)-\fg (a)}{x-a} = \frac{\frac{\f}{\g}-\frac{\f[a]}{\g[a]}}{x-a}  \\
+&=\frac{1}{\g[a]\g} \cdot \frac{\f\cdot\g[a] - \f[a]\g}{x-a} \\ 
+&=\frac{1}{\g[a]\g} \Big(\frac{\f -\f[a]}{x-a} \cdot\g[a] -\f[a]\cdot\frac{\g -\g[a]}{x-a} \Big) \\
+&=\frac{1}{\g[a]\g} (\g[a]\cdot\triangle_a \f -\f[a]\cdot\triangle_a \g )
+\end{align*}
+Innen mindkét oldal $a$-beli határértékét véve kapjuk a bizonyítandó 
+\[
+\fg '(a) = \frac{f'(a)\cdot\g[a] - \f[a]\cdot g'(a)}{g^2 (a)}
+\]
+összefüggést
+\newpage
+\section{A lokális szélsőértékre vonatkozó elsőrendű szükséges feltétel}
+\textbf{Tétel:}
+\textbf{Bizonyítás:}
+\end{document}
