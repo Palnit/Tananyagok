@@ -351,7 +351,8 @@ Tegyük fel hogy $g\in D(I), \mathcal{R}_g \subset J $ és az $f$ függvénynek 
 \] 
 ahol $F$ a $f$ függvénynek egy primitív függvénye
 \paragraph{6.}
-Adja meg az alábbi függvények egy primitív függvényét: \\
+Adja meg az alábbi függvények egy primitív függvényét: 
+
 exp, $x^a \; (x>0, a \in \R \setminus \{-1\})$ , sin, $\frac{1}{1+x^2} \; (x\in\R)$ \\\\
 \begin{itemize}
 \item $f(x) = e^x, F(x) = e^x$
@@ -359,5 +360,17 @@ exp, $x^a \; (x>0, a \in \R \setminus \{-1\})$ , sin, $\frac{1}{1+x^2} \; (x\in\
 \item $f(x) = \sin{x}, F(x) = -\cos{x} $ 
 \item $f(x) = \frac{1}{1+x^2}, F(x) = \frac{1}{2} \text{ln} \big\lvert \frac{x+1}{x-1}\big\rvert$
 \end{itemize} 
-
+\newpage
+\section{8. Gyakorlat elméleti kérdései}
+\paragraph{1.} Mit ért a határozatlan integrál linearitásán? \\\\
+Legyen $I$ nyílt intervallum. Ha az $f,g : I \rightarrow \R$ függvényeknek létezik primitív függvénye, akkor tetszőleges $\alpha \beta \in \R$ mellet $(\alpha f + \beta g)$-nek is létezik primitív függvénye és 
+\[
+\int (\alpha f(x) + \beta g(x))dx = \alpha \int f(x) dx + \beta \int g(x) dx \quad (x\in I)
+\]
+\paragraph{2.} Fogalmazza meg a primitív függvényekkel kapcsolatos második helyettesítési szabályt \\\\
+Legyen $I,J \subset \R $ nyílt intervallumok \\
+tegyük fel hogy  $f:I \rightarrow \R, \quad g: J \rightarrow I$ bijekció továbbá $g\in D(J), \; g'(x) \neq 0 \; (x\in J)$ Ha az $f \circ g \cdot g' : J \rightarrow \R $ függvénynek van primitív függvénye akkor az $f$ függvénynek is van primitív függvénye és 
+\[
+\int f(x)dx \underset{x=g(t)}{=} \int f(g(t)) \cdot g'(t) dt_{\big\lvert t=g^-1(x)} \quad (x\in I)
+\]
 \end{document} 
