@@ -34,6 +34,8 @@
 \newcommand{\fR}{f\in\R\rightarrow\R}
 \newcommand{\pf}{+\infty}
 \newcommand{\nf}{-\infty}
+\renewcommand{\>}{\rightarrow}
+
 
 \begin{document}
 
@@ -373,4 +375,46 @@ tegyük fel hogy  $f:I \rightarrow \R, \quad g: J \rightarrow I$ bijekció tová
 \[
 \int f(x)dx \underset{x=g(t)}{=} \int f(g(t)) \cdot g'(t) dt_{\big\lvert t=g^-1(x)} \quad (x\in I)
 \]
+\paragraph{3.}
+Legyen 	$I\subset \R$ nyílt intervallum $f:I\> \R$ és $f\in D(I)$. Mi a határozatlan integrálja az $f'\cdot f^n$ függvénynek. \\\\
+\[
+\int f^n(x)f'(x) dx = \frac{f^{n+1}(x)}{n+1} +c \quad (x\in I c\in \R)
+\]
+\paragraph{4.}
+Definiálja intervallum egy felosztását \\\\
+(Fogalmam nincs melyik a jó szerintem mind ugyan az de leírom mindet biztos ami biztos lehet válogatni) 
+\begin{enumerate}
+\item Az $[a,b]$ intervallum olyan véges részhalmazait, amik tartalmazzák az intervallum végpontjait azaz az $a,b$ pontokat az $[a,b]$ intervallum felosztásainak nevezzük 
+Az $[a,b]$ intervallum felosztásainak a halmazát $F[a,b]$-vel jelöljük
+\item Legyen $a,b \in \R \; a < b $ Ekkor az $[a,b]$ intervallum felosztásán olyan véges \[ \tau = \{ x_0,...,x_n\} \subset [a,b]\] halmazt értünk amelyre \[a = x_0<x_1<...<x_n = b\]
+\item Az $[a,b]$ intervallum egy felosztásán a 
+\[
+\tau := \{a=x_0<x_1<x_2<...<x_n =b\}
+\]  
+halmazt értjük ahol $n\in \mathbb{N}^+$
+\end{enumerate}
+\paragraph{5.}
+Mit jelent egy felosztás finomítása \\\\
+Legyen $a,b \in \R, \quad a<b$ és $\tau_1 , \tau_2 \subset [a,b]$ egy-egy felosztása $[a,b]$-nek. Ekkor $\tau_2$ finomítása $\tau_1$-nek, ha $\tau_1 \subset \tau_2$
+\paragraph{6.}
+Mi az also közelítő összeg definíciója \\\\
+(Kitudja hogy kérdezi e a felső közelítést olyan hasonló hogy inkább leírom mind 2 öt)
+Legyen $f\in K[a,b] \; \tau \in F [a,b], \tau = \{a=x_0<x_1<x_2<...<x_n =b\}$ \\
+\textbf{Alsó közelítő összeg:}
+\[
+m_i:= \inf \{ f(x) : x_{i-1} \leq x \leq x_i\} = \inf f_{\big\lvert [x_{i-1},x_i]} \quad (i=1,2,...,n) 
+\]
+Ekkor:
+\[
+s(f,\tau ): = \sum\limits_{i=1}^n m_i (x_i -x_{i-1}) 
+\]
+\textbf{Felső közelítő összeg}
+\[
+M_i:= \sup \{ f(x) : x_{i-1} \leq x \leq x_i\} = \sup f_{\big\lvert [x_{i-1},x_i]} \quad (i=1,2,...,n) 
+\]
+Ekkor:
+\[
+S(f,\tau ): = \sum\limits_{i=1}^n M_i (x_i -x_{i-1}) 
+\]
+\textbf{tldr:} A kettő ugyan az anyi különbség van bennük hogy $\inf$ helyet $\sup$ és $m$ és $s$ helyet $M$ és $S$ van
 \end{document} 
