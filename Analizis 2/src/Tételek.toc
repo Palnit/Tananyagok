@@ -48,3 +48,10 @@
 \select@language {magyar} \contentsline {paragraph}{4.}{13}{section*.49}%
 \select@language {magyar} \contentsline {paragraph}{5.}{14}{section*.50}%
 \select@language {magyar} \contentsline {paragraph}{6.}{14}{section*.51}%
+\select@language {magyar} \contentsline {section}{9. Gyakorlat elméleti kérdései}{15}{section*.52}%
+\select@language {magyar} \contentsline {paragraph}{1.}{15}{section*.53}%
+\select@language {magyar} \contentsline {paragraph}{2. }{15}{section*.54}%
+\select@language {magyar} \contentsline {paragraph}{3. }{15}{section*.55}%
+\select@language {magyar} \contentsline {paragraph}{4. }{15}{section*.56}%
+\select@language {magyar} \contentsline {paragraph}{5. }{15}{section*.57}%
+\select@language {magyar} \contentsline {paragraph}{6. }{16}{section*.58}%

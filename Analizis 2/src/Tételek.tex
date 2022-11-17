@@ -35,6 +35,7 @@
 \newcommand{\pf}{+\infty}
 \newcommand{\nf}{-\infty}
 \renewcommand{\>}{\rightarrow}
+\renewcommand{\r}{\tau}
 
 
 \begin{document}
@@ -417,4 +418,50 @@ Ekkor:
 S(f,\tau ): = \sum\limits_{i=1}^n M_i (x_i -x_{i-1}) 
 \]
 \textbf{tldr:} A kettő ugyan az anyi különbség van bennük hogy $\inf$ helyet $\sup$ és $m$ és $s$ helyet $M$ és $S$ van
+\newpage
+\section{9. Gyakorlat elméleti kérdései}
+\paragraph{1.} Fogalmazza meg a primitív függvényekkel kapcsolatos második helyettesítési szabályt \\\\
+Legyen $I,J \subset \R $ nyílt intervallumok \\
+tegyük fel hogy  $f:I \rightarrow \R, \quad g: J \rightarrow I$ bijekció továbbá $g\in D(J), \; g'(x) \neq 0 \; (x\in J)$ Ha az $f \circ g \cdot g' : J \rightarrow \R $ függvénynek van primitív függvénye akkor az $f$ függvénynek is van primitív függvénye és 
+\[
+\int f(x)dx \underset{x=g(t)}{=} \int f(g(t)) \cdot g'(t) dt_{\big\lvert t=g^-1(x)} \quad (x\in I)
+\]
+\paragraph{2. } Milyen viszony van az alsó és a felső közelítő összegek között? \textbf{(Nem vagyok benne biztos)} \\\\
+Legyen $f\in K[a,b]$ és tegyük fel, hogy $\tau_1 , \tau_2 \in F[a,b]$
+\begin{itemize}
+\item Ha $\tau_2$ finomabb $\tau_1$-nél (azaz $\tau_1 \subset \tau_2$) akkor : 
+\[
+s(f,\tau_1)\leq s(f,\r_2) \quad \text{és} \quad S(f,\r_1) \geq S(f,\r_2)
+\] 
+\item Tetszőleges $\r_1 , \r_2 \in F[a,b]$ esetén 
+\[
+s(f,\r_1) \leq S(f,\r_2)
+\] 
+\end{itemize} 
+\paragraph{3. }
+Mi a Darboux-féle alsó integrál definíciója? \\\\
+Legyen $f\in K[a,b]$ Az alsó közelítő összegek szuprémumát, azaz az \[
+I_* (f):= \sup \{s(f,\r ) \| \r \in F[a,b]\} \in \R
+\]	
+számot az f függvény Darbux-féle alsó integráljának nevezzük
+\paragraph{4. }
+Mi a Darboux-féle alsó integrál definíciója? \\\\
+Legyen $f\in K[a,b]$ A felső közelítő összegek infimumát, azaz az \[
+I^*(f):=\inf \{S(f,\r) \| \r \in F[a,b]\} \in \R
+\]	
+számot az f függvény Darbux-féle felső integráljának nevezzük
+\paragraph{5. }
+Mikor nevez egy függvényt (Riemann)-integrálhatónak ? \\\\
+Azt mondjuk hogy az $f\in K[a,b]$ függvény Riemann-integrálható az $[a,b]$ intervallumon (röviden integrálható $[a,b]$-n) ha:
+\[
+I_*(f)=I^*(f)
+\]
+Ezt a számot az $f$ függvény $[a,b]$ intervallum vett Riemann integráljának nevezzük, és következő képen jelöljük:
+\[
+\int\limits_a^b \quad \text{vagy} \quad \int\limits_a^b f(x) dx  
+\]
+\paragraph{6. } Hogyan értelmezi egy függvény határozott (vagy Riemann-) integrálját? \\\\
+Legyen $a,b \in \R , \; a<b$ és $f:[a,b] \> \R$ egy korlátos függvény. Ha $I_*(f)=I^*(f)$, akkor az $f$ függvény határozott (vagy Riemann-)integrálja az $I_*(f)=I^*(f)$ valós szám
+\paragraph{7. } Adjon meg egy példát nem integrálható függvényre! \\\\ 
+
 \end{document} 
