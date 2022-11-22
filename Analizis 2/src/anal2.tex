@@ -9,8 +9,17 @@
 \usepackage{cancel}
 \usepackage{titlesec}
 \usepackage{titling}
+\usepackage[pdfusetitle]{hyperref}
 \setcounter{secnumdepth}{0}
 
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
 
 \newtheorem{theorem}{Tétel}
 \renewenvironment{proof}{\textbf{Bizonyítás:} \\}{\hfill}
@@ -19,6 +28,7 @@
 \titleformat*{\section}{\normalsize}
 
 \date{\today}
+\author{}
 \title{%
 	\textbf{Analízis 2.} \\
 	\textbf{Programtervező informatikus A/B. szakirány} \\
