@@ -55,3 +55,6 @@
 \select@language {magyar} \contentsline {paragraph}{4. }{15}{section*.56}%
 \select@language {magyar} \contentsline {paragraph}{5. }{15}{section*.57}%
 \select@language {magyar} \contentsline {paragraph}{6. }{16}{section*.58}%
+\select@language {magyar} \contentsline {paragraph}{7. }{16}{section*.59}%
+\select@language {magyar} \contentsline {paragraph}{8. }{16}{section*.60}%
+\select@language {magyar} \contentsline {paragraph}{9. }{16}{section*.61}%
