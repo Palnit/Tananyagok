@@ -38,6 +38,7 @@
 \renewcommand{\>}{\rightarrow}
 \renewcommand{\r}{\tau}
 \newcommand{\F}{\mathcal{F}}
+\newcommand{\abi}{\int\limits_a^b}
 
 \begin{document}
 
@@ -481,4 +482,86 @@ $f\in R[a,b] \Longleftrightarrow$
 \[
 \forall \varepsilon > 0\text{-hoz} \quad \exists \r \in \mathcal{F}[a,b] : \quad \Omega (f,\r) < \varepsilon
 \]
+\newpage
+\section{10. Gyakorlat elméleti kérdései}
+\paragraph{1. }
+Felosztássorozatok segítségével adja meg a Riemann-integrálhatóság egy ekvivalens átfogalmazását! \\\\
+$f\in R[a,b]$ és $\int\limits_a^b f = i$ akkor és csak akkor, ha \\
+$\exists$ olyan $\r_n \in \F[a,b] \; (n\in\mathbb{N})$ felosztás szorzat, amelyre 
+\[
+\lim\limits_{n\>\pf} s(f,\r_n) = \lim\limits_{n\>\pf} S(f,\r_n) = i
+\]
+\paragraph{2. }
+Hogyan szól a Riemann-integrálható függvények összegével kapcsolatban tanult tétel?
+\\\\
+Tegyük fel, hogy $f,g \in R[a,b]$ Ekkor:
+\[
+f+g \in R[a,b] \quad \text{és} \quad \int\limits_a^b (f+g) = \abi f + \abi g 
+\] 
+\paragraph{3. }
+Hogyan szól a Riemann-integrálható függvények szorzatával kapcsolatban tanult tétel?
+\\\\
+Ha $f,g \in R[a,b]$ akkor $f\cdot g \in R[a,b]$ 
+\paragraph{4. }
+Hogyan szól a Riemann-integrálható függvények hányadosával kapcsolatban tanult tétel?
+\\\\
+Ha $f,g \in R[a,b], \vline g(x) \vline \geq m > 0 \quad (\forall x \in [a,b])$ akkor $\frac{f}{g} \in R[a,b]$
+\paragraph{5. }
+Milyen tételt tanult Riemann-integrálható függvény értékeinek megváltoztatását illetően?
+\\\\
+Tegyük fel hogy $f,g : [a,b] \> \R $ Ha $f\in R [a,b]$ és az 
+\[
+A := \{ x \in [a,b] \vline f(x) \neq (x)\} \text{halmaz véges}
+\]
+akkor $g\in R[a,b]$ és 
+\[
+\abi g = \abi f
+\]
+\paragraph{6. }
+Mit ért a Riemann-integrál intervallum szerinti additivitásán?
+\\\\
+Tegyük fel hogy  $f \in K[a,b]$ és legyen $c\in (a,b)$ Ekkor:
+\begin{enumerate}
+\item $f \in R[a,b] \Leftrightarrow  f\in R[a,c]$ és $f\in R[c,b]$
+\item ha $f\in R[a,c]$ és $f\in R[c,b]$ (vagy $f\in R[a,b]$) akkor 
+\end{enumerate}
+\[
+\abi f = \int\limits_a^c f + \int\limits_c^b f 
+\]
+\paragraph{7. }
+Hogyan szól az integrálszámítás első középértéktétele?
+\\\\
+Tegyük fel, hogy $f,g \in R[a,b]$ és $g\geq 0$
+Ekkor 
+\begin{enumerate}
+\item az $m:= \inf\limits_{[a,b]} f, M:= \sup\limits_{[a,b]} f$ jelölésekkel 
+\[
+m\cdot \abi g \leq \abi f\cdot g \leq M \cdot \abi g
+\]
+\item ha $f\in C[a,b]$ is teljesül, ekkor $\exists \varepsilon \in [a,b]$ olyan, hogy 
+\[
+\abi f \cdot g = f(\varepsilon) \cdot \abi g
+\]
+\end{enumerate}
+\paragraph{8. }
+Fogalmazza meg a Cauchy-Bunyakovszkij-Schwarz-féle egyenlőtlenséget!
+\\\\
+Tetszőleges $f,g \in R[a,b]$ függvények esetén 
+\[
+\Bigg\lvert \abi f\cdot g \Bigg\lvert \leq \sqrt{\abi f^2} \cdot \sqrt{\abi g^2}
+\] 
+\paragraph{9. }Mi a kapcsolat a monotonitás és a Riemann-integrálhatóság között? \\\\
+Ha az $f: [a,b] \> \R$ függvény monoton, akkor integrálható.
+\paragraph{10. }
+Definiálja a szakaszonként monoton függvény fogalmát! \\\\
+Legyen $a,b\in \R a<b$ \\
+azt mondjuk hogy $f:[a,b]\>\R$ függvény szakaszonként monoton ha 
+\[
+\exists m\in \mathbb{N}^+ \quad \text{és} \quad \r \{a=x_0<x_1< ...<x_m = b\} \in \F[a,b]
+\]
+úgy, hogy minden $i = 1,...,m$ index esetén
+\begin{enumerate}
+\item az $f_{\lvert (x_{i-1},x_i)}$ függvény monoton
+\item $f$ korlátos $[a,b]$-n  
+\end{enumerate}
 \end{document} 
