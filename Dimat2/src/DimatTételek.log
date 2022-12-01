@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  1 DEC 2022 15:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  1 DEC 2022 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -475,42 +475,73 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \c@mdf@zref@counter=\count293
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 24.
+(C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.st
+y
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+ (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count294
+\calc@Bcount=\count295
+\calc@Adimen=\dimen155
+\calc@Bdimen=\dimen156
+\calc@Askip=\skip123
+\calc@Bskip=\skip124
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count296
+\calc@Cskip=\skip125
+)
+(C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count297
+\l_MT_multwidth_dim=\dimen157
+\origjot=\skip126
+\l_MT_shortvdotswithinadjustabove_dim=\dimen158
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen159
+\l_MT_above_intertext_sep=\dimen160
+\l_MT_below_intertext_sep=\dimen161
+\l_MT_above_shortintertext_sep=\dimen162
+\l_MT_below_shortintertext_sep=\dimen163
+\xmathstrut@box=\box58
+\xmathstrut@dim=\dimen164
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 25.
  (DimatTételek.aux)
 \openout1 = `DimatTételek.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
 
 (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count294
-\scratchdimen=\dimen155
-\scratchbox=\box58
-\nofMPsegments=\count295
-\nofMParguments=\count296
+\scratchcounter=\count298
+\scratchdimen=\dimen165
+\scratchbox=\box59
+\nofMPsegments=\count299
+\nofMParguments=\count300
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count297
-\MPscratchDim=\dimen156
-\MPnumerator=\count298
-\makeMPintoPDFobject=\count299
+\MPscratchCnt=\count301
+\MPscratchDim=\dimen166
+\MPnumerator=\count302
+\makeMPintoPDFobject=\count303
 \everyMPtoPDFconversion=\toks25
 )
 (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
@@ -523,7 +554,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 74.
+Package hyperref Info: Link coloring ON on input line 75.
 
 (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -535,11 +566,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 tlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count300
+\c@section@level=\count304
 )
-LaTeX Info: Redefining \ref on input line 74.
-LaTeX Info: Redefining \pageref on input line 74.
-LaTeX Info: Redefining \nameref on input line 74.
+LaTeX Info: Redefining \ref on input line 75.
+LaTeX Info: Redefining \pageref on input line 75.
+LaTeX Info: Redefining \nameref on input line 75.
  (DimatTételek.out) (DimatTételek.out)
 \@outlinefile=\write3
 \openout3 = `DimatTételek.out'.
@@ -549,13 +580,13 @@ LaTeX Info: Redefining \nameref on input line 74.
 LaTeX Info: Redefining \cal on input line 497.
 LaTeX Info: Redefining \mit on input line 498.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 78.
 
 
 (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 78.
 
 
 (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -569,29 +600,35 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 {C:/Users/palint/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-Overfull \hbox (6.3748pt too wide) in paragraph at lines 142--143
+Overfull \hbox (6.3748pt too wide) in paragraph at lines 143--144
 []\T1/cmr/m/n/10 Minden $[][]$,$[][]$ eg�sz sz�-mok ese-t�n l�-tez-nek $[][]$,$
 [][]$ eg�-szek hogy $[][]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
+Underfull \hbox (badness 10000) in paragraph at lines 143--144
 
  []
 
-[3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17]
+[3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16] [17] [18]
 (DimatTételek.aux)
-Package rerunfilecheck Info: File `DimatTételek.out' has not changed.
-(rerunfilecheck)             Checksum: 7E9EDE170A5781219F24ED735C22CF51;4332.
+
+Package rerunfilecheck Warning: File `DimatTételek.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `DimatTételek.out':
+(rerunfilecheck)             Before: 8223D3C302109E364EE230CA0DAF5E76;4332
+(rerunfilecheck)             After:  D0CFE46D8E645F9F466B957F976CC726;4332.
  ) 
 Here is how much of TeX's memory you used:
- 14422 strings out of 478582
- 237251 string characters out of 2843872
- 607307 words of memory out of 3000000
- 32339 multiletter control sequences out of 15000+600000
+ 15067 strings out of 478582
+ 249336 string characters out of 2843872
+ 620991 words of memory out of 3000000
+ 32967 multiletter control sequences out of 15000+600000
  485875 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,11n,106p,588b,365s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 108i,11n,106p,588b,367s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
 m1000.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
 600\ecbx2074.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
@@ -615,9 +652,9 @@ a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pal
 int/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/
 Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/
 msbm10.pfb>
-Output written on DimatTételek.pdf (17 pages, 238306 bytes).
+Output written on DimatTételek.pdf (18 pages, 243128 bytes).
 PDF statistics:
- 581 PDF objects out of 1000 (max. 8388607)
- 60 named destinations out of 1000 (max. 500000)
+ 591 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
  129 words of extra memory for PDF output out of 10000 (max. 10000000)
 

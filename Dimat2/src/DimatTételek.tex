@@ -13,6 +13,7 @@
 \usepackage{scrextend}
 \usepackage[x11names]{xcolor}
 \usepackage{mdframed}
+\usepackage{mathtools}
 
 
 \hypersetup{
@@ -43,7 +44,7 @@
 \renewcommand{\>}{\rightarrow}
 \renewcommand{\r}{\tau}
 \newcommand{\F}{\mathcal{F}}
-\newcommand{\mmod}[2]{#1 \; \lvert \; #2}
+\newcommand{\mmod}[2]{#1  \mid #2}
 \renewcommand{\a}{\gr{a}}
 \renewcommand{\b}{\gr{b}}
 \renewcommand{\c}{\gr{c}}
@@ -197,6 +198,50 @@ Minden $\gr{a,b,c,d}$ és $\gr{m}$ egész számára igaz
 \item $a \equiv b \mod m ,c \equiv d \mod m \Rightarrow ac\equiv bd \mod m$
 \end{enumerate}
 \end{m}
+\newpage
+\paragraph{19. Lineáris kongruenciák megoldása}
+\begin{m}
+Legyenek $\a$,$\b$,$\gr{m}$ egész számok, $\gr{m>1}$. Ekkor az $\gr{ax \equiv b \mod m}$ megoldható $\Leftrightarrow \gr{(a,m)\mid b}$ Ez esetben pontosan $\gr{(a,m)}$ darab inkongruens megoldás van $\gr{\mod m}$
+\end{m}
+\paragraph{20. Lineáris diofantikus egyenletek}
+\begin{m}
+lineáris diofantikus egyenletek: $\gr{ax+by=c}$, ahol $\a$,$\b$,$\c$ egészek. \\
+Ez ekvivalens az $\gr{ax \equiv c \mod b}$, $\gr{by\equiv c \mod a}$ kongruenciákkal. \\
+Az $\gr{ax+by = c}$ pontosan akkor oldható meg, ha $\gr{(a,b)\mid c}$, és ekkor a megoldások megkaphatóak a \red{bővített euklideszi algoritmussal} 
+\end{m}
+\paragraph{21. Szimultán kongruenciák}
+\begin{m}
+Szeretnénk olyan $\x$ egészet, mely \red{egyszerre} elégíti ki a következő kongruenciákat:
+\[\gr
+{\begin{rcases}
+2x\equiv 1 &\mod 3 \\
+4x\equiv 3 &\mod 5
+\end{rcases} 
+}\]
+A konkurenciákat külön megoldva	
+\[\gr
+{\begin{rcases}
+x\equiv 2 &\mod 3 \\
+x\equiv 2 &\mod 5
+\end{rcases} 
+}\]
+Látszik, hogy $\gr{x=2}$ megoldás lesz. 
+\end{m}
+\paragraph{22. Kínai maradék-tétel}
+\begin{m}
+Legyenek $\gr{1<,m_1,m_2,...,m_n}$ relatív prím számok, $\gr{c_1,c_2,...,c_n}$ egészek. 
+Ekkor
+\[\gr{
+\begin{rcases}
+x \equiv & c_1 \mod m_1 \\
+x \equiv & c_2 \mod m_2 \\
+\quad \vdots & \\
+x \equiv & c_n \mod m_n \\
+\end{rcases}
+}\]
+\end{m}
+\paragraph{23. Maradékosztályok}
+
 \newpage
 
 \section{Algebrai alapok, polinomokkal kapcsolatos alapfogalmak}
