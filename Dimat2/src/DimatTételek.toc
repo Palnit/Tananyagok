@@ -8,23 +8,23 @@
 \select@language {magyar} \contentsline {paragraph}{5. prímszámok}{2}{section*.8}%
 \select@language {magyar} \contentsline {paragraph}{*. Prímek és Felbonthatatlan kapcsolat}{2}{section*.9}%
 \select@language {magyar} \contentsline {paragraph}{6,1. Maradékos osztás tétele (nemnegatív) egészek körében. (Maradék létezésére tétel)}{2}{section*.10}%
-\select@language {magyar} \contentsline {paragraph}{6,2. Maradékos osztás tétele (nemnegatív) egészek körében. (Tényleges tétel)}{3}{section*.11}%
-\select@language {magyar} \contentsline {paragraph}{7. Legnagyobb közös osztó }{3}{section*.12}%
+\select@language {magyar} \contentsline {paragraph}{6,2. Maradékos osztás tétele (nemnegatív) egészek körében. (Tényleges tétel)}{2}{section*.11}%
+\select@language {magyar} \contentsline {paragraph}{7. Legnagyobb közös osztó }{2}{section*.12}%
 \select@language {magyar} \contentsline {paragraph}{8. Legkisebb közös többszörös}{3}{section*.13}%
 \select@language {magyar} \contentsline {paragraph}{9. Bővített euklideszi algoritmus}{3}{section*.14}%
 \select@language {magyar} \contentsline {paragraph}{10. A számelmélet alaptétele}{3}{section*.15}%
 \select@language {magyar} \contentsline {paragraph}{11. Kanonikus prímtényezős alak.}{3}{section*.16}%
 \select@language {magyar} \contentsline {paragraph}{12. Osztók számának ($\tau (n)$ számelméletfüggvény)}{3}{section*.17}%
-\select@language {magyar} \contentsline {paragraph}{13. Euler-féle $\varphi $ függvénynek a kiszámítása a kanonikus alakból.}{4}{section*.18}%
-\select@language {magyar} \contentsline {paragraph}{14. Prímek száma (Euklidész-tétel)}{4}{section*.19}%
-\select@language {magyar} \contentsline {paragraph}{15. Prímek száma (Dirichlet-tétel)}{4}{section*.20}%
-\select@language {magyar} \contentsline {paragraph}{16. Eratoszthenész szitája}{4}{section*.21}%
+\select@language {magyar} \contentsline {paragraph}{13. Euler-féle $\varphi $ függvénynek a kiszámítása a kanonikus alakból.}{3}{section*.18}%
+\select@language {magyar} \contentsline {paragraph}{14. Prímek száma (Euklidész-tétel)}{3}{section*.19}%
+\select@language {magyar} \contentsline {paragraph}{15. Prímek száma (Dirichlet-tétel)}{3}{section*.20}%
+\select@language {magyar} \contentsline {paragraph}{16. Eratoszthenész szitája}{3}{section*.21}%
 \select@language {magyar} \contentsline {paragraph}{17. Kongruenciák: $a \equiv b \tmspace +\thickmuskip {.2777em}(\allowbreak \mkern 12mu{\mathgroup \symoperators mod}\,\,m)$ definíciója.}{4}{section*.22}%
 \select@language {magyar} \contentsline {paragraph}{18. Kongruenciák: $a \equiv b \tmspace +\thickmuskip {.2777em}(\allowbreak \mkern 12mu{\mathgroup \symoperators mod}\,\,m)$ tulajdonságai.}{4}{section*.23}%
-\select@language {magyar} \contentsline {paragraph}{19. Lineáris kongruenciák megoldása}{5}{section*.24}%
-\select@language {magyar} \contentsline {paragraph}{20. Lineáris diofantikus egyenletek}{5}{section*.25}%
-\select@language {magyar} \contentsline {paragraph}{21. Szimultán kongruenciák}{5}{section*.26}%
-\select@language {magyar} \contentsline {paragraph}{22. Kínai maradék-tétel}{5}{section*.27}%
+\select@language {magyar} \contentsline {paragraph}{19. Lineáris kongruenciák megoldása}{4}{section*.24}%
+\select@language {magyar} \contentsline {paragraph}{20. Lineáris diofantikus egyenletek}{4}{section*.25}%
+\select@language {magyar} \contentsline {paragraph}{21. Szimultán kongruenciák}{4}{section*.26}%
+\select@language {magyar} \contentsline {paragraph}{22. Kínai maradék-tétel}{4}{section*.27}%
 \select@language {magyar} \contentsline {paragraph}{23. Maradékosztályok}{5}{section*.28}%
 \select@language {magyar} \contentsline {section}{Algebrai alapok, polinomokkal kapcsolatos alapfogalmak}{6}{section*.29}%
 \select@language {magyar} \contentsline {section}{Polinomok maradékos osztásának tétele és következményei}{7}{section*.30}%

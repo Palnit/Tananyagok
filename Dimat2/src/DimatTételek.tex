@@ -14,6 +14,7 @@
 \usepackage[x11names]{xcolor}
 \usepackage{mdframed}
 \usepackage{mathtools}
+\usepackage[a4paper,left=2cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
 
 
 \hypersetup{
@@ -120,7 +121,6 @@ Tetszőleges $\gr{a},\gr{b \neq 0} $ egész számokhoz egyértelműen léteznek 
 \gr{a = bq+r } \quad \text{és} \quad \gr{0\leq r<\lvert b \lvert}
 \]
 \end{m}
-\newpage
 \paragraph{6,2. Maradékos osztás tétele (nemnegatív) egészek körében. (Tényleges tétel)}
 \begin{m}
 Legyenek $\gr{a},\gr{b}$ egész számok ($\gr{b\neq 0}$). Legyen $\gr{a = b\cdot q +r} (\gr{0\leq r < \lvert b \lvert})$ \\
@@ -134,9 +134,10 @@ Ekkor
 \begin{m}
 Az $\gr{a}$ és $\gr{b}$ \red{legnagyobb közös osztója} a $\gr{d}$ szám: $\gr{d = (a,b)= \text{lnko}(a,b)}$, ha $\gr{c \; \lvert \; a}$ és $\gr{\mmod{c}{b}} \Rightarrow \gr{\mmod{c}{d}}$
 \end{m}
+\newpage
 \paragraph{8. Legkisebb közös többszörös}
 \begin{m}
-Az $\gr{a} \text{és} \gr{b}$ \red{legkisebb közös többszörös} a $\gr{m}$ szám: $\gr{m=[a,b] = \text{lkkt}(a,b)}$ ha $\gr{\mmod{a}{c}}$ és $\gr{\mmod{b}{c}} \Rightarrow \gr{\mmod{m}{c}}$
+Az $\gr{a} \text{ és } \gr{b}$ \red{legkisebb közös többszörös} a $\gr{m}$ szám: $\gr{m=[a,b] = \text{lkkt}(a,b)}$ ha $\gr{\mmod{a}{c}}$ és $\gr{\mmod{b}{c}} \Rightarrow \gr{\mmod{m}{c}}$
 \end{m}
 \paragraph{9. Bővített euklideszi algoritmus}
 \begin{m}
@@ -150,18 +151,17 @@ Minden nem-nulla, nem egység egész szám sorrendtől és asszociáltaktól elt
 \begin{m}
 Egy $\gr{n}$ nem-nulla egész szám kanonikus alakja:
 \begin{align*}
-& \gr{n = \pm \; p_1^{\alpha_1}, p_2^{\alpha_2}, ... , p_\ell^{\alpha_\ell} = \pm \; \prod\limits_{i=1}^\ell p_i^{\alpha_i}}, \text{ ahol } \gr{p_1,p_2,...,p_\ell} \text{ pozitív prímek, } \\ & \gr{\alpha_1,\alpha_2,...,\alpha_\ell} \text{ pozitív egészek.}
+\gr{n = \pm \; p_1^{\alpha_1}, p_2^{\alpha_2}, ... , p_\ell^{\alpha_\ell} = \pm \; \prod\limits_{i=1}^\ell p_i^{\alpha_i}}, \text{ ahol } \gr{p_1,p_2,...,p_\ell} \text{ pozitív prímek, } \gr{\alpha_1,\alpha_2,...,\alpha_\ell} \text{ pozitív egészek.}
 \end{align*}
 \end{m}
 \paragraph{12. Osztók számának ($\r(n)$ számelméletfüggvény)}
 \begin{m}
-Egy $\gr{n > 1}$ egész esetén legyen $\red{\r(n)}$ az n pozitív \red{osztóinak száma} és \\ $\gr{n = p_1^{\alpha_1},p_2^{\alpha_2},...,p_\ell^{\alpha_\ell}}$ kanonikus alakkal. \\ 
+Egy $\gr{n > 1}$ egész esetén legyen $\red{\r(n)}$ az n pozitív \red{osztóinak száma} és $\gr{n = p_1^{\alpha_1},p_2^{\alpha_2},...,p_\ell^{\alpha_\ell}}$ kanonikus alakkal. \\ 
 Ekkor
 \begin{align*}
 \gr{\r(n)=(\alpha_1 + 1)\cdot (\alpha_2 + 1) \cdot ... \cdot (\alpha_\ell +1)}
 \end{align*}
 \end{m}
-\newpage
 \paragraph{13. Euler-féle $\varphi$ függvénynek a kiszámítása a kanonikus alakból.}
 \begin{m}
 Legyen $\gr{m}$ prímtényezős felbontása $\gr{m=p_1^{e_1}p_2^{e_2}...p_\ell^{e_\ell}}$ Ekkor:
@@ -182,6 +182,7 @@ Ha $\gr{a,d}$ egész számok, $\gr{d>0}, \gr{(a,d)=1},$ akkor végtelen sok $ak+
 Keressük meg egy adott $\n$-ig az összes prímet. Soroljuk fel $\gr{2}$-től $\n$-ig az egész számokat. Ekkor $\gr{2}$ prím. A $\gr{2}$ (valódi) többszörösei \red{nem prímek}, ezeket húzzuk ki. A következő szám $\gr{3}$ szintén prím. A $\gr{3}$ (valódi) többszörösei \red{nem prímek}, ezeket húzzuk ki.. \\
 Ismételjük az eljárást $\gr{\sqrt{n}}$-ig. A ki nem húzott számok mind prímek.
 \end{m}
+\newpage
 \paragraph{17. Kongruenciák: $a \equiv b \;(\mod m)$ definíciója.}
 \begin{m}
 Legyenek $a,b,m$ egészek, akkor $\red{a \equiv b \mod m}$ ($a$ és $b$	\red{kongruensek}), ha $\gr{ \mmod{m}{a}- b}$, és $\gr{a\not\equiv b \mod m}$  ($a$ és $b$ \red{inkongruensek}), ha $\gr{m \; \nmid \; a-b}$
@@ -198,7 +199,6 @@ Minden $\gr{a,b,c,d}$ és $\gr{m}$ egész számára igaz
 \item $a \equiv b \mod m ,c \equiv d \mod m \Rightarrow ac\equiv bd \mod m$
 \end{enumerate}
 \end{m}
-\newpage
 \paragraph{19. Lineáris kongruenciák megoldása}
 \begin{m}
 Legyenek $\a$,$\b$,$\gr{m}$ egész számok, $\gr{m>1}$. Ekkor az $\gr{ax \equiv b \mod m}$ megoldható $\Leftrightarrow \gr{(a,m)\mid b}$ Ez esetben pontosan $\gr{(a,m)}$ darab inkongruens megoldás van $\gr{\mod m}$
@@ -240,6 +240,7 @@ x \equiv & c_n \mod m_n \\
 \end{rcases}
 }\]
 \end{m}
+\newpage
 \paragraph{23. Maradékosztályok}
 
 \newpage
