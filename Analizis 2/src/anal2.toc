@@ -1,0 +1,12 @@
+\select@language {magyar} \contentsline {section}{Oszcillációs összegek. Az integrálhatóság jellemzése oszcillációs összegekkel.}{2}{section*.1}%
+\select@language {magyar} \contentsline {section}{Az összegfüggvény integrálhatóságára vonatkozó tétel.}{3}{section*.2}%
+\select@language {magyar} \contentsline {section}{A szorzatfüggvény integrálhatóságára vonatkozó tétel}{4}{section*.3}%
+\select@language {magyar} \contentsline {section}{Függvények hányadosának integrálhatóságára vonatkozó tétel }{5}{section*.4}%
+\select@language {magyar} \contentsline {section}{A monoton függvény integrálhatóságára vonatkozó tétel}{6}{section*.5}%
+\select@language {magyar} \contentsline {section}{Az egyenletes folytonosságra vonatkozó Heine-tétel}{7}{section*.6}%
+\select@language {magyar} \contentsline {section}{Folytonos függvények integrálhatóságára vonatkozó tétel}{8}{section*.7}%
+\select@language {magyar} \contentsline {section}{Newton-Leibniz tétel}{9}{section*.8}%
+\select@language {magyar} \contentsline {section}{Az integrálfüggvény folytonosságára vonatkozó tétel}{10}{section*.9}%
+\select@language {magyar} \contentsline {section}{Az integrálfüggvény differenciálhatóságára vonatkozó állítás}{11}{section*.10}%
+\select@language {magyar} \contentsline {section}{A parciális integrálásra vonatkozó tétel határozott integrálra}{12}{section*.11}%
+\select@language {magyar} \contentsline {section}{A helyettesítéses integrálás szabálya határozott integrálra}{13}{section*.12}%

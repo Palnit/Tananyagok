@@ -1,0 +1,289 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[magyar]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage[pdfusetitle]{hyperref}
+\usepackage{titling}
+\usepackage{scrextend}
+\usepackage[x11names]{xcolor}
+\usepackage{mdframed}
+\usepackage{mathtools}
+\usepackage[a4paper,left=2cm,right=2cm,top=2.5cm,bottom=2.5cm]{geometry}
+
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\date{\today}
+\author{Petrányi Bálint}
+\title{%
+	\textbf{Diszkrét Matematika 2.} \\
+	\textbf{Programtervező informatikus A. szakirány} \\
+	Definíciók és tételek (Bebizonyítással kértek is )\\
+	\large 2022-2023. tanév 1. félév
+}
+
+
+
+\setcounter{secnumdepth}{-9}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\fR}{f\in\R\rightarrow\R}
+\newcommand{\pf}{+\infty}
+\newcommand{\nf}{-\infty}
+\renewcommand{\>}{\rightarrow}
+\renewcommand{\r}{\tau}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\mmod}[2]{#1  \mid #2}
+\renewcommand{\a}{\gr{a}}
+\renewcommand{\b}{\gr{b}}
+\renewcommand{\c}{\gr{c}}
+\renewcommand{\d}{\gr{d}}
+\newcommand{\x}{\gr{x}}
+\newcommand{\y}{\gr{y}}
+\newcommand{\n}{\gr{n}}
+
+\definecolor{FancsaliGreen}{rgb}{0.25098,  0.68627,  0.26275}
+\definecolor{FancsaliBlue}{rgb}{0.92157,  0.92157,  0.96863}
+
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\gr}[1]{\textcolor{FancsaliGreen}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+
+
+\newenvironment{m}
+    {\begin{center}
+    \begin{mdframed}[backgroundcolor=FancsaliBlue]
+    }
+    { 
+    \end{mdframed}
+    \end{center}
+    }
+%
+
+
+\begin{document}
+
+
+\maketitle
+\tableofcontents
+\newpage
+\textit{A *. hivatalosan nincsenek benne a kérdések között}
+\part{Tételek}
+
+\section{Számelméleti alapok}
+
+\paragraph{1. Oszthatóság az egész számok körében.}
+\begin{m}
+Az $\gr{a}$ egész osztja a $\gr{b}$ egészet: $\red{a \;\lvert\; b}$, ha létezik olyan $\gr{c}$ egész, mellyel $\gr{a\cdot c = b}$, azaz $\gr{b\setminus a}$ szintén egész.
+\end{m}
+
+\paragraph{2. Egységek}
+\begin{m}
+Ha egy szám bármely másiknak osztója, akkor \red{egységnek} nevezzük.
+\end{m}
+
+\paragraph{3. Asszociált számok}
+\begin{m}
+Két szám asszociált, ha egymás egységszeresei.
+\end{m}
+\paragraph{*. Triviális osztó}
+\begin{m}
+Egy számnak az asszociáltjai és az egységek a triviális osztói.
+\end{m}
+\paragraph{4. Felbonthatatlan (irreducibilis) számok}
+\begin{m}
+Ha egy nem-nulla, nem-egység számnak a triviális osztóin kívül nincs más osztója, akkor \red{felbonthatatlanak}  (\red{irreducibilis}) nevezzük 
+\end{m}
+\paragraph{5. prímszámok}
+\begin{m}
+Egy nem-nulla, nem-egység $\gr{p}$ számot \red{prímszámnak} nevezünk, ha $\gr{p \;\lvert\; ab} \Rightarrow \gr{p\;\lvert\;a} \;\; \red{\text{vagy}} \; \; \gr{p\;\lvert\;b}$
+\end{m}
+\paragraph{*. Prímek és Felbonthatatlan kapcsolat}
+\begin{m}
+Minden Prímszám felbonthatatlan
+\end{m}
+\paragraph{6,1. Maradékos osztás tétele (nemnegatív) egészek körében. (Maradék létezésére tétel)}
+\begin{m}
+Tetszőleges $\gr{a},\gr{b \neq 0} $ egész számokhoz egyértelműen léteznek $\gr{q},\gr{r}$ egészek hogy
+\[
+\gr{a = bq+r } \quad \text{és} \quad \gr{0\leq r<\lvert b \lvert}
+\]
+\end{m}
+\paragraph{6,2. Maradékos osztás tétele (nemnegatív) egészek körében. (Tényleges tétel)}
+\begin{m}
+Legyenek $\gr{a},\gr{b}$ egész számok ($\gr{b\neq 0}$). Legyen $\gr{a = b\cdot q +r} (\gr{0\leq r < \lvert b \lvert})$ \\
+Ekkor
+\begin{itemize}
+\item $\gr{a \text{mod} b = r}$;
+\item $\gr{q = \lfloor a\setminus b\rfloor}$, ha $\gr{b>0}$, és $\gr{q = \lceil a\setminus b \rceil}$, ha $\gr{b<0}$
+\end{itemize}
+\end{m}
+\paragraph{7. Legnagyobb közös osztó }
+\begin{m}
+Az $\gr{a}$ és $\gr{b}$ \red{legnagyobb közös osztója} a $\gr{d}$ szám: $\gr{d = (a,b)= \text{lnko}(a,b)}$, ha $\gr{c \; \lvert \; a}$ és $\gr{\mmod{c}{b}} \Rightarrow \gr{\mmod{c}{d}}$
+\end{m}
+\newpage
+\paragraph{8. Legkisebb közös többszörös}
+\begin{m}
+Az $\gr{a} \text{ és } \gr{b}$ \red{legkisebb közös többszörös} a $\gr{m}$ szám: $\gr{m=[a,b] = \text{lkkt}(a,b)}$ ha $\gr{\mmod{a}{c}}$ és $\gr{\mmod{b}{c}} \Rightarrow \gr{\mmod{m}{c}}$
+\end{m}
+\paragraph{9. Bővített euklideszi algoritmus}
+\begin{m}
+Minden $\a$,$\b$ egész számok esetén léteznek $\x$,$\y$ egészek hogy $\gr{(a,b)=x\cdot a + y \cdot b}$ 
+\end{m}
+\paragraph{10. A számelmélet alaptétele}
+\begin{m}
+Minden nem-nulla, nem egység egész szám sorrendtől és asszociáltaktól eltekintve egyértelműen felírható prímszámok szorzataként.
+\end{m}
+\paragraph{11. Kanonikus prímtényezős alak.}
+\begin{m}
+Egy $\gr{n}$ nem-nulla egész szám kanonikus alakja:
+\begin{align*}
+\gr{n = \pm \; p_1^{\alpha_1}, p_2^{\alpha_2}, ... , p_\ell^{\alpha_\ell} = \pm \; \prod\limits_{i=1}^\ell p_i^{\alpha_i}}, \text{ ahol } \gr{p_1,p_2,...,p_\ell} \text{ pozitív prímek, } \gr{\alpha_1,\alpha_2,...,\alpha_\ell} \text{ pozitív egészek.}
+\end{align*}
+\end{m}
+\paragraph{12. Osztók számának ($\r(n)$ számelméletfüggvény)}
+\begin{m}
+Egy $\gr{n > 1}$ egész esetén legyen $\red{\r(n)}$ az n pozitív \red{osztóinak száma} és $\gr{n = p_1^{\alpha_1},p_2^{\alpha_2},...,p_\ell^{\alpha_\ell}}$ kanonikus alakkal. \\ 
+Ekkor
+\begin{align*}
+\gr{\r(n)=(\alpha_1 + 1)\cdot (\alpha_2 + 1) \cdot ... \cdot (\alpha_\ell +1)}
+\end{align*}
+\end{m}
+\paragraph{13. Euler-féle $\varphi$ függvénynek a kiszámítása a kanonikus alakból.}
+\begin{m}
+Legyen $\gr{m}$ prímtényezős felbontása $\gr{m=p_1^{e_1}p_2^{e_2}...p_\ell^{e_\ell}}$ Ekkor:
+\[
+\gr{\varphi (m) = \prod\limits_{i=1}^\ell \big(p_i^{e_1}-p_i^{e_i -1}\big)= m\cdot \prod\limits_{i=1}^\ell \Big(1-\frac{1}{p_i}\Big) }
+\]
+\end{m}
+\paragraph{14. Prímek száma (Euklidész-tétel)}
+\begin{m}
+Végtelen sok prím van.
+\end{m}
+\paragraph{15. Prímek száma (Dirichlet-tétel)}
+\begin{m}
+Ha $\gr{a,d}$ egész számok, $\gr{d>0}, \gr{(a,d)=1},$ akkor végtelen sok $ak+d$ alakú prím van. 
+\end{m}
+\paragraph{16. Eratoszthenész szitája}
+\begin{m}
+Keressük meg egy adott $\n$-ig az összes prímet. Soroljuk fel $\gr{2}$-től $\n$-ig az egész számokat. Ekkor $\gr{2}$ prím. A $\gr{2}$ (valódi) többszörösei \red{nem prímek}, ezeket húzzuk ki. A következő szám $\gr{3}$ szintén prím. A $\gr{3}$ (valódi) többszörösei \red{nem prímek}, ezeket húzzuk ki.. \\
+Ismételjük az eljárást $\gr{\sqrt{n}}$-ig. A ki nem húzott számok mind prímek.
+\end{m}
+\newpage
+\paragraph{17. Kongruenciák: $a \equiv b \;(\mod m)$ definíciója.}
+\begin{m}
+Legyenek $a,b,m$ egészek, akkor $\red{a \equiv b \mod m}$ ($a$ és $b$	\red{kongruensek}), ha $\gr{ \mmod{m}{a}- b}$, és $\gr{a\not\equiv b \mod m}$  ($a$ és $b$ \red{inkongruensek}), ha $\gr{m \; \nmid \; a-b}$
+\end{m}
+\paragraph{18. Kongruenciák: $a \equiv b \;(\mod m)$ tulajdonságai.}
+\begin{m}
+Minden $\gr{a,b,c,d}$ és $\gr{m}$ egész számára igaz
+\begin{enumerate}
+\item $a \equiv a \mod m$ \red{reflexív}
+\item $a \equiv b \mod m, m' \mid m \Rightarrow a \equiv b \mod m'$
+\item $a \equiv b \mod m  \Rightarrow b \equiv a \mod m $ \red{szimmetrikus} 
+\item $a \equiv b \mod m, b\equiv c \mod m \Rightarrow a \equiv c   \mod m $ \red{tranzitív}
+\item $a \equiv b \mod m, c \equiv d \mod m \Rightarrow a + c \equiv b+ d \mod m$
+\item $a \equiv b \mod m ,c \equiv d \mod m \Rightarrow ac\equiv bd \mod m$
+\end{enumerate}
+\end{m}
+\paragraph{19. Lineáris kongruenciák megoldása}
+\begin{m}
+Legyenek $\a$,$\b$,$\gr{m}$ egész számok, $\gr{m>1}$. Ekkor az $\gr{ax \equiv b \mod m}$ megoldható $\Leftrightarrow \gr{(a,m)\mid b}$ Ez esetben pontosan $\gr{(a,m)}$ darab inkongruens megoldás van $\gr{\mod m}$
+\end{m}
+\paragraph{20. Lineáris diofantikus egyenletek}
+\begin{m}
+lineáris diofantikus egyenletek: $\gr{ax+by=c}$, ahol $\a$,$\b$,$\c$ egészek. \\
+Ez ekvivalens az $\gr{ax \equiv c \mod b}$, $\gr{by\equiv c \mod a}$ kongruenciákkal. \\
+Az $\gr{ax+by = c}$ pontosan akkor oldható meg, ha $\gr{(a,b)\mid c}$, és ekkor a megoldások megkaphatóak a \red{bővített euklideszi algoritmussal} 
+\end{m}
+\paragraph{21. Szimultán kongruenciák}
+\begin{m}
+Szeretnénk olyan $\x$ egészet, mely \red{egyszerre} elégíti ki a következő kongruenciákat:
+\[\gr
+{\begin{rcases}
+2x\equiv 1 &\mod 3 \\
+4x\equiv 3 &\mod 5
+\end{rcases} 
+}\]
+A konkurenciákat külön megoldva	
+\[\gr
+{\begin{rcases}
+x\equiv 2 &\mod 3 \\
+x\equiv 2 &\mod 5
+\end{rcases} 
+}\]
+Látszik, hogy $\gr{x=2}$ megoldás lesz. 
+\end{m}
+\paragraph{22. Kínai maradék-tétel}
+\begin{m}
+Legyenek $\gr{1<,m_1,m_2,...,m_n}$ relatív prím számok, $\gr{c_1,c_2,...,c_n}$ egészek. 
+Ekkor
+\[\gr{
+\begin{rcases}
+x \equiv & c_1 \mod m_1 \\
+x \equiv & c_2 \mod m_2 \\
+\quad \vdots & \\
+x \equiv & c_n \mod m_n \\
+\end{rcases}
+}\]
+\end{m}
+\newpage
+\paragraph{23. Maradékosztályok}
+
+\newpage
+
+\section{Algebrai alapok, polinomokkal kapcsolatos alapfogalmak}
+\newpage
+
+\section{Polinomok maradékos osztásának tétele és következményei}
+\newpage
+
+\section{Polinomok algebrai deriváltja, véges testek, racionális gyökteszt, Lagrange-interpoláció}
+\newpage
+
+\section{Polinomok felbonthatósága}
+\newpage
+
+\section{Entrópia, forráskódolás}
+\newpage
+
+\section{Hibakorlátozó és lineáris kódolás}
+\newpage
+
+\part{Bebizonyítással Kért Tételek}
+
+\section{Számelméleti alapok}
+\newpage
+
+\section{Algebrai alapok, polinomokkal kapcsolatos alapfogalmak}
+\newpage
+
+\section{Polinomok maradékos osztásának tétele és következményei}
+\newpage
+
+\section{Polinomok algebrai deriváltja, véges testek, racionális gyökteszt, Lagrange-interpoláció}
+\newpage
+
+\section{Polinomok felbonthatósága}
+\newpage
+
+\section{Entrópia, forráskódolás}
+\newpage
+
+\section{Hibakorlátozó és lineáris kódolás}
+\newpage
+
+\end{document}

@@ -1,0 +1,12 @@
+\select@language {magyar} \contentsline {section}{\numberline {1}A differenciálhatóság átfogalmazása}{2}{section.1}%
+\select@language {magyar} \contentsline {section}{\numberline {2}A szorzat függvény deriválása}{3}{section.2}%
+\select@language {magyar} \contentsline {section}{\numberline {3}A hányados függvény deriváltja}{4}{section.3}%
+\select@language {magyar} \contentsline {section}{\numberline {4}A lokális szélsőértékre vonatkozó elsőrendű szükséges feltétel}{5}{section.4}%
+\select@language {magyar} \contentsline {section}{\numberline {5}A Rolle-féle középértéktétel}{6}{section.5}%
+\select@language {magyar} \contentsline {section}{\numberline {6}A Lagrange-féle középértéktétel.}{7}{section.6}%
+\select@language {magyar} \contentsline {section}{\numberline {7}A Cauchy-féle középértéktétel.}{8}{section.7}%
+\select@language {magyar} \contentsline {section}{\numberline {8}Nyílt intervallumon értelmezett deriválható függvények esetében a monotonitás és a derivált kapcsolata}{9}{section.8}%
+\select@language {magyar} \contentsline {section}{\numberline {9}A lokális szélsőértékre vonatkozó elsőrendű elégséges feltétel}{10}{section.9}%
+\select@language {magyar} \contentsline {section}{\numberline {10}A konvexitás jellemzése a deriváltfüggvénnyel.}{11}{section.10}%
+\select@language {magyar} \contentsline {section}{\numberline {11}A véges pontbeli $\frac {0}{0}$ határérték esetre vonatkozo L'Hospital-szabály}{12}{section.11}%
+\select@language {magyar} \contentsline {section}{\numberline {12}A Taylor-formula a Lagrange-féle maradéktaggal}{13}{section.12}%

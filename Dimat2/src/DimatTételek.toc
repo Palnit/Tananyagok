@@ -1,0 +1,42 @@
+\select@language {magyar} \contentsline {part}{Tételek}{2}{section*.1}%
+\select@language {magyar} \contentsline {section}{Számelméleti alapok}{2}{section*.2}%
+\select@language {magyar} \contentsline {paragraph}{1. Oszthatóság az egész számok körében.}{2}{section*.3}%
+\select@language {magyar} \contentsline {paragraph}{2. Egységek}{2}{section*.4}%
+\select@language {magyar} \contentsline {paragraph}{3. Asszociált számok}{2}{section*.5}%
+\select@language {magyar} \contentsline {paragraph}{*. Triviális osztó}{2}{section*.6}%
+\select@language {magyar} \contentsline {paragraph}{4. Felbonthatatlan (irreducibilis) számok}{2}{section*.7}%
+\select@language {magyar} \contentsline {paragraph}{5. prímszámok}{2}{section*.8}%
+\select@language {magyar} \contentsline {paragraph}{*. Prímek és Felbonthatatlan kapcsolat}{2}{section*.9}%
+\select@language {magyar} \contentsline {paragraph}{6,1. Maradékos osztás tétele (nemnegatív) egészek körében. (Maradék létezésére tétel)}{2}{section*.10}%
+\select@language {magyar} \contentsline {paragraph}{6,2. Maradékos osztás tétele (nemnegatív) egészek körében. (Tényleges tétel)}{2}{section*.11}%
+\select@language {magyar} \contentsline {paragraph}{7. Legnagyobb közös osztó }{2}{section*.12}%
+\select@language {magyar} \contentsline {paragraph}{8. Legkisebb közös többszörös}{3}{section*.13}%
+\select@language {magyar} \contentsline {paragraph}{9. Bővített euklideszi algoritmus}{3}{section*.14}%
+\select@language {magyar} \contentsline {paragraph}{10. A számelmélet alaptétele}{3}{section*.15}%
+\select@language {magyar} \contentsline {paragraph}{11. Kanonikus prímtényezős alak.}{3}{section*.16}%
+\select@language {magyar} \contentsline {paragraph}{12. Osztók számának ($\tau (n)$ számelméletfüggvény)}{3}{section*.17}%
+\select@language {magyar} \contentsline {paragraph}{13. Euler-féle $\varphi $ függvénynek a kiszámítása a kanonikus alakból.}{3}{section*.18}%
+\select@language {magyar} \contentsline {paragraph}{14. Prímek száma (Euklidész-tétel)}{3}{section*.19}%
+\select@language {magyar} \contentsline {paragraph}{15. Prímek száma (Dirichlet-tétel)}{3}{section*.20}%
+\select@language {magyar} \contentsline {paragraph}{16. Eratoszthenész szitája}{3}{section*.21}%
+\select@language {magyar} \contentsline {paragraph}{17. Kongruenciák: $a \equiv b \tmspace +\thickmuskip {.2777em}(\allowbreak \mkern 12mu{\mathgroup \symoperators mod}\,\,m)$ definíciója.}{4}{section*.22}%
+\select@language {magyar} \contentsline {paragraph}{18. Kongruenciák: $a \equiv b \tmspace +\thickmuskip {.2777em}(\allowbreak \mkern 12mu{\mathgroup \symoperators mod}\,\,m)$ tulajdonságai.}{4}{section*.23}%
+\select@language {magyar} \contentsline {paragraph}{19. Lineáris kongruenciák megoldása}{4}{section*.24}%
+\select@language {magyar} \contentsline {paragraph}{20. Lineáris diofantikus egyenletek}{4}{section*.25}%
+\select@language {magyar} \contentsline {paragraph}{21. Szimultán kongruenciák}{4}{section*.26}%
+\select@language {magyar} \contentsline {paragraph}{22. Kínai maradék-tétel}{4}{section*.27}%
+\select@language {magyar} \contentsline {paragraph}{23. Maradékosztályok}{5}{section*.28}%
+\select@language {magyar} \contentsline {section}{Algebrai alapok, polinomokkal kapcsolatos alapfogalmak}{6}{section*.29}%
+\select@language {magyar} \contentsline {section}{Polinomok maradékos osztásának tétele és következményei}{7}{section*.30}%
+\select@language {magyar} \contentsline {section}{Polinomok algebrai deriváltja, véges testek, racionális gyökteszt, Lagrange-interpoláció}{8}{section*.31}%
+\select@language {magyar} \contentsline {section}{Polinomok felbonthatósága}{9}{section*.32}%
+\select@language {magyar} \contentsline {section}{Entrópia, forráskódolás}{10}{section*.33}%
+\select@language {magyar} \contentsline {section}{Hibakorlátozó és lineáris kódolás}{11}{section*.34}%
+\select@language {magyar} \contentsline {part}{Bebizonyítással Kért Tételek}{12}{section*.34}%
+\select@language {magyar} \contentsline {section}{Számelméleti alapok}{12}{section*.35}%
+\select@language {magyar} \contentsline {section}{Algebrai alapok, polinomokkal kapcsolatos alapfogalmak}{13}{section*.36}%
+\select@language {magyar} \contentsline {section}{Polinomok maradékos osztásának tétele és következményei}{14}{section*.37}%
+\select@language {magyar} \contentsline {section}{Polinomok algebrai deriváltja, véges testek, racionális gyökteszt, Lagrange-interpoláció}{15}{section*.38}%
+\select@language {magyar} \contentsline {section}{Polinomok felbonthatósága}{16}{section*.39}%
+\select@language {magyar} \contentsline {section}{Entrópia, forráskódolás}{17}{section*.40}%
+\select@language {magyar} \contentsline {section}{Hibakorlátozó és lineáris kódolás}{18}{section*.41}%

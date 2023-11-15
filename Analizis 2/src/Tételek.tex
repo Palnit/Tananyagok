@@ -1,0 +1,567 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[magyar]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage[pdfusetitle]{hyperref}
+\usepackage{titling}
+\usepackage{scrextend}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\date{\today}
+\author{Petrányi Bálint}
+\title{%
+	\textbf{Analízis 2.} \\
+	\textbf{Programtervező informatikus A. szakirány} \\
+	\medskip
+	Definíciók és tételek\\
+	\large 2022-2023. tanév 1. félév
+}
+\setcounter{secnumdepth}{0}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\fR}{f\in\R\rightarrow\R}
+\newcommand{\pf}{+\infty}
+\newcommand{\nf}{-\infty}
+\renewcommand{\>}{\rightarrow}
+\renewcommand{\r}{\tau}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\abi}{\int\limits_a^b}
+
+\begin{document}
+
+\maketitle
+\textbf{Remélem nem írtam el semmit illetve hogy jól értelmeztem a kérdéseket ha mégis írjatok hogy mit hibáztam és kijavítom.}
+
+\tableofcontents
+\newpage
+
+
+
+\section{2. Gyakorlat elméleti kérdései}
+\paragraph{1.}
+Mi a belső pont definíciója? \\
+\\
+Legyen $\emptyset \neq A \subset \mathbb{R}$. Azt mondjuk, hogy az $a \subset 	\mathbb{R}$ pont az $A$ halmaz egyes belső pontja, ha $\exists \delta > 0$ olyan, hogy $k_{\delta} \subset A$. \\ \\
+Emlékeztető: $k_{\delta}(a)=(a-\delta , a+\delta)$ \\ \\
+jelölés: az $A$ belső pontjainak halmazát az $A$ belsejének hívjuk és int $A$-val jelöljük. 
+
+\paragraph{2.}
+Mikor mondjuk azt, hogy egy $f \in \mathbb{R} \rightarrow \mathbb{R}$ függvény differenciálható valamely $a \in$ int $\mathcal{D}_f$ \\
+\\ 
+Akkor ha
+\[
+\exists \lim_{h \rightarrow 0}{ \frac{f(a+h)-f(a)}{h}} \in \mathbb{R}
+\]
+Jelölése: $f \in \mathcal{D} \{a\}$
+
+\paragraph{3.}
+Mi a kapcsolat a pontbeli differenciálhatóság és a folytonosság között?\\
+\\
+\[
+f \in \mathbb{R} \rightarrow \mathbb{R}, \quad f \in D\{a\} \quad \Longrightarrow \quad  f \in C\{a\}
+\]
+Szóban: Ha egy valós-valós függvény differenciálható egy pontban, akkor folytonos abban a pontban.
+\paragraph{4.}
+Milyen ekvivalens átfogalmazást ismer a pontbeli deriválhatóságra lineáris közelítéssel? \\
+\\
+Legyen $f \in \mathbb{R} \rightarrow \mathbb{R}, a \in \text{int } \mathcal{D}_f$. Ekkor
+\[
+\begin{split}
+f \in & \; D\{a\} \\
+& \Updownarrow \\
+\exists A \in \mathbb{R}, \; \text{és} \; \epsilon : \mathcal{D}_f \rightarrow \mathbb{R}, \lim_a{\epsilon} = 0 \quad \text{úgy, hogy } & \; f(x)- f(a) = A(x-a)+\epsilon (x)(x-a)
+\end{split}
+\]
+\paragraph{5.}
+Mi az érintő definíciója? \\ \\
+Legyen $f \in D\{a\}$. Ekkor az 
+\[
+e_af:\mathbb{R} \rightarrow \mathbb{R}, \quad	 e_af(x) =f'(a)(x-a)+f(a)
+\]
+egyenesest az $f$ függvény $a$ pontbeli érintőjének hívjuk .
+\paragraph{6.}
+Milyen tételt ismer két függvény szorzatának valamely pontbeli differenciálhatóságáról és a deriváltjáról? \\ \\
+\[
+f,g \in D\{a\} \quad \Longrightarrow \quad f \cdot g \in D\{a\}, \; \text{és} \; (f \cdot g)'(a) =f'(a)g(a)+f(a)g'(a)
+\]
+\paragraph{7.}
+Milyen tételt ismer két függvény hányadosának valamely pontbeli differenciálhatóságáról és a deriváltjáról? \\ \\
+\[
+f,g \in D\{a\}  \; \text{és} \; g(a) \neq 0 \quad \Longrightarrow \quad \frac{f}{g} \in D\{a\}, \; \text{és} \; \Big( \frac{f}{g} \Big) '(a) = \frac{f'(a)g(a)-f(a)g'(a)}{g^2(a)}  
+\]
+\paragraph{8.}
+Milyen tételt ismer két függvény kompozíciójának valamely pontbeli differenciálhatóságáról és a deriváltjáról? \\ \\
+Legyen $f,g \in \mathbb{R} \rightarrow \mathbb{R}$, Tegyük fel, hogy az $a$ int $\mathcal{D}_g$ pontban $g \in D\{a\}$, továbbá $f\in D\{g(a)\}$. Ekkor:
+\[
+f \circ g \in D\{a\}, \; \text{és} \; (f \circ g)' (a) = f'(g(a)) \cdot g'(a)
+\]
+\paragraph{9.}
+Mi az exp, sin, cos függvények derivált függvénye? \\
+
+\begin{itemize}
+\item $(e^x)' = e^x$
+\item $\sin ' = \cos$
+\item $\cos ' = -\sin$ 
+\end{itemize}
+\newpage
+
+\section{3. Gyakorlat elméleti kérdései}
+\paragraph{1.}
+Írja fel az $\exp, \; \text{ln}x,\; \sin,\; \cos,\; \text{tg},\; a^x (a>0, x\in\mathbb{R})$ függvények derivált függvényét.  \\
+\begin{itemize}
+\item $(e^x)' = e^x$
+\item $\text{ln }x'=\frac{1}{x}$
+\item $\sin ' = \cos$
+\item $\cos ' = -\sin$ 
+\item $\text{tg }x' = \frac{1}{\cos^2 x }$
+\item $ a^{x'} = a \cdot \text{ln }a $
+\end{itemize}
+\paragraph{2.}
+Adjon példát olyan függvényre, ami az $a \in \mathbb{R}$ pontban folytonos, de nem differenciálható! \\
+\\
+Az abszolút érték függvény folytonos a 0 pontban, de
+nem differenciálható 0-ban.
+\paragraph{3.}
+Mi a jobb oldali derivált definíciója?
+\\ \\
+Legyen $f\in\mathbb{R}\rightarrow\mathbb{R}, a \in \mathcal{D}_f$ és tegyük fel hogy az $f$ függvény jobbról deriválható (differenciálható), ha 
+\[
+\exists \quad \text{és véges a} \quad \lim\limits_{x\rightarrow a+0} \frac{f(x)-f(a)}{x-a} \text{határérték}
+\] 
+Ezt a határértéket nevezzük az $f$ függvény $a$ pontbeli jobb oldal deriváltjának és $f'_+(a)$-val jelöljük 
+\paragraph{4.}
+Mi az érintő definíciója? \\ \\
+Legyen $f \in D\{a\}$. Ekkor az 
+\[
+e_af:\mathbb{R} \rightarrow \mathbb{R}, \quad	 e_af(x) =f'(a)(x-a)+f(a)
+\]
+egyenesest az $f$ függvény $a$ pontbeli érintőjének hívjuk .
+\paragraph{5.}
+Írja le az inverz függvény differenciálszámításáról szóló tételt!
+\\ \\
+Legyen $I\in\mathbb{R}$ nyílt intervallum és $f: I \rightarrow \mathbb{R}$.
+Tegyük fel, hogy
+\begin{enumerate}
+\item $f$ szigorúan monoton és folytonos $I$-n,
+\item $f$ differenciálható az $a \in I$ és $f'(a)\neq 0$.
+\end{enumerate} 
+Ekkor az $f^{-1}$ inverz függvény deriválható a $b:=f(a)$ pontban, és
+\[
+\Big( f^{-1} \Big) '(b) = \frac{1}{f'(a)} = \frac{1}{f'(f^{-1}(b))}
+\]  
+\paragraph{6.}
+Milyen tételt hatványsor összegfüggvényének differenciálhatóságáról és a deriváltjáról? \\ \\
+Tegyük fel, hogy a $\sum (\alpha_n(x-a)^n) \; (x\in\mathbb{R})$ hatványsor $R$ konvergenciasugara pozitív. Legyen
+\[
+f(x):= \sum\limits^{+\infty}_{n=0} \alpha_n(x-a)^n \quad (x\in K_R(a))
+\] 
+a hatványsor összegfügevénye. \\
+Ekkor minden $x\in K_R(a)$ pontban $f\in D\{x\}$ és 
+\[
+f'(x) = \sum\limits^{+\infty}_{n=1} n\alpha_n(x-a)^{n-1} \quad (\forall x \in K_R(a))
+\] 
+\newpage
+\section{4. Gyakorlat elméleti kérdései}
+\paragraph{1.}
+Milyen szükséges és elégséges feltételt ismer differenciálható függvény monoton növekedésével kapcsolatban?\footnote{(Ha nem jó valaki javítson ki mert nem tudom ere mi lenne a pontos válasz)\label{refnote}} \\ \\
+Legyen $I \subset \R $ nyílt intervallum. Tegyük fel hogy $f : I \rightarrow \R, \; f\in D(I)$\\ Ekkor:
+\[
+f\nearrow \quad \Longleftrightarrow \quad f'\geq 0.
+\] 
+\textbf{Megjegyzés:} az $f'\geq 0$ feltétel azt jelenti, hogy minden $x\in I$ pontban $f'(x)\geq 0$, aminek geometriai interpretációja az, hogy az érintő meredeksége minden pontban
+nem negatív. 
+\paragraph{2.}
+Milyen elégséges feltételt ismer differenciálható függvény szigorú monoton növekedésével kapcsolatban?\footref{refnote}\\\\
+Legyen $I \subset \R $ nyílt intervallum. Tegyük fel hogy $f : I \rightarrow \R, \; f\in D(I)$\\ Ekkor:
+\[
+f'>0 \quad \Rightarrow \quad f\uparrow
+\]
+\textbf{Megjegyzés:} Az állítás fordítottja nem igaz. Az $f(x)=x^3 \; (x\in\R)$ függvény szigorúan monoton növekedő, de $f'(0)=0$
+\paragraph{3.}
+Mit ért azon hogy az $f\in\R\rightarrow\R$ függvény valamely helyen lokális minimuma van? \\\\
+Az  $\fR$ függvénynek az $a\in \text{int } \D_f$ pontban lokális minimuma van ha 
+\[
+\exists K(a), \quad \text{hogy} \quad \forall x \in K(a)\cap \D_f \quad \text{esetén} \quad f(x)\geq f(a)
+\]
+Ekkor az $a\in\D_f$ pontot az $f$ lokális minimumhelyének nevezzük, $f(a)$ pedig az $f$ lokális minimuma.
+\paragraph{4.}
+Hogyan szól a lokális szélsőértékre vonatkozó elsőrendű szükséges feltétel?\\\\
+Tegyük fel, hogy az $f:\R\rightarrow\R$ függvénynek az $a\in\D_f$ pontban lokális szélsőértéke van és $f\in D\{a\}$ \\
+Ekkor:
+\[
+f'(a)=0
+\]
+\paragraph{5.}
+Adjon  példát olyan $\fR$ függvényre, amelyre valamely $a\in\R$ esetén $f\in D\{a\} , f'(a)=0$ teljesül, de az $f$ függvénynek az $a$ pontjában nincs lokális szélsőértéke \\\\
+
+$f(x)=x^3 \quad (x\in\R)$  esetén $f'(x)=3x^2$ derivált csak a $0$ pontban $0$ ami viszont egyértelműen nem lokális szélsőértékhely $x<0$ esetén $x^3 < 0$ és $x>0$ esetén $x^3>0$
+
+\paragraph{6.}
+Mit ért azon, hogy egy függvény valamely helyen jelet vált? \\\\
+Azt mondjuk hogy $\fR$ függvény az $a \in \text{int }\D_f$ pontban (-,+) előjelet vált ha $f(a)=0$, és van olyan $\delta >0$, hogy
+\[
+f(x)<0 \: (a-\delta <x < a), \quad f(x)>0 \: (a<x<a+\delta)
+\]
+A (+,-) jelváltás értelem szerűen  definiálható
+\paragraph{7.}
+Hogyan szól a lokális maximumra vonatkozó elsőrendű elégséges feltétel? \\\\
+Legyen $\fR$, és a $a\in \text{int }\D_f$.\\
+Tegyük fel hogy $\exists \delta >0$, amelyre $f\in D((a-\delta ,a+\delta )) $ és $f'$ előjelet vált $a$-ban \\
+Ekkor $f$-nek szigorú lokális szélsőértéke van az $a$-ban \\
+($+,-$) jelváltás esetén maximum. \\
+\textbf{Megjegyzés:} ($-,+$) jelváltás esetén minimum,
+\paragraph{8.}
+Írja le a lokális minimumra vonatkozó másodrendű elégséges feltételt. \\\\
+Legyen $f \in \R \rightarrow \R$, $a\in \text{int } \D_f$\\
+Tegyük fel hogy:
+\begin{enumerate}
+\item $f\in D^2\{a\}$
+\item $f'(a)=0 \quad \text{és} \quad f''(a)\neq 0$  
+\end{enumerate}
+Ekkor az $a$ pont a szigorú lokális szélsőértékhelye az $f$. függvénynek $f''(a)>0$ esetén minimum \\
+\textbf{Megjegyzés:} $f''(a)<0 $ esetén maximum
+\paragraph{9.}
+Mondja ki a Lagrange-féle középértéktételt! \\
+Legyen $a,b\in\R$ és $a<b$. Tegyük fel hogy 
+\begin{enumerate}
+\item $f\in C [a,b]$
+\item $f\in D(a,b)$
+\end{enumerate}
+Ekkor:
+\[
+\exists \varepsilon \in (a,b) \quad \text{hogy} \quad f'(\varepsilon) = \frac{f(b)-f(a)}{b-a}
+\]
+\paragraph{10.}
+Mondja ki a Cauchy-féle középértéktételt! \\
+Legyen $a,b\in\R$ és $a<b$. Tegyük fel hogy 
+\begin{enumerate}
+\item $f,g\in C[a,b]$
+\item $f,g\in D(a,b)$
+\item $g'(x)\neq 0 (x\in (a,b))$
+\end{enumerate}
+Ekkor:
+\[
+\exists \varepsilon \in (a,b), \quad \text{hogy} \quad \frac{f'(\varepsilon)}{g'(\varepsilon)} = \frac{f(b)-f(a)}{g(b)-g(a)}
+\]
+\newpage
+\section{5. Gyakorlat elméleti kérdései}
+\paragraph{1.}
+Definiálja az inflexiós pont fogalmát. \\
+Legyen $I$ nyílt intervallumon, $\fR, I \subset \D_f$ \\
+Azt mondjuk hogy az $a\in I$ pont az $f$ függvénynek inflexiós pontja ha:
+\begin{gather*}
+\exists \delta > 0 \; k_\delta (a) \subset I \text{ olyan hogy} \\
+f \text{ konvex az } (a-\delta , a] \text{ intervallumon és }\\ \text{konkáv az } [a,a+\delta)\text{-n intervallumon vagy fordítva}  
+\end{gather*} 
+\paragraph{2.}
+Mondja ki az inflexiós pont létezésére vonatkozó másodrendű szükséges feltételt. \\
+Legye $\fR, \; a \in \text{int } \D_f$ \\
+Ha $f\in C^2\{a\}$ és $f$-nek az a pontjában inflexiója van akkor $f''(a)=0$
+\paragraph{3.}
+Mikor mondjuk, hogy egy függvénynek aszimptotája van a $+\infty$-ben? \\
+Legyen $a\in \R $ és $f : (a,\pf) \rightarrow \R.$ Azt mondjuk hogy $f$-nek van aszimptotája $(\pf)$-ben, ha:
+\[
+\exists l(x)=Ax+B \quad (x\in\R)
+\]
+elsőfokú függvény, amelyre:
+\[
+\lim\limits_{x\rightarrow\pf}(f(x)-l(x)) = 0
+\] 
+Ekkor az $l(x) \: (x\in\R)$ egyenes az $f$ aszimptotája $(\pf)$-ben
+\paragraph{4.}
+Hogyan szól a $(\pf)$-beli aszimptota létezésére vonatkozó tétel?\\
+Az $f:(a,\pf)\rightarrow\R$ függvénynek akkor és csak akkor van aszimptotája $(\pf)$-ben, ha léteznek és végesek az alábbi határértékek:
+\[
+\lim\limits_{x\rightarrow\pf} \frac{f(x)}{x} =: A \in \R \quad \lim\limits_{x\rightarrow\pf} (f(x)-Ax) =: B \in \R
+\]
+Ekkor az
+\[
+l(x)=Ax+B \quad (x\in\R)
+\]
+Egyenes az $f$ függvény aszimptotája $(\pf)$-ben
+\paragraph{5.}
+Írja le a jobboldali határérték $\frac{0}{0}$ esetére vonatkozó L'Hospital-szabályt. \\
+Legyen $\nf \leq a < b < \pf $ és $f,g\in D(a,b).$ Tegyük fel hogy:
+\begin{itemize}
+\item $\exists \lim\limits_{a+0}f=\lim\limits_{a+0}g=0 $
+\item $g(x)\neq$ 0 és $g'(x)\neq 0 \quad \forall x \in (a,b)$
+\item $\exists \lim\limits_{a+0} \frac{f'}{g'} \in \overline{\R}$
+\end{itemize}
+Ekkor
+\[
+\exists 	\lim\limits_{a+0} \frac{f}{g} \quad \text{ és } \quad \lim\limits_{a+0}\frac{f}{g} = \lim\limits_{a+0}\frac{f'}{g'} \in \overline{\R}
+\]
+\paragraph{6.}
+Írja le a baloldali határérték $\frac{\pf}{\pf}$ esetére vonatkozó L'Hospital-szabályt. \\
+Legyen $\nf < a<b\leq \pf$ és $f,g\in D(a,b)$ Tegyük fel hogy:
+\begin{itemize}
+\item $\exists \lim\limits_{a-0}f=\lim\limits_{a-0} g = \pf$
+\item $g(x)\neq 0 \text{ és } g'(x)\neq 0 \quad \forall x \in(a,b)$
+\item $\exists \lim\limits_{a-0} \frac{f'}{g'} \in \overline{\R}$
+\end{itemize}
+Ekkor
+\[
+\exists \lim\limits_{a-0}\frac{f}{g} \in \overline{\R} \quad \text{és} \quad \lim\limits_{a-0}\frac{f}{g} = \lim\limits_{a-0} \frac{f'}{g'} \in \overline{\R}
+\]
+\newpage
+\section{6. Gyakorlat elméleti kérdései}
+\newpage
+\section{7. Gyakorlat elméleti kérdései}
+\paragraph{1.}
+Definiálja a primitív függvény fogalmát!
+\\ \\
+Legyen $I \subset \R$ nyílt intervallumon és $f : I \rightarrow \R$ egy adott függvény. \\ Azt mondjuk, hogy a $F : I \rightarrow \R$ függvény az $f$ egy primitív függvénye ha,
+\[
+F \in D(i) \text{ és } F'(x) = f(x)  \quad (\forall x \in i)
+\] 
+\paragraph{2.} 
+Mit nevezünk egy függvény határozatlan integráljának? \\ \\
+Legyen $I \subset \R$ nyílt intervallumon és $f : I \rightarrow \R$
+\\
+Az $f$ függvény primitív függvényeinek halmazát az $f$ határozatlan integráljának nevezzük. \\
+Jelölések : $\int{f}, \int{f(x) dx}$
+\paragraph{3.}
+Mikor mondjuk, hogy egy függvény Darboux-tulajdonságú? \\ \\
+Legyen $I$ nyílt intervallumon, $\fR , \quad	I \subset \D_f$
+ \\ \\ Azt mondjuk, hogy az $f$ függvény Daroux-tulajdonságú az $I$ intervallumon, ha tetszőleges $a,b\in I, a<b$ és bármely $f(a)$ és $f(b)$ közé eső $c$ esetén van olyan $\varepsilon \in [a,b]$, hogy $f(\varepsilon) = c$ \\  \\
+\textbf{Megjegyzés:} Ha $f:I\rightarrow \R$ folytonos akkor $f$ Daroux-tulajdonságú az $I$-n
+\paragraph{4.}
+Mit mond ki a primitív függvényekkel kapcsolatos parciális integrálás tétele?
+ \\ \\
+Legyen $I$ nyílt intervallum. \\ \\
+Tegyük fel, hogy $f,g \in D(I)$ és az $f'g$ függvénynek létezik függvénye $I$-n \\
+Ekkor az $fg'$ függvénynek is van primitív függvénye és 
+\[
+\int{f(x)g'(x)dx} = f(x)g(x)-\int{f'(x)g(x)dx} \quad (x\in I)
+\]
+\paragraph{5.}
+Hogyan szól a primitív függvényekkel kapcsolatos első helyettesítési szabály? \\\\
+Legyenek adottak az $I,J$ nyílt intervallumok és a $g: I \rightarrow \R ,f: J \rightarrow \R $ függvények. \\\\
+Tegyük fel hogy $g\in D(I), \mathcal{R}_g \subset J $ és az $f$ függvénynek van primitív függvénye. Ekkor az $(f \circ g) \cdot g'$ függvénynek is van primitív függvénye és 
+\[
+\int{f(g(x))\cdot g'(x)dx} = F(g(x))+C \quad (x\in I)
+\] 
+ahol $F$ a $f$ függvénynek egy primitív függvénye
+\paragraph{6.}
+Adja meg az alábbi függvények egy primitív függvényét: 
+
+exp, $x^a \; (x>0, a \in \R \setminus \{-1\})$ , sin, $\frac{1}{1+x^2} \; (x\in\R)$ \\\\
+\begin{itemize}
+\item $f(x) = e^x, F(x) = e^x$
+\item $f(x) = x^a, F(x) = \frac{x^{a+1}}{a+1}$
+\item $f(x) = \sin{x}, F(x) = -\cos{x} $ 
+\item $f(x) = \frac{1}{1+x^2}, F(x) = \frac{1}{2} \text{ln} \big\lvert \frac{x+1}{x-1}\big\rvert$
+\end{itemize} 
+\newpage
+\section{8. Gyakorlat elméleti kérdései}
+\paragraph{1.} Mit ért a határozatlan integrál linearitásán? \\\\
+Legyen $I$ nyílt intervallum. Ha az $f,g : I \rightarrow \R$ függvényeknek létezik primitív függvénye, akkor tetszőleges $\alpha \beta \in \R$ mellet $(\alpha f + \beta g)$-nek is létezik primitív függvénye és 
+\[
+\int (\alpha f(x) + \beta g(x))dx = \alpha \int f(x) dx + \beta \int g(x) dx \quad (x\in I)
+\]
+\paragraph{2.} Fogalmazza meg a primitív függvényekkel kapcsolatos második helyettesítési szabályt \\\\
+Legyen $I,J \subset \R $ nyílt intervallumok \\
+tegyük fel hogy  $f:I \rightarrow \R, \quad g: J \rightarrow I$ bijekció továbbá $g\in D(J), \; g'(x) \neq 0 \; (x\in J)$ Ha az $f \circ g \cdot g' : J \rightarrow \R $ függvénynek van primitív függvénye akkor az $f$ függvénynek is van primitív függvénye és 
+\[
+\int f(x)dx \underset{x=g(t)}{=} \int f(g(t)) \cdot g'(t) dt_{\big\lvert t=g^-1(x)} \quad (x\in I)
+\]
+\paragraph{3.}
+Legyen 	$I\subset \R$ nyílt intervallum $f:I\> \R$ és $f\in D(I)$. Mi a határozatlan integrálja az $f'\cdot f^n$ függvénynek. \\\\
+\[
+\int f^n(x)f'(x) dx = \frac{f^{n+1}(x)}{n+1} +c \quad (x\in I c\in \R)
+\]
+\paragraph{4.}
+Definiálja intervallum egy felosztását \\\\
+(Fogalmam nincs melyik a jó szerintem mind ugyan az de leírom mindet biztos ami biztos lehet válogatni) 
+\begin{enumerate}
+\item Az $[a,b]$ intervallum olyan véges részhalmazait, amik tartalmazzák az intervallum végpontjait azaz az $a,b$ pontokat az $[a,b]$ intervallum felosztásainak nevezzük 
+Az $[a,b]$ intervallum felosztásainak a halmazát $F[a,b]$-vel jelöljük
+\item Legyen $a,b \in \R \; a < b $ Ekkor az $[a,b]$ intervallum felosztásán olyan véges \[ \tau = \{ x_0,...,x_n\} \subset [a,b]\] halmazt értünk amelyre \[a = x_0<x_1<...<x_n = b\]
+\item Az $[a,b]$ intervallum egy felosztásán a 
+\[
+\tau := \{a=x_0<x_1<x_2<...<x_n =b\}
+\]  
+halmazt értjük ahol $n\in \mathbb{N}^+$
+\end{enumerate}
+\paragraph{5.}
+Mit jelent egy felosztás finomítása \\\\
+Legyen $a,b \in \R, \quad a<b$ és $\tau_1 , \tau_2 \subset [a,b]$ egy-egy felosztása $[a,b]$-nek. Ekkor $\tau_2$ finomítása $\tau_1$-nek, ha $\tau_1 \subset \tau_2$
+\paragraph{6.}
+Mi az also közelítő összeg definíciója \\\\
+(Kitudja hogy kérdezi e a felső közelítést olyan hasonló hogy inkább leírom mind 2 öt)
+Legyen $f\in K[a,b] \; \tau \in F [a,b], \tau = \{a=x_0<x_1<x_2<...<x_n =b\}$ \\
+\textbf{Alsó közelítő összeg:}
+\[
+m_i:= \inf \{ f(x) : x_{i-1} \leq x \leq x_i\} = \inf f_{\big\lvert [x_{i-1},x_i]} \quad (i=1,2,...,n) 
+\]
+Ekkor:
+\[
+s(f,\tau ): = \sum\limits_{i=1}^n m_i (x_i -x_{i-1}) 
+\]
+\textbf{Felső közelítő összeg}
+\[
+M_i:= \sup \{ f(x) : x_{i-1} \leq x \leq x_i\} = \sup f_{\big\lvert [x_{i-1},x_i]} \quad (i=1,2,...,n) 
+\]
+Ekkor:
+\[
+S(f,\tau ): = \sum\limits_{i=1}^n M_i (x_i -x_{i-1}) 
+\]
+\textbf{tldr:} A kettő ugyan az anyi különbség van bennük hogy $\inf$ helyet $\sup$ és $m$ és $s$ helyet $M$ és $S$ van
+\newpage
+\section{9. Gyakorlat elméleti kérdései}
+\paragraph{1.} Fogalmazza meg a primitív függvényekkel kapcsolatos második helyettesítési szabályt \\\\
+Legyen $I,J \subset \R $ nyílt intervallumok \\
+tegyük fel hogy  $f:I \rightarrow \R, \quad g: J \rightarrow I$ bijekció továbbá $g\in D(J), \; g'(x) \neq 0 \; (x\in J)$ Ha az $f \circ g \cdot g' : J \rightarrow \R $ függvénynek van primitív függvénye akkor az $f$ függvénynek is van primitív függvénye és 
+\[
+\int f(x)dx \underset{x=g(t)}{=} \int f(g(t)) \cdot g'(t) dt_{\big\lvert t=g^-1(x)} \quad (x\in I)
+\]
+\paragraph{2. } Milyen viszony van az alsó és a felső közelítő összegek között? \textbf{(Nem vagyok benne biztos)} \\\\
+Legyen $f\in K[a,b]$ és tegyük fel, hogy $\tau_1 , \tau_2 \in \F[a,b]$
+\begin{itemize}
+\item Ha $\tau_2$ finomabb $\tau_1$-nél (azaz $\tau_1 \subset \tau_2$) akkor : 
+\[
+s(f,\tau_1)\leq s(f,\r_2) \quad \text{és} \quad S(f,\r_1) \geq S(f,\r_2)
+\] 
+\item Tetszőleges $\r_1 , \r_2 \in \F[a,b]$ esetén 
+\[
+s(f,\r_1) \leq S(f,\r_2)
+\] 
+\end{itemize} 
+\paragraph{3. }
+Mi a Darboux-féle alsó integrál definíciója? \\\\
+Legyen $f\in K[a,b]$ Az alsó közelítő összegek szuprémumát, azaz az \[
+I_* (f):= \sup \{s(f,\r ) \| \r \in \F[a,b]\} \in \R
+\]	
+számot az f függvény Darbux-féle alsó integráljának nevezzük
+\paragraph{4. }
+Mi a Darboux-féle alsó integrál definíciója? \\\\
+Legyen $f\in K[a,b]$ A felső közelítő összegek infimumát, azaz az \[
+I^*(f):=\inf \{S(f,\r) \| \r \in F[a,b]\} \in \R
+\]	
+számot az f függvény Darbux-féle felső integráljának nevezzük
+\paragraph{5. }
+Mikor nevez egy függvényt (Riemann)-integrálhatónak ? \\\\
+Azt mondjuk hogy az $f\in K[a,b]$ függvény Riemann-integrálható az $[a,b]$ intervallumon (röviden integrálható $[a,b]$-n) ha:
+\[
+I_*(f)=I^*(f)
+\]
+Ezt a számot az $f$ függvény $[a,b]$ intervallum vett Riemann integráljának nevezzük, és következő képen jelöljük:
+\[
+\int\limits_a^b \quad \text{vagy} \quad \int\limits_a^b f(x) dx  
+\]
+\paragraph{6. } Hogyan értelmezi egy függvény határozott (vagy Riemann-) integrálját? \\\\
+Legyen $a,b \in \R , \; a<b$ és $f:[a,b] \> \R$ egy korlátos függvény. Ha $I_*(f)=I^*(f)$, akkor az $f$ függvény határozott (vagy Riemann-)integrálja az $I_*(f)=I^*(f)$ valós szám
+\paragraph{7. } Adjon meg egy példát nem integrálható függvényre! \\\\ Legyen 
+\[
+f(x) : = \begin{cases}
+1, \quad \text{ha} x \in \mathbb{Q} \\
+0, \quad \text{ha} x \in \R \setminus \mathbb{Q}
+\end{cases}
+\]
+\paragraph{8. } Mi az oszcillációs összeg definíciója? \\\\
+Ha $f\in K[a,b]$ és $\r \in \F[a,b],$ akkor 
+\[
+\Omega (f,\r ) :=S(f,\r)-s(f,\r)
+\]
+az $f$ függvény $\r$ felosztásához tartózó oszcillációs összege
+\paragraph{9. } Hogyan szól a Riemann-integrálhatósággal kapcsolatban tanult kritérium az oszcillációs összegekkel megfogalmazva? \\\\
+$f\in R[a,b] \Longleftrightarrow$
+\[
+\forall \varepsilon > 0\text{-hoz} \quad \exists \r \in \mathcal{F}[a,b] : \quad \Omega (f,\r) < \varepsilon
+\]
+\newpage
+\section{10. Gyakorlat elméleti kérdései}
+\paragraph{1. }
+Felosztássorozatok segítségével adja meg a Riemann-integrálhatóság egy ekvivalens átfogalmazását! \\\\
+$f\in R[a,b]$ és $\int\limits_a^b f = i$ akkor és csak akkor, ha \\
+$\exists$ olyan $\r_n \in \F[a,b] \; (n\in\mathbb{N})$ felosztás szorzat, amelyre 
+\[
+\lim\limits_{n\>\pf} s(f,\r_n) = \lim\limits_{n\>\pf} S(f,\r_n) = i
+\]
+\paragraph{2. }
+Hogyan szól a Riemann-integrálható függvények összegével kapcsolatban tanult tétel?
+\\\\
+Tegyük fel, hogy $f,g \in R[a,b]$ Ekkor:
+\[
+f+g \in R[a,b] \quad \text{és} \quad \int\limits_a^b (f+g) = \abi f + \abi g 
+\] 
+\paragraph{3. }
+Hogyan szól a Riemann-integrálható függvények szorzatával kapcsolatban tanult tétel?
+\\\\
+Ha $f,g \in R[a,b]$ akkor $f\cdot g \in R[a,b]$ 
+\paragraph{4. }
+Hogyan szól a Riemann-integrálható függvények hányadosával kapcsolatban tanult tétel?
+\\\\
+Ha $f,g \in R[a,b], \vline g(x) \vline \geq m > 0 \quad (\forall x \in [a,b])$ akkor $\frac{f}{g} \in R[a,b]$
+\paragraph{5. }
+Milyen tételt tanult Riemann-integrálható függvény értékeinek megváltoztatását illetően?
+\\\\
+Tegyük fel hogy $f,g : [a,b] \> \R $ Ha $f\in R [a,b]$ és az 
+\[
+A := \{ x \in [a,b] \vline f(x) \neq (x)\} \text{halmaz véges}
+\]
+akkor $g\in R[a,b]$ és 
+\[
+\abi g = \abi f
+\]
+\paragraph{6. }
+Mit ért a Riemann-integrál intervallum szerinti additivitásán?
+\\\\
+Tegyük fel hogy  $f \in K[a,b]$ és legyen $c\in (a,b)$ Ekkor:
+\begin{enumerate}
+\item $f \in R[a,b] \Leftrightarrow  f\in R[a,c]$ és $f\in R[c,b]$
+\item ha $f\in R[a,c]$ és $f\in R[c,b]$ (vagy $f\in R[a,b]$) akkor 
+\end{enumerate}
+\[
+\abi f = \int\limits_a^c f + \int\limits_c^b f 
+\]
+\paragraph{7. }
+Hogyan szól az integrálszámítás első középértéktétele?
+\\\\
+Tegyük fel, hogy $f,g \in R[a,b]$ és $g\geq 0$
+Ekkor 
+\begin{enumerate}
+\item az $m:= \inf\limits_{[a,b]} f, M:= \sup\limits_{[a,b]} f$ jelölésekkel 
+\[
+m\cdot \abi g \leq \abi f\cdot g \leq M \cdot \abi g
+\]
+\item ha $f\in C[a,b]$ is teljesül, ekkor $\exists \varepsilon \in [a,b]$ olyan, hogy 
+\[
+\abi f \cdot g = f(\varepsilon) \cdot \abi g
+\]
+\end{enumerate}
+\paragraph{8. }
+Fogalmazza meg a Cauchy-Bunyakovszkij-Schwarz-féle egyenlőtlenséget!
+\\\\
+Tetszőleges $f,g \in R[a,b]$ függvények esetén 
+\[
+\Bigg\lvert \abi f\cdot g \Bigg\lvert \leq \sqrt{\abi f^2} \cdot \sqrt{\abi g^2}
+\] 
+\paragraph{9. }Mi a kapcsolat a monotonitás és a Riemann-integrálhatóság között? \\\\
+Ha az $f: [a,b] \> \R$ függvény monoton, akkor integrálható.
+\paragraph{10. }
+Definiálja a szakaszonként monoton függvény fogalmát! \\\\
+Legyen $a,b\in \R a<b$ \\
+azt mondjuk hogy $f:[a,b]\>\R$ függvény szakaszonként monoton ha 
+\[
+\exists m\in \mathbb{N}^+ \quad \text{és} \quad \r \{a=x_0<x_1< ...<x_m = b\} \in \F[a,b]
+\]
+úgy, hogy minden $i = 1,...,m$ index esetén
+\begin{enumerate}
+\item az $f_{\lvert (x_{i-1},x_i)}$ függvény monoton
+\item $f$ korlátos $[a,b]$-n  
+\end{enumerate}
+\end{document} 

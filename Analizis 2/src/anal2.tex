@@ -1,0 +1,376 @@
+\documentclass{article}
+
+\usepackage{t1enc}
+\usepackage[magyar]{babel}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{cancel}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[pdfusetitle]{hyperref}
+\setcounter{secnumdepth}{0}
+
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\newtheorem{theorem}{Tétel}
+\renewenvironment{proof}{\textbf{Bizonyítás:} \\}{\hfill}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
+\titleformat*{\section}{\normalsize}
+
+\date{\today}
+\author{}
+\title{%
+	\textbf{Analízis 2.} \\
+	\textbf{Programtervező informatikus A/B. szakirány} \\
+	\medskip
+	Bebizonyítással kért tételek\\
+	\large 2022-2023. tanév 1. félév
+}
+
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\begin{theorem}
+\section{Oszcillációs összegek. Az integrálhatóság jellemzése oszcillációs összegekkel.}
+\begin{equation*}
+    f\in R[a,b] \Longleftrightarrow \forall \varepsilon > 0\textrm{-hoz }\exists\tau \in\mathcal{F}[a,b]: \Omega (f,\tau)<\varepsilon
+\end{equation*}
+\end{theorem}
+\begin{proof}
+$\boxed{\Longrightarrow}$ Tegyük fel, hogy $f\in R[a,b]: I_*(f)=I^*(f)=I(f)$. A szuprémum definíciója alapján:
+\begin{equation*}
+\begin{split}
+    \operatorname{sup}\{s(f,\tau) \mid \tau \in \mathcal{F}[a,b]\} =I_*(f)=I(f) & \overset{\textrm{sup def.}}{\Longrightarrow} \\
+    \forall \varepsilon > 0\textrm{-hoz }\exists \tau_1\in \mathcal{F}[a,b]:I(f)-\frac{\varepsilon}{2}<s(f,\tau_1)\leq I(f) \\
+\end{split}
+\end{equation*}
+Az infimum definíciója alapján:
+\begin{equation*}
+\begin{split}
+    \operatorname{inf}\{S(f,\tau) \mid \tau \in \mathcal{F}[a,b]\} =I^*(f)=I(f) & \overset{\textrm{inf def.}}{\Longrightarrow} \\
+    \forall \varepsilon > 0\textrm{-hoz }\exists \tau_2\in \mathcal{F}[a,b]:I(f)+\frac{\varepsilon}{2}>S(f,\tau_2)\geq I(f) \\
+\end{split}
+\end{equation*}
+Legyen $\tau=\tau_1\cup\tau_2\in\mathcal{F}[a,b]$. Ekkor $\tau$ finomítása $\tau_1$-nek és $\tau_2$-nek, ezért:
+\begin{equation*}
+\begin{split}
+    I(f)-\frac{\varepsilon}{2}<s(f,\tau_1)\leq s(f,\tau)\leq& I_*(f)\leq I^*(f)\leq S(f,\tau)\leq S(f,\tau_2)\leq I(f)+\frac{\varepsilon}{2} \Longrightarrow \\
+    \Omega(f,\tau)=S(f,\tau)-s(f,\tau)<\varepsilon \\
+\end{split}
+\end{equation*}
+$\boxed{\Longleftarrow}$. Legyen $\varepsilon > 0$ tetszőleges és $\tau \in \mathcal{F}[a,b]: \Omega(f,\tau)<\varepsilon$. Mivel $s(f,\tau)\leq I_*(f)\leq I^*(f)\leq S(f,\tau)$ ezért
+\begin{equation*}
+\begin{split}
+    0\leq I^*(f)-I_*(f)\leq S(f,\tau)-s(f,\tau)=\Omega(f,\tau)<\varepsilon & \Longrightarrow \\
+    0 \leq I^*(f)-I_*(f)<\varepsilon\quad (\forall \varepsilon > 0)& \Longrightarrow \\
+    I^*(f) -I_*(f) = 0\Longrightarrow I^*(f)=I_*(f) \Longrightarrow f\in R[a,b] & \\
+\end{split}
+\end{equation*}
+\end{proof}
+\newpage
+\begin{theorem}
+\section{Az összegfüggvény integrálhatóságára vonatkozó tétel.} 
+Tegyük fel, hogy $f,g\in R[a,b]$. Ekkor $f+g\in R[a,b]$ és
+\begin{equation*}
+    \int_a^b(f+g)=\int_a^bf+\int_a^bg
+\end{equation*}
+\end{theorem}
+\begin{proof}
+Legyen $\tau=\{x_0=a<x_1<\dots<x_n=b\}\in\mathcal{F}[a,b]$ és
+\begin{itemize}
+    \item[] $f_i=\displaystyle\inf_{[x_{i-1},x_i]} f$
+    \item[] $F_i=\displaystyle\sup_{[x_{i-1},x_i]} f$
+    \item[] $g_i=\displaystyle\inf_{[x_{i-1},x_i]} g$
+    \item[] $G_i=\displaystyle\sup_{[x_{i-1},x_i]} g$
+\end{itemize}
+Mivel $f_i+g_i\leq f(x)+g(x)\leq F_i+G_i$ $\forall x\in [x_{i-1},x_i]$ ezért $f_i+g_i\leq \displaystyle\inf_{[x_{i-1},x_i]}(f+g) \leq\displaystyle\sup_{[x_{i-1},x_i]}(f+g) \leq F_i + G_i$. Ebből $x_i-x_{i-1}$-el való szorzással kapjuk, hogy
+\begin{equation*}
+    s(f,\tau)+s(g,\tau)\leq s(f+g,\tau)\leq S(f+g,\tau)\leq S(f,\tau)+S(g,\tau)
+\end{equation*}
+Tegyük fel, hogy $\tau_1,\tau_2\in\mathcal{F}[a,b]$ és legyen $\tau = \tau_1 \cup \tau_2\in \mathcal{F}[a,b]$. Ekkor
+\begin{equation*}
+    s(f,\tau_1)+s(g,\tau_2)\leq s(f,\tau)+s(g,\tau)\leq s(f+g,\tau)\leq I_*(f+g)
+\end{equation*}
+Innen először a $\tau_1$ majd a $\tau_2$ felosztásokra a bal oldal felső határát véve következik, hogy
+\begin{equation*}
+I_*(f)+I_*(g)\leq I_*(f+g)
+\end{equation*}
+Hasonlóan igazolható, hogy $I^*(f)+I^*(g)\geq I^*(f+g)$. Így:
+\begin{equation*}
+    I_*(f)+I_*(g)\leq I_*(f+g)\leq I^*(f+g)\leq I^*(f)+I^*(g)
+\end{equation*}
+Mivel $f,g\in R[a,b]$ ezért $I_*(f)=I^*(f)=\int_a^bf$ és $I_*(g)=I^*(g)=\int_a^bg$ ezért $I_*(f+g)=I^*(f+g)$ tehát $f+g\in R[a,b]$ és
+\begin{equation*}
+\int_a^b(f+g)=\int_a^bf+\int_a^bg
+\end{equation*}
+\end{proof}
+\newpage
+\begin{theorem}
+\section{A szorzatfüggvény integrálhatóságára vonatkozó tétel} 
+Tegyük fel, hogy $f,g\in R[a,b]$. Ekkor $f\cdot g\in R[a,b]$.
+\end{theorem}
+\begin{proof}
+\textbf{1.} Tegyük fel, hogy $f,g \geq 0$, $\tau = \{a = x_0 < x_1 < \dots < x_n \} \in \mathcal{F}[a,b]$. Az előző bizonyításban bevezetett jelölésekkel:
+\begin{equation*}
+\begin{split}
+    f_i\cdot g_i \leq f(x)\cdot g(x) \leq F_i\cdot G_i\quad \forall x\in[x_{i-1},x_i] & \Longrightarrow \\
+    f_i\cdot g_i \leq \inf_{[x_{i-1},x_i]}f\cdot g \leq \sup_{[x_{i-1},x_i]} f\cdot g\leq F_i\cdot G_i\quad \forall x \in [x_{i-1},x_i] & \Longrightarrow \\
+    \Omega(f\cdot g, \tau)=S(f\cdot g,\tau)-s(f\cdot g, \tau) & = \\
+    \sum_{i=1}^n \left(\sup_{[x_{i-1},x_i]}f\cdot g - \inf_{[x_{i-1},x_i]}f\cdot g\right)\cdot (x_i-x_{i-1}) & \leq \\
+    \sum_{i=1}^n \left(F_i\cdot G_i - f_i \cdot g_i\right)\cdot (x_i-x_{i-1}) & \\
+\end{split}
+\end{equation*}
+Mivel $f$ és $g$ korlátos ezért $\exists M: |f|,|g|\leq M$ $[a,b]$-n. Így
+\begin{equation*}
+\begin{split}
+    \Omega(f\cdot g, \tau)\leq \sum_{i=1}^n \left(F_i(G_i-g_i)+(F_i-f_i)g_i\right)\cdot (x_i-x_{i-1}) & \leq \\
+    M\cdot\sum_{i=1}^n(G_i-g_i)(x_i-x_{i-1})+M\cdot\sum(F_i-f_i)(x_i-x_{i-1}) & = \\
+    M\cdot \left(\Omega(g,\tau)+\Omega(f,\tau)\right)
+\end{split}
+\end{equation*}
+Mivel $f,g\in R[a,b]$ ezért $\forall \varepsilon >0$-hoz $\exists\tau : \Omega(f,\tau), \Omega(g,\tau)< \varepsilon$. Tehát $\forall \varepsilon > 0$-hoz $\exists\tau \in \mathcal{F}[a,b]$ felosztás:
+\begin{equation*}
+    \Omega(f\cdot g)\leq 2\cdot M \cdot \varepsilon \Longrightarrow f\cdot g \in R[a,b]
+\end{equation*}
+\textbf{2.} Tegyük fel, hogy $f,g$ tetszőleges és legyen $m_f = \displaystyle\inf_{[a,b]}f$ és $m_g = \displaystyle\inf_{[a,b]}g$. Ekkor $f-m_f\geq 0$ és $g-m_g\geq 0$ $[a,b]$-n integrálható függvények és az \textbf{1.} szerint:
+\begin{equation*}
+    (f-m_f)(g-m_g)=f\cdot g - \underbrace{f\cdot m_g - m_f \cdot g + m_f \cdot g}_{\in R[a,b]} \in R[a,b]
+\end{equation*}
+következtetésképpen $f\cdot g \in R[a,b]$.
+\end{proof}
+\newpage
+\begin{theorem}
+\section{Függvények hányadosának integrálhatóságára vonatkozó tétel }
+Tegyük fel, hogy $f,g \in R[a,b]$ és $|g(x)|\geq m > 0\quad (\forall x \in [a,b])$. Ekkor $\frac{f}{g}\in R[a,b]$.
+\end{theorem}
+\begin{proof}
+A szorzat tétel miatt elég csak azt bebizonyítani, hogy a $g$-re tett feltétel esetén $\frac{1}{g}\in R[a,b]$. Legyen $\tau = \{a =x_0 < x_1 < \dots < x_n = b\} \in \mathcal{F}[a,b]$ tetszőleges. Ekkor $\forall x,y \in [x_{i-1},x_i]$ pontokban
+\begin{equation*}
+    \frac{1}{g(x)} - \frac{1}{g(y)} = \frac{g(y) - g(x)}{g(y)g(x)} \leq \frac{|g(y) - g(x)|}{|g(y)g(x)|} \leq \frac{G_i-g_i}{m^2}        
+\end{equation*}
+Ebből következik, hogy
+\begin{equation*}
+    \sup_{[x_{i-1},x_i]} \frac{1}{g} - \inf_{[x_{i-1},x_i]} \frac{1}{g} \leq \frac{G_i-g_i}{m^2}
+\end{equation*}
+$(x_i-x_{i-1})$-gyek való szorzás és összegzés után azt kapjuk, hogy
+\begin{equation*}
+    \Omega\left(\frac{1}{g}, \tau\right) \leq \frac{1}{m^2} \Omega (g, \tau)
+\end{equation*}
+Mivel $g\in R[a,b]$ ezért $\forall \varepsilon > 0$-hoz $\exists \tau \in \mathcal{F}[a,b]: \Omega(g,\tau) < \varepsilon$. Így:
+\begin{equation*}
+    \Omega\left(\frac{1}{g}, \tau\right) < \frac{\varepsilon}{m^2} \Longrightarrow \frac{1}{g} \in R[a,b]
+\end{equation*}
+\end{proof}
+\newpage
+\begin{theorem}
+\section{A monoton függvény integrálhatóságára vonatkozó tétel} 
+Ha $f : [a,b] \to \mathbb{R}$ függvény monoton az $[a,b]$ intervallumon, akkor integrálható $[a,b]$-n.
+\end{theorem}
+\begin{proof}
+Az integrálhatóság oszcillációs összegekkel való jellemzésére vonatkozó állítást alkalmazzuk, tehát
+\begin{equation*}
+    \forall \varepsilon > 0\textrm{-hoz } \exists \tau \in \mathcal{F}[a,b]:\Omega(f,\tau)< \varepsilon
+\end{equation*}
+Legyen pl $f \nearrow$. Ha $f(a) = f(b)$ akkor $f$ állandó ezért ebben az esetben igaz. Ha $f(a) < f(b)$ akkor $\forall\tau = \{a = x_0 < \dots < x_n = b\} \in \mathcal{F}[a,b]$ felosztásra $m_i = \displaystyle\inf_{[x_{i-1},x_i]}=f(x_{i-1})$ és $M_i = \displaystyle\sup_{[x_{i-1},x_i]}=f(x_i)$. Ezért
+\begin{equation*}
+    \Omega(f,\tau)=S(f,\tau)-s(f,\tau)=\sum_{i=1}^n(f(x_i)-f(x_{i-1}))\cdot(x_i-x_{i-1})
+\end{equation*}
+Legyen $\varepsilon > 0$ adott és $n\in\mathbb{N}^+:\frac{b-a}{n}<\frac{\varepsilon}{f(b)-f(a)}$ valamit $\tau$ az $[a,b]$ egyenletes felosztása. Ekkor $x_i-x_{i-1}<\frac{\varepsilon}{f(b)-f(a)}$ minden $i=1,\dots,n$ indexre és
+\begin{equation*}
+\begin{split}
+    \Omega(f,\tau)<\sum_{i=1}^n(f(x_i)-f(x_{i-1}))\cdot \frac{\varepsilon}{f(b)-f(a)} & < \\
+    \frac{\varepsilon}{f(b)-f(a)}\cdot\left((\cancel{f(x_1)} - \underbrace{f(x_0)}_{f(a)})+(\cancel{f(x_2)}-\cancel{f(x_1)})+\dots+(\underbrace{f(x_n)}_{f(b)}-\cancel{f(x_{n-1})})\right) = \varepsilon
+\end{split}
+\end{equation*}
+Ezzel az erdeti állítást igazoltuk $\Longrightarrow f \in R[a,b]$.
+\end{proof}
+\newpage
+\begin{theorem}
+\section{Az egyenletes folytonosságra vonatkozó Heine-tétel} 
+Ha $-\infty < a < b < +\infty$ és $f\in C[a,b]$ akkor $f$ egyenletesen folytonos az $[a,b]$ intervallumon
+\end{theorem}
+\begin{proof}
+Indirekt módon. Tegyük fel, hogy $f$ nem egyenletesen folytonos $[a,b]$-n. Ezt azt jelenti, hogy
+\begin{equation*}
+    \exists \varepsilon > 0\textrm{ hogy }\forall \delta > 0\textrm{-hoz }\exists x,y\in [a,b], |x-y| < \delta: |f(x)-f(y)| \geq \varepsilon 
+\end{equation*}
+A $\delta=\frac{1}{n}\quad (n\in\mathbb{N}^+)$ választással kapjuk, hogy minden $n$-re létezik $x_n,y_n\in[a,b]$:
+\begin{equation*}
+    |x_n-y_n|<\frac{1}{n}\textrm{ és }\underbrace{|f(x_n)-f(y_n)|\geq \varepsilon}_{(*)}
+\end{equation*}
+$x_n$ sorozat korlátos ezért van egy $x_{n_k}$ konvergens részsorozata, amelynek az $\alpha$ határértéke ugyancsak $[a,b]$-ben van. Így
+\begin{equation*}
+    y_{n_k}=\left(y_{n_k}-x_{n_k}\right)+x_{n_k}\to 0+\alpha=\alpha\textrm{, ha }n_k\to + \infty
+\end{equation*}
+Mivel $f\in C[a,b]$ ezért $f\in C\{\alpha\}$ is teljesül. Az átviteli elv szerint tehát $f(x_{n_k})\to f(\alpha)$ és $f(y_{n_k})\to f(\alpha)$ ezért
+\begin{equation*}
+    \lim_{n_k\to+\infty}(f(x_{n_k}) - f(y_{n_k})) = 0
+\end{equation*}
+Ez azonban ellent mond a $(*)$ állításnak.
+\end{proof}
+\newpage
+\begin{theorem}
+\section{Folytonos függvények integrálhatóságára vonatkozó tétel} 
+Ha az $f$ függvény folytonos az $[a,b]$ intervallumon, akkor integrálható $[a,b]$-n
+\end{theorem}
+\begin{proof}
+Elég megmutatni azt, hogy $\forall f \in C[a,b]$ függvényre a következő teljesül:
+\begin{equation*}
+    \forall \varepsilon >0\textrm{-hoz }\exists\tau \in \mathcal{F}[a,b]:\Omega(f,\tau)<\varepsilon
+\end{equation*}
+Mivel $f\in C[a,b]\Longrightarrow$ (Heine tétel) $f$ egyenletesen folytonos az $[a,b]$ intervallumon, ezért $\forall \varepsilon > 0$-hoz $\exists \delta > 0$, hogy
+\begin{equation*}
+    \forall x,y \in [a,b], |x-y|< \delta:|f(x)-f(y)|<\frac{\varepsilon}{b-a}
+\end{equation*}
+Legyen $\varepsilon > 0$ és $\tau = \{x_0 = a < x_1 < \dots < x_n = b\} \in \mathcal{F}[a,b]: ||\tau||=\max\{x_i-x_{i-1} \mid i = 1,\dots,n\}\leq \delta$. Ekkor $\Omega(f,\tau)$-ban $i=1,\dots,n$ esetén legyen
+\begin{equation*}
+    m_i=\min_{[x_{i-1},x_i]}f=f(u_i)\textrm{ és }M_i=\max_{[x_{i-1},x_i]}f=f(v_i)
+\end{equation*}
+(Weierstrass tétel miatt $\exists u_i,v_i$). Ekkor
+\begin{equation*}
+    \Omega(f,\tau)=\sum_{i=1}^n(M_i-m_i)\cdot(x_i-x_{i-1})\leq \frac{\varepsilon}{b-a}\sum_{i=1}^n(x_i-x_{i-1})=\varepsilon
+\end{equation*}
+Ez pedig azt jelenti, hogy $f\in R[a,b]$.
+\end{proof}
+\newpage
+\begin{theorem}
+\section{Newton-Leibniz tétel} 
+Ha $f\in R[a,b]$ és az f függvénynek van primitív függvénye $[a,b]$-n akkor
+\begin{equation*}
+    \int_a^bf(x) dx=F(b)-F(a)=:\left[F(x)\right]^b_a
+\end{equation*}
+Ahol $F$ az $f$ függvény egy tetszőleges primitív függvénye.
+\end{theorem}
+\begin{proof}
+Legyen $\tau={a=x_0<x_1<\dots<x_n=b}\in\mathcal{F}[a,b]$ tetszőleges. A Lagrange-féle k.é.t. szerint $\forall i=1,\dots,n$ indexre $\exists\xi_i\in (x_{i-1},x_i)$:
+\begin{equation*}
+    F(x_i)-F(x_{i-1})=F'(\xi_i)\cdot(x_i-x_{i-1})=f(\xi_i)\cdot(x_i-x_{i-1})
+\end{equation*}
+Ha ezeket az egyenlőségeket összeadjuk $\forall i=1,\dots,n$-en akkor a baloldalon minden tag kivéve $F(x_0)=F(a)$ és $F(x_n)=F(b)$ kiesik tehát:
+\begin{equation*}
+    F(b) - F(a)=\sum_{i=1}^n f(\xi_i)\cdot (x_i-x_{i-1})=\sigma(f,\tau,\xi)
+\end{equation*}
+ahol $\xi=(\xi_1,\dots\xi_n)$. Mivel $\displaystyle\inf_{[x_{i-1},x_i]}f\leq f(\xi_i)\leq \displaystyle\sup_{[x_{i-1},x_i]}f$ ezért 
+\begin{equation*}
+    s(f,\tau)\leq \sigma(f,\tau,\xi)\leq F(b)-F(a) \leq S(f,\tau, \xi)
+\end{equation*}
+Következtetésképpen
+\begin{equation*}
+    I_*(f)=\sup_{\tau\in\mathcal{F}[a,b]}s(f,\tau)\leq F(b)-F(a) \leq \inf_{\tau\in\mathcal{F}[a,b]} S(f,\tau,\xi)=I^*(f)
+\end{equation*}
+Mivel $f\in R[a,b]$ ezért $I_*(f)=I^*(f)=\int_a^b f$, így
+\begin{equation*}
+    F(b)-F(a)=\int_a^b f(x)dx
+\end{equation*}
+\end{proof}
+\newpage
+\begin{theorem}
+\section{Az integrálfüggvény folytonosságára vonatkozó tétel} 
+Tegyük fel, hogy $f\in R[a,b]$ és $x_0 \in [a,b]$. Ekkor a
+\begin{equation*}
+    F(x)=\int_{x_0}^xf(t)dt\quad (x\in [a,b])
+\end{equation*}
+integrálfüggvény folytonos az $[a,b]$ intervallumon.
+\end{theorem}
+\begin{proof}
+Tetszőleges $x,y\in [a,b], x < y$ esetén
+\begin{equation*}
+    |F(x)-F(y)| = \left|\int_{x_0}^yf-\int_{x_0}^xf\right| = \left|\int_{x_0}^yf+\int_x^{x_0}f\right|=\left|\int_x^yf\right|\leq \int_x^y|f|\leq M\cdot\int_x^y1=M(y-x)
+\end{equation*}
+ahol $M$ az $f$ függvény egy korlátja: $|f(x)|\leq M\quad (x\in[a,b])$. (Mivel $f\in R[a,b]$ ezért $f$ korlátos $[a,b]$-n). Ha tehát $\varepsilon > 0, \delta > 0: M\delta < \varepsilon$, akkor $\forall x,y \in [a,b], |x-y| < \delta$ esetén:
+\begin{equation*}
+    |F(y)-F(x)| < M\cdot\frac{\varepsilon}{M}=\varepsilon
+\end{equation*}
+Ez azt jelenti $F$ egyenletesen folytonos $[a,b]$-n így folytonos is.
+\end{proof}
+\newpage
+\begin{theorem}
+\section{Az integrálfüggvény differenciálhatóságára vonatkozó állítás}
+Tegyük fel, hogy $f\in R[a,b]$ és $x_0 \in [a,b]$. Ekkor ha a
+\begin{equation*}
+    F(x)=\int_{x_0}^xf(t)dt\quad (x\in [a,b])
+\end{equation*}
+integrálfüggvény egy $d\in [a,b]$ pontban folytonos, akkor ott az $F$ integrálfüggvény deriválható és $F'(d)=f(d)$. Ha $f \in C[a,b]$ akkor $F\in D[a,b]$ és $F'(x)=f(x)$ minden $x\in [a,b]$ pontban.
+\end{theorem}
+\begin{proof}
+Legyen $d\in (a,b)$ és tegyük fel, hogy $f\in C\{d\}$. Ez azt jelenti, hogy $\forall \varepsilon > 0$-hoz $\exists \delta > 0$:
+\begin{equation*}
+    \forall t \in [a,b]: |t-d| < \delta\textrm{ esetén }|f(t)-f(d)|< \varepsilon
+\end{equation*}
+Tegyük fel, hogy $h$-ra $d+h\in (a,b)$ teljesül. Ekkor
+\begin{equation*}
+    F(d+h)-F(d)=\int_{x_0}^{d+h}f-\int_{x_0}^df=\int_d^{d+h}f
+\end{equation*}
+Mivel $f(d)=\frac{1}{h}\int_d^{d+h}f(d)dt$ ezért
+\begin{equation*}
+    \frac{F(d+h)-F(d)}{h}-f(d)=\frac{1}{h}\int_d^{d+h}(f(t)-f(d))dt
+\end{equation*}
+Ha $0<h<\delta$, akkor
+\begin{equation*}
+    \left|\frac{F(d+h)-F(d)}{h}\right|<\frac{1}{h}\cdot\int_d^{d+h}|f(t)-f(d)|dt <\frac{1}{h}\int_d^{d+h}\varepsilon=\frac{1}{h}\cdot \varepsilon\cdot h
+\end{equation*}
+Ha $-\delta<h<0$, akkor
+\begin{equation*}
+    \left|\frac{F(d+h)-F(d)}{h}-f(d)\right|\leq\frac{1}{|h|}\int_d^{d+h}|f(t)-f(d)|dt < \varepsilon
+\end{equation*}
+Az előzőek alapján tehát $\forall \varepsilon > 0$-hoz $\exists\delta > 0: \forall|h| < \delta$:
+\begin{equation*}
+    \left|\frac{F(d+h)-F(d)}{h}-f(d)\right|< \varepsilon
+\end{equation*}
+Ez azt jelenti, hogy:
+\begin{equation*}
+    \lim_{h\to 0}\frac{F(d+h)-F(d)}{h}-f(d)=0\Longrightarrow \lim_{h\to 0}\frac{F(d+h)-F(d)}{h}=f(d)
+\end{equation*}
+vagyis $F\in D\{d\}$ és $F'(d)=f(d)$. A végpontokban az előzőekhez hasonlóan kapjuk meg az egyoldali deriváltakra vonatkozó állításokat.
+\end{proof}
+\newpage
+\begin{theorem}
+\section{A parciális integrálásra vonatkozó tétel határozott integrálra} 
+Tegyük fel, hogy $f,g \in [a,b] \to \mathbb{R}, f,g\in D[a,b]$ és $f',g'\in R[a,b]$. Ekkor
+\begin{equation*}
+    \int_a^bfg'=f(b)g(b)-f(a)g(a)-\int_a^bf'g
+\end{equation*}
+\end{theorem}
+\begin{proof}
+Egyrészt $f\in D[a,b]\Longrightarrow f\in C[a,b]\Longrightarrow f\in R[a,b]$. Mivel $g' \in R[a,b]$ ezért $fg' \in R[a,b]$. Hasonlóan kapjuk meg azt is, hogy $f'g\in R[a,b]$. Így $f'g+g'f\in R[a,b]$. Másrészt $fg$ primitív függvénye az $f'g+g'f$ függvénynek. A Newton-Leibniz tétel szerint
+\begin{equation*}
+    \int_a^b(f'g+g'f)=[fg]_a^b=f(b)g(b)-f(a)g(a)
+\end{equation*}
+A határozott integrál additivitását felhasználva rendezés után azt kapjuk, hogy
+\begin{equation*}
+    \int_a^bfg'=[fg]_a^b-\int_a^bf'g
+\end{equation*}
+\end{proof}
+\newpage
+\begin{theorem}
+\section{A helyettesítéses integrálás szabálya határozott integrálra} 
+Tegyük fel, hogy $f\in C[a,b]$ és a $g\in[\alpha,\beta]\to[a,b]$ függvény folytonosan deriválható. Ekkor
+\begin{equation*}
+    \int_{g(\alpha)}^{g(\beta)}f=\int_{\alpha}^{\beta}f\circ g\cdot g'
+\end{equation*}
+\end{theorem}
+\begin{proof}
+Tekintsük az
+\begin{equation*}
+    F(x)=\int_{g(\alpha)}^xf\quad(x\in[a,b]),\quad G(u)=\int_\alpha^uf\circ g\cdot g'\quad(x\in[\alpha,\beta])
+\end{equation*}
+integrálfüggvényeket. Megmutatjuk, hogy
+\begin{equation*}
+    \int_{g(\alpha)}^{g(\beta)}f=\underbrace{F(g(\beta))=G(\beta)}_{(*)}=\int_\alpha^\beta f\circ g\cdot g'
+\end{equation*}
+Egyrész $f\in C[a,b]\Longrightarrow F' = f$, másrészt $f\circ g \cdot g'\in C[\alpha,\beta]\Longrightarrow G'= f\circ g\cdot g'$. Mivel $(F\circ g)'=F'\circ g\cdot g'=f \circ g \cdot g'$, ezért $(F \circ g - G)'= 0\Longrightarrow \exists c \in \mathbb{R}: F \circ g - G = c$. Ugyanakkor $F(g(\alpha))=0=G(\alpha)\Longrightarrow c=0$. Következtetésképpen $F\circ g=G\Longrightarrow F(g(\beta))=G(\beta)$.
+\end{proof}
+\end{document}

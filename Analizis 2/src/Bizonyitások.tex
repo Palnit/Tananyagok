@@ -1,0 +1,85 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[magyar]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage[pdfusetitle]{hyperref}
+\usepackage{titling}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\date{\today}
+\author{Petrányi Bálint}
+\title{%
+	\textbf{Analízis 2.} \\
+	\textbf{Programtervező informatikus A. szakirány} \\
+	\medskip
+	Bizonyítások\\
+	\large 2022-2023. tanév 1. félév
+}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{A differenciálhatóság átfogalmazása}
+\textbf{Tétel:} \\ 
+Legyen $f \in \mathbb{R} \rightarrow \mathbb{R}, a \in \text{int } \mathcal{D}_f$. Ekkor
+\[
+\begin{split}
+f \in & \; D\{a\} \\
+& \Updownarrow \\
+\exists A \in \mathbb{R}, \; \text{és} \; \epsilon : \mathcal{D}_f \rightarrow \mathbb{R}, \lim_a{\epsilon} = 0 \quad \text{úgy, hogy } & \; f(x)- f(a) = A(x-a)+\epsilon (x)(x-a)
+\end{split}
+\]
+\textbf{Bizonyítás:}
+\[
+\Longrightarrow f \in D\{a\} \; \text{esetén legyen} \; A:=f'(a), \; \text{és} \epsilon (x) := \frac{f(x)-f(a)}{x-a} -f'(a).
+\]
+Ezzel a választással egyrészt
+\[
+A(x-a) + \epsilon (x)(x-a) =f'(a)(x-a)+\Big(\frac{f(x)-f(a)}{x-a}-f'(a)\Big)(x-a) =f(x)-f(a),
+\]
+másrészt a differenciálhatóság miatt
+\[
+\lim\limits_{x\rightarrow a} \epsilon (x) = \lim\limits_{x\rightarrow a} \frac{f(x)-f(a)}{x-a}-f'(a)=0.
+\]
+$\Longleftarrow$ Ha az $A$ szám és az $\epsilon$ függvény teljesítik az állítást feltételeit, akkor 
+\[
+\frac{f(x)-f(a)}{x-a} = A + \epsilon (x), és \lim\limits_{x-a} \frac{f(x)-f(a)}{x-a} = A = f'(a) \in \mathbb{R}
+\]
+\newpage
+\section{A folytonosság és a differenciálhatóság kapcsolata}
+\textbf{Tétel:}
+\[
+f \in \mathbb{R} \rightarrow \mathbb{R}, \quad f \in D\{a\} \quad \Longrightarrow \quad  f \in C\{a\}
+\]
+\textbf{Szóban:} Ha egy valós-valós függvény differenciálható egy pontban, akkor folytonos abban a pontban. \\ \\
+\textit{Megjegyzés:} Fordítva nem igaz. Az abszolútérték függvény folytonos a $0$ pontban de nem deriválható $0$-ban. Kompatibilitási probléma is van: folytonosság esetében nem szükséges, hogy a pont az értelmezési tartomány belső pontja legye. \\ \\
+\textbf{Bizonyítás:} \\ \\
+Nyilván $f(x)=\frac{f(x)-f(a)}{x-a}(x-a)+f(a). \; f$ differenciálhatósága miatt, ezért
+\[
+\lim_a f= \lim_{x\rightarrow a } \Big(\frac{f(x)-f(a)}{x-a}(x-a)+f(a)\Big) 	= f'(a)\cdot 0 + f(a)=f(a)
+\]
+\newpage
+\section{Deriválási szabályok}
+\textbf{Tételek:} \\ \\
+$f,g \in \mathbb{R} \rightarrow \mathbb{R}$ \\
+
+\begin{tabular}{c c c c c c c c}
+1. & $ f\in D\{a\} \text{ és } c \in \mathbb{R} \:$ & $\Longrightarrow$& $ c\cdot f \in D\{a\}, $ & $\text{és}$ & $ (c \cdot f)'(a) $&$=$&$c\cdot f'(a) $ \\
+2. & $f\in D\{a\} $&$\Longrightarrow$ &$ f+g\in D\{a\},$ &$ \text{és}$&$ (f+g)'(a) $&$=$&$f'(a) + g'(a)$   \\
+3. & $f\in D\{a\}$ & $\Longrightarrow $ & $ f\cdot g \in D\{a\}, $&$  \text{és} $&$ (f\cdot g)'(a) $&$=$&$f'(a)g(a)+ f(a)g'(a)$ \\
+4. & $f\in D\{a\} \text{ és }  g(a)\neq 0 $&$\Longrightarrow$&$  \frac{f}{g} \in D\{a\},$&$  \text{és} $&$ \Big(\frac{f}{g} \Big)' (a)$&$ =$&$ \frac{f'(a)g(a)-f(a)g'(a)}{g^2(a)}$
+\end{tabular}
+\end{document}
