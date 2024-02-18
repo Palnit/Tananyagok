@@ -1,0 +1,177 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[magyar]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\author{Petrányi Bálint}\usepackage[pdfusetitle]{hyperref}
+\usepackage{titling}
+\usepackage[x11names]{xcolor}
+\usepackage{xparse}
+\usepackage{tcolorbox}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\graphicspath{ {./images/} }
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\date{\today}
+\author{Petrányi Bálint}
+\title{%
+	\textbf{Analzízis Alkalmazásai.} \\
+	\textbf{Programtervező informatikus A. szakirány} \\
+	RöpZh Tételek\\
+	\large 2023-2024. tanév 2. félév
+}
+\newcommand{\norm}[1]{\lVert #1 \rVert}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\CR}{\mathcal{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\CD}{\mathcal{D}}
+\newcommand{\m}{\varrho}
+\newcommand{\f}{\varphi}
+\newcommand{\met}[1]{\m \left( #1 \right)}
+\newcommand{\bb}[1]{\left( #1 \right)}
+\newcounter{count}
+%\setcounter{count}{#3} #1_{\thecount},\setcounter{count}{\numexpr\thecount+1} #1_{\thecount}, \ldots, #2_{#4} 
+\NewDocumentCommand{\ton}{ O{1} O{n} o o } {\IfValueTF{#3}{\IfValueTF{#4}{\setcounter{count}{#3} #1_{\thecount},\setcounter{count}{\numexpr\thecount+1} #1_{\thecount}, \ldots, #2_{#4}}{\setcounter{count}{#3} #1_{\thecount},\setcounter{count}{\numexpr\thecount+1} #1_{\thecount}, \ldots, #2_{n}}}{ #1, #1, \ldots, #2 }}
+\newcommand{\oneton}{1,2,\ldots ,n}
+\newcommand{\nrom}[1]{\lVert #1 \rVert}
+\newcommand{\angels}[1]{\langle #1 \rangle}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\braces}[1]{\left\lbrace #1 \right\rbrace}
+
+\newtheorem{tet}{Tétel}[section]
+\tcolorboxenvironment{tet}{
+  colback=blue!10!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt,right=2pt,top=2pt,bottom=2pt,
+  oversize=2pt,
+  sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+\newtheorem{defi}{Definíció}[section]
+\tcolorboxenvironment{defi}{
+  colback=green!15!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt,right=2pt,top=2pt,bottom=2pt,
+  oversize=2pt,
+  sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+\tcolorboxenvironment{proof}{
+  colback=red!30!white,
+  boxrule=0pt,
+  boxsep=1pt,
+  left=2pt,right=2pt,top=2pt,bottom=2pt,
+  oversize=2pt,
+  sharp corners,
+  before skip=\topsep,
+  after skip=\topsep,
+}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\section{1. week}
+\subsection{Mikor mondjuk, hogy a $\f$ függvény az $f(x, y) = 0$ egyenletnek egy implicit megoldása?}
+\begin{defi}
+Legyen $f \in \R^2 \rightarrow \R$ egy adott függvény. Ha létezik olyan $I \subset \R$ nyílt intervallum és $\f : I \rightarrow \R$ függvény, hogy 
+\[
+f(x,\f(x)) = 0 \quad (\forall x \in I)
+\]
+akkor azt mondjuk, hogy a $\f$ függvény az $f(x, y) = 0$ implicit alakban van megadva
+\end{defi}
+\subsection{Hogyan szól az egyváltozós implicitfüggvény-tétel?}
+\begin{tet}[Egyváltozós implicitfüggvény-tétel.]
+Legyen $\Omega \in \R^2$ nyílt halmaz és $f : \Omega \rightarrow \R$. Tegyük fel, hogy
+\begin{enumerate}
+\item[(a)] $f$  folytonosan deriválható $\Omega$-n
+\item[(b)] az $(a,b) \in \Omega$ pontban $f(a,b) = 0 $ és $\partial_2 f(a,b) \neq 0$
+\end{enumerate}
+Ekkor:
+\begin{enumerate}
+\item Van olyan $K(a) =: U$ és $K(b) =: V$ környezet $\R$-ben, hogy minden $x \in U$ ponthoz létezik egyetlen $\f(x) \in V$, amelyre $f(x, \f(x)) = 0$
+\item Az így definiált $\f : U \rightarrow V$ függvény folytonosan deriválható $U$-n, továbbá $\forall x \in U$-ra  $\partial_2 f(x,\f(x)) \neq 0$ és
+\end{enumerate}
+\[
+\f'(x) = \frac{\partial_1 f (x,\f(x))}{\partial_2 f(x,\f(x))}
+\]
+\end{tet}
+\subsection{Igaz-e a következő állítás? \textit{"Az implicitfüggvény-tétel egy explicit előállítást ad az $f(x, y) = 0$ egyenlet implicit megoldására."} A válaszát indokolja meg!}
+Nem igaz
+
+Világos, hogy $\f(a) = b$. A $\f$ függvényt az $f(x, \f(x)) = 0 \; \; (x \in U)$ egyenlőség "implicit" módon definiálja. Innen származik a tétel neve.
+A tétel csak a $\f$ implicit függvény létezéséről szól, ezt a függvényt általában nem tudjuk explicit képlettel előállítani. Ennek ellenére a $\f'(x)$ deriváltat ki tudjuk számítani, ha ismerjük a $\f(x)$ függvényértéket.
+\subsection{A deriválási szabályok alapján hogyan vezethető le az $f(x, \f(x)) = 0 \; (x \in U)$ egyenlőségből az implicit megoldás deriváltjára vonatkozó összefüggést az $U$ környezetben?}
+\[
+F(x) := f(x,\f(x)) \quad (x \in U)
+\]
+Mivel $\forall x \in U $  esetén $F(x) = 0$, ezért $F'(x) = 0$. Az összetett függvény deriválási szabálya szerint
+\begin{align*}
+0 = F'(x) = \partial_1 f (x, \f(x)) &\cdot 1 + \partial_2 f(x,\f(x)) \cdot \f'(x) \quad (x\in U) \\
+\text{ezért } \forall x \in U \text{ pontban:} \\
+\f'(x) &= \frac{\partial_1 f (x,\f(x))}{\partial_2 f(x,\f(x))}
+\end{align*}
+\subsection{Mit jelent az, hogy egy $\R^n \rightarrow \R^n$ típusú függvény lokálisan invertálható?}
+\begin{tet}[Lokális invertálhatóság.]
+Legyen $I \subset \R$ nyílt intervallum és $f : I \rightarrow \R$.
+
+T.f.h. $f \in C^1(I)$ és egy $a \in I$ pontban $f'(a) \neq 0$
+
+Ekkor $f$ az $a$-ban lokálisan invertálható, azaz $\exists U := K(a)$ és $V:= f[U]$ nyílt halmaz, hogy az  $f_{\mid_U} : U \rightarrow V$ függvény bijekció, ezért invertálható. Az $f_{\mid_U}^{-1}$ lokális inverz folytonosan deriválható $V$-n, és
+\[
+(f^{-1})' (y) = \frac{1}{f'(f^{-1}(y))} \quad (y \in V)
+\]
+\end{tet}
+\subsection{Igaz-e, hogy minden $\R^2 \rightarrow \R^2$ típusú, folytonos és lokálisan invertálható függvény globálisan is invertálható? A válaszát indokolja meg!}
+Nem igaz\\
+Például az 
+\[
+f(x,y) := (e^x \cos y, e^x \sin y) \quad ((x,y)\in \R^2)
+\]
+folytonos függvény a sík minden $\pi$-nél kisebb sugarú körlapján injektív, de globálisan nem injektív, hiszen
+\[
+f(x,y+2\pi) = f(x,y) \quad (\forall (x,y)\in \R^2)
+\]
+\subsection{Hogyan szól az inverzfüggvény-tétel?}
+\begin{tet}[Inverzfüggvény-tétel.]
+Legyen $\Omega \subset \R^n \; (x\in\N)$  nyílt halmaz és $f: \Omega \rightarrow \R^n$. T.f.h
+\begin{enumerate}
+\item[(a)] $f$ folytonosan deriválható $\Omega$-n
+\item[(b)] egy $a \in \Omega$ pontban $\det f'(a) \neq 0$
+\end{enumerate}
+Ekkor
+\begin{enumerate}
+\item $f$ lokálisan invertálható, azaz van olyan, az $a \in \Omega$ pontot tartalmazó $U$ nyílt halmaz, hogy ha $V := f[U]$, akkor az $f_{\mid_U} : U \rightarrow V$ függvény bijekció (következésképpen invertálható).
+\item Az $\bb{f_{\mid_U}}^{-1}$ 
+lokális inverz folytonosan deriválható $V$-n és
+\[
+\bb{f^{-1}}'(y) = \left[ f'(f^{-1}(y)) \right]^{-1} \quad (y \in V)
+\]
+\end{enumerate}
+\end{tet}
+\subsection{Igaz-e a következő állítás? \textit{"Az inverzfüggvény-tétel egy explicit előállítást ad bizonyos feltételeket teljesítő függvények inverzére."} A válaszát indokolja meg!}
+Nem igaz
+
+Az $f$ függvény explicit alakjának az ismeretében $f^{-1}$ helyettesítési értékeire általában nincs explicit képlet, viszont
+\[
+\bb{f^{-1}}'(y) = \left[ f'(f^{-1}(y)) \right]^{-1} \quad (y \in V)
+\]
+alapján a derivált helyettesítési értékei az $f'$ helyettesítési értékeinek felhasználásával már kiszámíthatók, ha ismerjük az inverz függvény értékét a megfelelő pontban
+\end{document}
