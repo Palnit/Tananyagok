@@ -318,4 +318,68 @@ H_g := \braces{x\in U \mid g(x) = 0}
 \]
 halmaz korlátos és zárt. Ebben az esetben a Weierstrass-tétel
 garantálja a feltételes abszolút szélsőértékhelyek létezését, amelyek a Lagrange-függvény stacionárius pontjai lesznek.
+\newpage
+\section{week}
+\subsection{Mit nevezünk szakaszonként sima útnak?}
+\begin{defi}
+A $\f : \boxes{a,b} \to \R^n$ függvény \textbf{szakaszonként sima
+út}, ha
+\begin{itemize}
+\item $\f \in C \boxes{a,b}$
+\item $\exists a = t_0 < t_ 1 < \ldots < t_m = b \; (m \in \N )$  olyan felosztása $\boxes{a,b}$-nek , amelyre tetszőleges $k = 0,1,\ldots,m-1$ index esetén $\f_{\vert_{\boxes{t_k,t_{k+1}}}}$ sima út
+\end{itemize}
+\end{defi}
+\subsection{Mit nevezünk egy út ellentettjének?}
+Egy $\f$ út $\tilde{\f}$ \textbf{ellentettjét} így definiáljuk:
+\[
+\tilde{\f} := \f(b+a-t) \quad (a \leq t \leq b)
+\]
+\subsection{Mit nevezünk az $u$ és $v$ pontokat összekötő szakasznak?}
+Legyenek adottak az $u,v \in \R^n$  pontok, és legyen
+\[
+\f_{uv}(t) := u+t(v-u) \quad (0 \leq t \leq 1)
+\]
+Ekkor $\f_{uv}$ egy sima út, az $u$-t és $v$-t összekötő szakasz, amelynek a $\f_{uv}(0) = u$ a kezdőpontja, a $\f_{uv}(1) = v$ pedig a végpontja.
+\subsection{Mikor mondjuk, hogy egy halmaz összefüggő, és mit nevezünk tartománynak?}
+Azt mondjuk, hogy az $U \subset \R^n$ nyílt halmaz \textbf{összefüggő}, ha bármely két pontja összeköthető $U$-ban haladó töröttvonallal. Az összefüggő nyílt halmazokat röviden \textbf{tartománynak} nevezzük.
+\subsection{Adja meg az $f$ függvény $\f$ útra vett vonalintegráljának fogalmát!}
+\begin{defi}
+T.f.h $U \subset \R^n \quad (n \in \R^n)$ tartomány, az $f: U \to  \R^n$ függvény folytonos, továbbá $\f : \boxes{a,b} \to  \R^n$ egy $U$-ban  haladó szakaszonként sima út. Ekkor az $f$ függvény $\f$ út vett vonalintegrálját így értelmezzük:
+\[
+\int\limits_\f f := \int\limits^b_a \angels{f \circ \f,\f'} = \int\limits^b_a \angels{f(\f(t)), \f'(t)} dt.
+\]
+\end{defi}
+\subsection{Mondja ki a vonalintegrál utak egyesítéséről szóló állítás!}
+\begin{tet}
+Legyen $U \subset \R^n \quad (n\in \N)$ egy tartomány és t.f.h az $f,g : U \to \R^n$ függvények folytonosak.
+Ha a $\f,\psi$ utak $U$-beliek és létezik a $\f \vee \psi $ egyesítésük, akkor
+\[
+\int\limits_{\f \vee \psi } f = \int\limits_\f f + \int\limits_\psi f
+\]
+\end{tet}
+\subsection{Mondja ki a vonalintegrál utak ellentettjéről szóló állítás!}
+\begin{tet}
+Legyen $U \subset \R^n \quad (n\in \N)$ egy tartomány és t.f.h az $f,g : U \to \R^n$ függvények folytonosak.
+bármilyen $U$-beli $\f$ út $\tilde{\f}$ ellentettjére
+\[
+\int\limits_{\tilde{\f}} f = -\int\limits_\f f 
+\]
+\end{tet}
+\subsection{Adja meg egy $f$ vektormező primitív függvényének fogalmát!}
+\begin{defi}
+Legyen $U \subset \R^n$ egy tartomány és  $f = (f_1,\ldots,\f_n): U \to \R^n$ adott vektormező Azt mondjuk, hogy a $F : U \to \R$ függvény a $f$ függvény \textbf{primitív függvénye} ha $F$ differenciálható $U$-ban, és $F' = f$ azaz  ha minden $x \in U$ pontban
+\[
+F'(x) = \bb{\partial_1F(x),\ldots,\partial_nF(x)} = \bb{f_1(x),\ldots,f_n(x)}
+\]
+\end{defi}
+\subsection{Mondja ki a Newton-Leibniz-tételt!}
+\begin{tet}[Newton–Leibniz]
+Legye $U \subset \R^n$ egy tartomány, és t.f.h. az $f : U \to \R^n$
+folytonos függvénynek van primitív függvénye. Ekkor tetszőleges $U$-ban haladó $\f : [a, b] \to U$ szakaszonként sima út esetén a $f$ bármelyik $F$ primitív függvényével
+\[
+\int\limits_\f f = F(\f(b))-F(\f(a))
+\]
+\end{tet}
+\subsection{Igaz-e a következő állítás? "Ha a folytonos $f : U \to \R^n$ függvénynek van primitív függvénye, akkor $f$ vonalintegráltjának értéke nulla tetszőleges $U$-ban haladó zárt úton" A válaszát indokolja meg!}
+
 \end{document}
