@@ -381,5 +381,81 @@ folytonos függvénynek van primitív függvénye. Ekkor tetszőleges $U$-ban ha
 \]
 \end{tet}
 \subsection{Igaz-e a következő állítás? "Ha a folytonos $f : U \to \R^n$ függvénynek van primitív függvénye, akkor $f$ vonalintegráltjának értéke nulla tetszőleges $U$-ban haladó zárt úton" A válaszát indokolja meg!}
+\newpage
+\section{week}
+\subsection{Mit jelent, hogy egy vonalintegrál független az úttól?}
+\begin{tet}
+Legyen $U \subset \R^n$ tartomány és $f = (f_1,\ldots,f_n): U \to \R^n$ folytonos függvény.
 
+A vonalintegrál független az úttól. Ez azt jelenti, hogy ha az $U$-be
+\[
+\f : \boxes{a,b} \to U \quad \text{ és } \quad \psi : \boxes{c,d} \to U
+\]
+szakaszonként sima utak $\f(a) = \psi(c)$ és $\f(b) = \psi(d)$ azaz a $\f,\psi$ utak ugyanazt a kezdőpontot és végpontot köti össze $U$-ban, akkor
+\[
+\int\limits_\f f = \int\limits_\psi f
+\]
+\end{tet}
+\subsection{Milyen állításokat ismer, amelyek ekvivalensek azzal, hogy minden vonalintegrál független az úttól?}
+\begin{tet}
+Legyen $U \subset \R^n$ tartomány és $f = (f_1,\ldots,f_n): U \to \R^n$ folytonos függvény.
+\begin{enumerate}
+\item A $f$-nek létezik primitív függvénye $U$-n, vagyis $\exists F : U \to \R$ differenciálható függvény, amelyre minden $x \in U$ pontban
+\[
+F'(x) = \bb{\partial_1F(x),\ldots,\partial_nF(x)} = \bb{f_(x),\ldots,f_n(x)}
+\]
+\item Minden $U$-ban haladó $\f : \boxes{a,b} \to U $ U szakaszonként sima zárt (az $\f(a) = \f(b)$) útra
+\[
+\oint\limits_\f f = 0
+\]
+\end{enumerate}
+\end{tet}
+\subsection{Mondja ki a tanult szükséges feltételt primitív függvény létezésére vonatkozóan!}
+\begin{tet}[Szükséges feltétel primitív függvény létezésére]
+Legye $U \subset \R^n$ tartomány és $f = \bb{f_1,\ldots,f_n} : U \to \R^n$ deriválható függvény. Ha $f$-nek létezik primitív függvénye $U$-n, akkor az $f'$ deriváltmátrix szimmetrikus, azaz minden $x \in U$ pontban
+\[
+\partial_if_j(x)=\partial_jf_i(x) \quad \bb{i,j = 1,2,\ldots,n}
+\]
+\end{tet}
+\subsection{Igaz-e a következő állítás? "Minden $f : \R^2 \to \R^2$ folytonos függvénynek van primitív függvénye." A válaszát indokolja meg!}
+Nem igaz
+Például
+\[
+f(x,y) := \bb{-\frac{y}{x^2+y^2},\frac{x}{x^2+y^2}} \quad \bb{(0,0) \neq (x,y) \in \R^2}
+\]
+Ennek a függvénynek $\int\limits_\f f \neq 0$ Mivel $\f$ zárt út $\mathcal{D}_f$-ben ezért $f$-nek nincs primitív függvénye. Az az deriválható még sincs primitív függvénye
+\subsection{Mondja ki a tanult elégséges feltételt primitív függvény létezésére vonatkozóan!}
+\begin{tet}[Elégséges feltétel primitív függvény létezésére]
+Tekintsük az $U \subset \R^n \quad (n\in \N)$ csillagtartományon értelmezett $f=\bb{f_1,\ldots,\f_n} : U \to \R^n$ folytonosan deriválható függvényt.
+T.f.h $\forall x \in U$ esetén az $f'(x)$ deriváltmátrix szimmetrikus, azaz minden $x \in U$ pontban
+\[
+\partial_if_j(x)=\partial_jf_i(x) \quad \bb{i,j = 1,2,\ldots,n}
+\]
+Ekkor $f$-nek van primitív függvénye, azaz $\exists F: U \to \R$ differenciálható függvény, hogy $\forall i = 1,\ldots,n$ index esetén $\forall x \in U$ pontban $\partial_iF(x)=f_i(x)$ 
+\end{tet}
+\subsection{Adja meg egy $v$ vektormező divergenciájának fogalmát!}
+\begin{defi}
+A $v = \bb{v_1,v_2,v_3} : D \to \R^3 \; \bb{D \subset \R^3 \text{ tartomány} }$ deriválható vektormező $v'$ deriváltmátrixának főátlójában álló elemeinek összegét, azaz a
+\[
+\text{div } \textbf{v} := \partial_1v_1+\partial_2v_2 + \partial_3v_3 : D \to \R
+\]
+függvényt a $v$ vektormező \textbf{divergenciájának} nevezzük.
+\end{defi}
+\subsection{Adja meg egy $v$ vektormező rotációjának fogalmát!}
+\begin{defi}
+A $v = \bb{v_1,v_2,v_3} : D \to \R^3 \; \bb{ D \subset \R^3  \text{ tartomány} }$ deriválható vektormező \textbf{rotációjának} a 
+\[
+\text{rot } \textbf{v}:=\boxes{\partial_2V_3-\partial_3V_2 \;\; \partial_3V_1-\partial_1V_3 \;\; \partial_1V_2-\partial_2V_1}
+\]
+függvényt nevezzük.
+\end{defi}
+\subsection{Mondja ki a Green-tételt!}
+\begin{tet}[Green-tétel]
+T.f.h $\f : \boxes{0,1} \to \R^2$ pozitív irányítású, szakaszonként sima, egyszerű, zárt görbe, és $S \subset \R^2$ az általa határolt síkrész.
+Legye $f \in \R^2 \to \R^2, S \subset \CD_f$ folytonosan differenciálható függvény. Ekkor
+\[
+\int\limits_{\partial S} f = \iint\limits_s (\partial_1f_2-\partial_2f_1)
+\]
+ahol $\partial S$ az $S$ határát jelöli és $\f$ a $\partial S$ egy paraméterezése.
+\end{tet}
 \end{document}

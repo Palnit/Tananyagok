@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  4 MAR 2024 08:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  11 MAR 2024 08:50
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -708,11 +708,12 @@ m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )) =
 [1
 
 
-{C:/Users/palint/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}])
+{C:/Users/palint/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2])
 \tf@toc=\write5
 \openout5 = `AnalAlkZhTet.toc'.
 
- [2]
+
+[3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 95.
@@ -774,7 +775,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 124.
 
-[3]
+[4]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 134.
@@ -815,7 +816,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 145.
 
-[4] [5]
+[5] [6]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 182.
@@ -848,13 +849,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 194.
 
-[6] [7] [8]
+[7] [8] [9]
 Overfull \hbox (33.78737pt too wide) in paragraph at lines 306--306
 \T1/cmr/bx/n/14.4 zet-ni egy egy-vál-to-zós függ-vény széls®érték-problémájára?
  
  []
 
-[9]
+[10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 337.
@@ -891,16 +892,16 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 345.
 
-[10]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 368.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 368.
-
 [11]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 368.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 368.
+
+[12]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 383.
@@ -933,17 +934,72 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 383.
 
-[12] (C:\Users\palint\Desktop\elte\Tananyagok\Analizis 4\build\AnalAlkZhTet.aux
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
+[]\T1/cmr/m/it/12 Legye
+ []
+
+[14]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 420.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 420.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\to' on input line 420.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 420.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 420.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 429--431
+[]
+ []
+
+
+Underfull \hbox (badness 4266) in paragraph at lines 429--431
+\T1/cmr/m/it/12 Tekintsük az $\OML/cmm/m/it/12 U \OMS/cmsy/m/n/12 ^^Z \U/msb/m/
+n/12 R[] \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 N
+\OT1/cmr/m/n/12 )$ \T1/cmr/m/it/12 csil-lag-tar-to-má-nyon ér-tel-me-zett
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 436.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 436.
+
+[15]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 444.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 444.
+
+[16] (C:\Users\palint\Desktop\elte\Tananyagok\Analizis 4\build\AnalAlkZhTet.aux
 )
 Package rerunfilecheck Info: File `AnalAlkZhTet.out' has not changed.
-(rerunfilecheck)             Checksum: 63D19EB4ECB94FDDBE79DB120B58986A;15813.
+(rerunfilecheck)             Checksum: 187620F5DC3833F720C51C60B002391B;19484.
  ) 
 Here is how much of TeX's memory you used:
- 22130 strings out of 478582
- 413955 string characters out of 2843872
- 711095 words of memory out of 3000000
- 39896 multiletter control sequences out of 15000+600000
- 486632 words of font info for 71 fonts, out of 8000000 for 9000
+ 22176 strings out of 478582
+ 414504 string characters out of 2843872
+ 712099 words of memory out of 3000000
+ 39916 multiletter control sequences out of 15000+600000
+ 489401 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,12n,80p,1213b,515s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
@@ -973,9 +1029,9 @@ m/cmsy10.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
 Output written on "C:\Users\palint\Desktop\elte\Tananyagok\Analizis 4\build\Ana
-lAlkZhTet.pdf" (12 pages, 333397 bytes).
+lAlkZhTet.pdf" (16 pages, 361533 bytes).
 PDF statistics:
- 731 PDF objects out of 1000 (max. 8388607)
- 65 named destinations out of 1000 (max. 500000)
- 245 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 824 PDF objects out of 1000 (max. 8388607)
+ 87 named destinations out of 1000 (max. 500000)
+ 317 words of extra memory for PDF output out of 10000 (max. 10000000)
 
