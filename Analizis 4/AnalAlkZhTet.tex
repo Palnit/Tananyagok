@@ -458,4 +458,75 @@ Legye $f \in \R^2 \to \R^2, S \subset \CD_f$ folytonosan differenciálható füg
 \]
 ahol $\partial S$ az $S$ határát jelöli és $\f$ a $\partial S$ egy paraméterezése.
 \end{tet}
+\newpage
+\section{week}
+\subsection{Mit nevezünk explicit elsőrendű közönséges differenciálegyenletnek? Fogalmazza meg pontosan, hogy milyen feladatot oldunk meg ebben az esetben!}
+\begin{defi}
+\textbf{Feladat}
+
+\underline{Adott:} \begin{itemize}
+\item $D \subset \R^2$ tartomány
+\item $f : D \to \R $ folytonos függvény
+\end{itemize}
+\underline{Keresünk} olyan $I \subset R$ nyílt intervallumot és $\f : I \to R$ deriválható függvényt, amelyre igazak a következő állítások:
+\begin{align*}
+\bb{x,\f(x)} \in D \quad &\bb{\forall x \in I} \\
+\f'(x) = f\bb{x,\f(x)} \quad &\bb{\forall x \in I}
+\end{align*}
+Ezt a feladatot explicit elsőrendű közönséges differenciálegyenletnek fogjuk nevezni.
+\end{defi}
+\subsection{Mit nevezünk az explicit elsőrendű közönséges differenciálegyenletre vonatkozó kezdetiérték problémának? Fogalmazza meg pontosan, hogy milyen feladatot oldunk meg ebben az esetben!}
+\begin{defi}
+Tekintsük az $y' = f \circ (id, y)$ differenciálegyenletet, ahol $f : D \to \R \; (D \subset \R^2$ tartomány) folytonos függvény. Legyen $(\tau, \xi) \in D$ egy tetszőleges pont. Keressünk olyan $I \subset \R$ nyílt intervallumot és $\f : I \to R$ függvényt, amelyre a következők teljesülnek:
+\begin{itemize}
+\item $\f$ az $y' = f \circ (id,y)$ d.e. megoldása $I$-n
+\item $\tau \in I$
+\item $\f(\tau) = \xi$ 
+\end{itemize} 
+Ezt a feladatot kezdetiérték-problémának nevezzük.
+\end{defi}
+\subsection{Mit állít a Cauchy Peano-féle egzisztenciatétel?}
+\begin{tet}[A Cauchy–Peano-féle egzisztenciatétel]
+T.f.h a $D \subset \R^2$ tartományon értelmezett $f: D \to \R$ függvény folytonos. Ekkor bármely $\bb{\tau,\xi} \in D$ esetén az 
+\[
+y' = f \circ \bb{id,y} \quad \; y(\tau) = \xi
+\]
+kezdetiérték-problémának van megoldása.
+\end{tet}
+\subsection{Mit jelent, hogy egy kezdetiérték-probléma globálisan egyértelműen oldható meg?}
+\begin{defi}
+Az $y' = f \circ \bb{id,y}, \; y(\tau) = \xi$ k.é.p \textbf{globálisan egyértelműen oldható meg}, ha létezik olyan $\tilde{I} \subset \R$ nyílt intervallum és olyan $\tilde{\f}: \tilde{I} \to \R$ megoldása a k.é.p.-nak, hogy annak bármely más megoldása $\tilde{\f}$ egy leszűkítése. Ebben az esetben
+a $\tilde{\f}$ függvényt a k.é.p. teljes megoldásának nevezzük.
+\end{defi}
+\begin{tet}
+Az $y' = f \circ \bb{id,y}, \; y(\tau) = \xi$ k.é.p globálisan egyértelműen oldható meg, akkor és csak akkor ha a k.é.p bármely $\f,\psi$ megoldására a
+\[
+\f(x) = \psi(x) \quad \bb{x \in \CD_\f \cap \CD_\psi}
+\]
+egyenlőség teljesül.
+\end{tet}
+\subsection{Mit jelent, hogy egy kezdetiérték-probléma lokálisan egyértelműen oldható meg?}
+\begin{defi}
+Az $y' = f \circ \bb{id,y}, \; y(\tau) = \xi$ k.é.p \textbf{lokálisan egyértelműen oldható meg}, vagy a megoldása \textbf{lokálisan egyértelmű}, ha a $\bb{\tau,\xi}$ pontnak létezik olyan $K(\tau,\xi) \subset \R \times \R$ környezete, hogy az $f$ függvényt erre leszűkítve a megfelelő k.é.p. már globálisan egyértelműen oldható meg.
+\end{defi}
+\subsection{Mondja ki a kezdetiérték-problémák globálisan és lokálisan egyértelmű megoldhatóságának a kapcsolatáról szóló tétel!}
+\begin{tet}
+Az $y' = f \circ \bb{id,y}, \; y(\tau) = \xi$ k.é.p minden $\bb{\tau,\xi} \in D$ esetén lokálisan egyértelműen oldható meg akkor minden k.é.p. megoldása globálisan is egyértelmű.
+\end{tet}
+\subsection{Mit nevezünk szétválasztható változójú differenciálegyenletnek? Fogalmazza meg pontosan, hogy milyen feladatot oldunk meg ebben az esetben!}
+\begin{defi}
+\textbf{Feladat}
+
+\underline{Adott:} \begin{itemize}
+\item $I,J \subset \R$ nyílt intervallum
+\item $g:I \to \R$ és $h:J\to \R$ folytonos függvények
+\end{itemize}
+\underline{Keresünk} olyan $I_1 \subset I$ nyílt intervallumot és $\f : I_1 \to J$ függvényt, amelyre:
+\[
+\f'(x) = g(x) \cdot h(\f(x)) \quad (\forall x \in I_1)
+\]
+Ezt a feladatot szétválasztható változójú d.e.-nek nevezzük
+\end{defi}
+\subsection{Mit tud mondani a szétválasztható változójú differenciálegyenletre vonatkozó kezdetiérték problémák megoldhatóságát illetően?}
+
 \end{document}

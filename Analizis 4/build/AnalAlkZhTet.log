@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  11 MAR 2024 08:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  18 MAR 2024 08:49
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -989,16 +989,16 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 444.
 
-[16] (C:\Users\palint\Desktop\elte\Tananyagok\Analizis 4\build\AnalAlkZhTet.aux
-)
+[16] [17] [18] [19]
+(C:\Users\palint\Desktop\elte\Tananyagok\Analizis 4\build\AnalAlkZhTet.aux)
 Package rerunfilecheck Info: File `AnalAlkZhTet.out' has not changed.
-(rerunfilecheck)             Checksum: 187620F5DC3833F720C51C60B002391B;19484.
+(rerunfilecheck)             Checksum: 24F877BFF1898DD11574D73167F39FE3;25071.
  ) 
 Here is how much of TeX's memory you used:
- 22176 strings out of 478582
- 414504 string characters out of 2843872
- 712099 words of memory out of 3000000
- 39916 multiletter control sequences out of 15000+600000
+ 22219 strings out of 478582
+ 415116 string characters out of 2843872
+ 713102 words of memory out of 3000000
+ 39939 multiletter control sequences out of 15000+600000
  489401 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,12n,80p,1213b,515s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1029,9 +1029,9 @@ m/cmsy10.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
 Output written on "C:\Users\palint\Desktop\elte\Tananyagok\Analizis 4\build\Ana
-lAlkZhTet.pdf" (16 pages, 361533 bytes).
+lAlkZhTet.pdf" (19 pages, 390718 bytes).
 PDF statistics:
- 824 PDF objects out of 1000 (max. 8388607)
- 87 named destinations out of 1000 (max. 500000)
- 317 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 921 PDF objects out of 1000 (max. 8388607)
+ 107 named destinations out of 1000 (max. 500000)
+ 389 words of extra memory for PDF output out of 10000 (max. 10000000)
 
