@@ -39,6 +39,7 @@
 \newcommand{\CL}{\mathcal{L}}
 \newcommand{\m}{\varrho}
 \newcommand{\f}{\varphi}
+\newcommand{\tf}{\tilde{\f}}
 \newcommand{\met}[1]{\m \left( #1 \right)}
 \newcommand{\bb}[1]{\left( #1 \right)}
 \newcounter{count}
@@ -528,5 +529,90 @@ Az $y' = f \circ \bb{id,y}, \; y(\tau) = \xi$ k.é.p minden $\bb{\tau,\xi} \in D
 Ezt a feladatot szétválasztható változójú d.e.-nek nevezzük
 \end{defi}
 \subsection{Mit tud mondani a szétválasztható változójú differenciálegyenletre vonatkozó kezdetiérték problémák megoldhatóságát illetően?}
+\newpage
+\section{week}
+\subsection{Mit nevezünk egzakt differenciálegyenletnek? Fogalmazza meg pontosan, hogy milyen feladatot oldunk meg ebben az esetben!}
+\begin{defi}
+Legyen adott $H \subset \R^2$ tartomány és a $g,h : H \to \R$ folytonos függvények. Tegyük fel még azt is, hogy $0 \notin \mathcal{R}_h$. Keresünk olyan $\f : \R \to \R$ differenciálható függvényt amelyre $\CD_\f$ nyílt intervallum $(x,\f(x)) \in H $ és:
+\[
+\f'(x) = -\frac{g(x,(\f(x)))}{h(x,\f(x))} \quad (x \in \CD_\f)
+\]
+Ezt a feladatot egzakt differenciálegyenletnek nevezzük, ha az
+\[
+\R^2 \supset H \ni (u,v) \mapsto (g(u,v),h(u,v)) \in \R^2
+\]
+függvénynek van primitív függvénye, azaz létezik olyan $F: H \to \R$ differenciálható függvény, amelyre az igaz, hogy
+\[
+\text{grad } F = (\partial_1F,\partial_2F) = (g,h)
+\]
+\end{defi}
+\subsection{Milyen tételt ismer az egzaktság eldöntésére?}
+\begin{tet}[Az egzaktság eldöntése.]
+Legye $H \subset \R^2 $ csillagtartomány (pl. konvex halmaz). T.f.h. $g,h \in C^1 (H,\R)$ valamint $0 \notin \CR_h$ Ekkor a
+\[
+\frac{dy}{dx} = \frac{g(x,y)}{h(x,y)} \quad \bb{(x,y) \in H}
+\] 
+d.e. pontosan akkor egzakt d.e., ha
+\[
+\partial_2g(u,v) = \partial_1h(u,v) \quad \bb{\forall (u,v) \in H}
+\]
+\end{tet}
+\subsection{Mit tud mondani az egzakt differenciálegyenletre vonatkozó kezdeti érték-probléma megoldhatóságáról és megoldása előállításáról?}
+\begin{tet}[Az egzakt d.e. megoldásainak előállítása.]
+Legyen $H \subset \R^2$ egy tetszőleges tartomány. T.f.h. $g,h \in C (H,\R)$ és $0 \notin \CR_h$. Ekkor minden $(\tau,\varepsilon) \in H $ esetén a
+\[
+\frac{dy}{dx} = - \frac{g(x,y)}{h(x,y)} \quad \bb{(x,y)\in H } \quad y(\tau) = \varepsilon
+\]
+kezdetiérték-probléma globálisan egyértelműen oldható meg. Ha $F : H \to \R $ jelöli a $(g,h) : H \to \R^2$ függvény egy primitív függvényét, akkor a $(\tau,\varepsilon)$ ponton átmenő $\tf$ teljes megoldásra az
+\[
+F(x,\tf(x)) = F(\tau,\varepsilon) \quad \bb{x \in CD_{\tf}}
+\]
+implicit egyenlet teljesül.
+\end{tet}
+\subsection{Mit nevezünk integráló tényezőnek?}
+Előfordulhat hogy a
+\[
+g(x,y)dx + h(x,y)dy = 0
+\]
+d.e. nem egzakt, de egzakttá tehető, vagyis az egyenlet egzakt lesz, ha megszorozzuk egy alkalmas pl. pozitív $\mu \in \R^2 \to \R $ függvénnyel, amelyet integráló tényezőnek vagy multiplikátornak szokás nevezni
+\subsection{Mit nevezünk elsőrendű lineáris differenciálegyenletnek? Fogalmazza meg pontosan,hogy milyen feladatot oldunk meg ebben az esetben!}
+\begin{defi}
+Legyen $I \subset \R$ nyílt intervallum, és t.f.h. $f,g : I \to \R$ folytonos függvények. Az 
+\[
+y'(x)+ f(x)\cdot y(x) = g(x) \quad \bb{x \in I} \text{ vagy } y' + f \cdot y = g
+\]
+feladatot elsőrendű lineáris d.e.-nek nevezzük.
+\end{defi}
+\subsection{Milyen alakban írható fel egy elsőrendű inhomogén lineáris differenciálegyenlet általános megoldása bizonyos homogén-inhomogén megoldások ismeretében?}
 
+\subsection{Mit nevezünk Bernoulli-féle differenciálegyenletnek? Fogalmazza meg pontosan, hogy milyen feladatot oldunk meg ebben az esetben!}
+\begin{defi}
+Legyen $I \in \R$ nyílt intervallum. T.f.h. $f, g \in C (I,\R)$ és $\alpha \in \R \setminus \braces{0,1}$ Ekkor az:
+\[
+y' + f \cdot y = g \cdot y^{\alpha} \quad \bb{y > 0}
+\]
+feladatot Bernoulli-féle d.e.-nek nevezzük.
+\end{defi}
+\subsection{Írja fel az explicit elsőrendű közönséges differenciálegyenletre vonatkozó kezdetiérték-problémát integrálegyenlet alakjában!}
+
+\subsection{Mit állít a Picard Lindelöf-féle egzisztencia- és unicitástétel?}
+\begin{tet}
+Legyen $n \in \N, D \subset \R \times \R^n$ egy tartomány és $(\tau,\varepsilon) \in D$ teszőleges. Tegyük fel, hogy
+\begin{enumerate}
+\item az $f: D \to \R^n$ függvény folytonos $D$-n,
+\item az $f$ függvény a $(\tau,\varepsilon)$ pontban a második változójában lokális Lipschitz-feltételnek tesz eleget, azaz
+\begin{align*}
+\exists K (\tau,\varepsilon) \subset D \subset \R \times \R^n \; \text{ és } \; \exists L:=L_{(\tau,\varepsilon)} > 0 \; \text{ hogy} \\
+\norm{f(x,u)-f(x,v)} \leq L\norm{u-v} \quad \bb{(x,u),(x,v) \in K(\tau,\varepsilon)} 
+\end{align*}
+\end{enumerate} 
+Ekkor az $y' = f \circ (id,y),\; y(\tau)= \varepsilon$ kezdetiérték-problémának létezik megoldása, és az lokálisan (következésképpen globálisan is) egyértelmű. 
+\end{tet}
+\subsection{Mit jelent, hogy az explicit elsörendü közönséges differenciálegyenletre vonatkozó kezdetiérték-problémának egy megoldása határtól határig halad egy tartományban!}
+\begin{defi}
+Legyen $f: D \to \R^n$, ahol $D \subset \R \times \R^n$. Azt mondjuk, hogy az $y' = f \circ (id,y) \; y(\tau)= \varepsilon$ k.é.p. $\f$ megoldása $D$-ben határtól határig halad, ha $D$ bármely $K$ kompakt részhalmazához vannak olyan $x_1,x_2 \in \CD_\f, x_1 < \tau < x_2$ pontok amellyel
+\[
+\bb{x_1,\f(x_1)} \notin K \; \text{ és } \;  \bb{x_2,\f(x_2)} \notin K
+\]
+\end{defi}
 \end{document}
