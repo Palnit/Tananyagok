@@ -37,6 +37,7 @@
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\CD}{\mathcal{D}}
 \newcommand{\CL}{\mathcal{L}}
+\newcommand{\CM}{\mathcal{M}}
 \newcommand{\m}{\varrho}
 \newcommand{\f}{\varphi}
 \newcommand{\tf}{\tilde{\f}}
@@ -615,4 +616,77 @@ Legyen $f: D \to \R^n$, ahol $D \subset \R \times \R^n$. Azt mondjuk, hogy az $y
 \bb{x_1,\f(x_1)} \notin K \; \text{ és } \;  \bb{x_2,\f(x_2)} \notin K
 \]
 \end{defi}
+\newpage
+\section{week}
+\subsection{Mit nevezünk elsőrendű lineáris differenciálegyenlet-rendszernek? Fogalmazza meg pontosan, hogy milyen feladatot oldunk meg ebben az esetben!}
+\begin{defi}
+Legyen $n \in \N, I \subset \R $ nyílt intervallum, és t.f.h. az
+\[
+A : I \to \R^{n \times n} \quad \text{ és a } \quad b: I \to \R^n
+\]
+adott folytonos függvények. Ekkor az
+\[
+y'(x) = A(x) \cdot y(x) + b(x) \quad \bb{x \in I} \quad \text{ vagy } \quad y' = A \cdot y + b
+\]
+feladatot elsőrendű lineáris differenciálegyenlet-rendszernek (röviden lineáris d.e.r.) nevezzük.
+\end{defi}
+\subsection{Mit tudunk mondani egy elsőrendű lineáris differenciálegyenlet-rendszerre vonatkozó kezdetiérték-probléma megoldhatóságáról?}
+\begin{tet}
+Az (LKEP) k.é.p. minden $\tau \in I$ és $\varepsilon \in \R^n$ esetén globálisan egyértelműen oldható meg, és a teljes megoldás értelmezési tartománya az egész $I$ intervallum.
+\end{tet}
+\subsection{Mit nevezünk alaprendszernek elsőrendű lineáris differenciálegyenlet-rendszerek esetén?}
+\begin{tet}
+Az $\mathcal{M}_h$ lineáris térnek egy
+\[
+\f^{(k)} = \bb{\f_1^{(k)},\f_2^{(k)},\ldots,\f_n^{(k)}} \quad  \bb{k= 1,2,\ldots,n}
+\]
+bázisát az $y' = A \cdot y$ homogén d.e.r. egy alaprendszerének nevezzük
+\end{tet}
+\subsection{Mit nevezünk alapmátrixnak elsőrendű lineáris differenciálegyenlet-rendszerek esetén?}
+\begin{tet}
+Az $\mathcal{M}_h$ lineáris térnek az alaprendszereiből mint oszlopvektorokból képzett
+\[
+\Phi := \boxes{\f^{(1)} \; \f^{(2)} \; \ldots \; \f^{(n)}} = \begin{bmatrix}
+\f_1^{(1)} & \f_1^{(2)} & \ldots & \f_1^{(n)} \\
+\f_1^{(2)} & \f_2^{(2)} & \ldots & \f_2^{(n)} \\
+\vdots & \vdots & \vdots & \vdots \\
+\f_n^{(1)} & \f_n^{(2)} & \ldots & \f_n^{(n)}
+\end{bmatrix}
+\]
+mátrixfüggvényt az egyenlet egy alapmátrixának nevezzük
+\end{tet}
+\subsection{Mit nevezünk egy megoldásrendszer Wronski-féle determinánsának elsőrendű lineáris differenciálegyenlet-rendszerek esetén?}
+\begin{tet}
+Az $\mathcal{M}_h$ lineáris térnek és ahol $\Phi$ az $y' = A \cdot y$ homogén lineáris d.e.r. egy alapmátrixa
+\[
+W(x) := \det \Phi(x) \quad \bb{x \in I}
+\]
+képlettel definiált $W$ függvény a megoldásrendszer Wronski-féle determinánsa.
+\end{tet}
+\subsection{Milyen jellegzetes tulajdonsága van egy alaprendszer Wronski-féle determinánsának?}
+Nagyon nem vagyok ebben biztos:
+\begin{tet}
+Legyen $\f^{(1)},\f^{(2)},\ldots,\f^{(n)}$ az $y' = A \cdot y$ homogén d.e.r. egy alaprendszere és $\Phi$ egy alapmátrixa. Ekkor a $\Phi : I \to \R^{n \times n}$ mátrixfüggvény a homogén egyenletnek akkor és csak akkor alapmátrixa, ha valamilyen $x_0 \in I $ esetén 
+\[
+W(x_0) := \det \Phi(x_0) \neq 0
+\]
+\end{tet}
+\subsection{Milyen alakban írható fel egy elsőrendű inhomogén lineáris differenciálegyenlet-rendszer általános megoldása bizonyos homogén-inhomogén megoldások ismeretében?}
+\begin{tet}
+Legyen $\psi_p$ az (IH) d.e.r egy ismert (ún. partikuláris) megoldása. Ekkor
+\[
+\CM_ih = \CM_h + \psi_p := \braces{\f + \psi_p \lvert \f \in \CM_h}
+\]
+Az inhomogén lineáris d.e.r. általános megoldása:
+\[
+\psi(x) = \Phi(x) \cdot c + \psi_p(x) \quad \bb{x \in I}
+\]
+alakú ahol $\Phi$ az $y' = A \cdot y$ homogén lineáris d.e.r. egy alapmátrixa és $c \in \R^{n \times 1 }$ tetszőleges oszlopvektor
+\end{tet}
+
+\subsection{Tegyük fel, hogy az elsőrendű állandó együtthatós lineáris differenciálegyenlet-rendszer együtthatókból álló $A \in \R^{n \times n}$ mátrixnak van $n$ számú különböző valós sajátértéke. Hogyan állíthatjuk elő egy alaprendszert ebben az esetben?}
+Ilyenkor egy alaprendszere:
+\[
+\f^{i}(x) = e^{\lambda_{i}x} \cdot s^{(i)} \quad \bb{x \in \R, i = 1,2, \ldots, n}
+\]
 \end{document}
