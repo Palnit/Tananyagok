@@ -689,4 +689,111 @@ Ilyenkor egy alaprendszere:
 \[
 \f^{i}(x) = e^{\lambda_{i}x} \cdot s^{(i)} \quad \bb{x \in \R, i = 1,2, \ldots, n}
 \]
+\newpage
+\section{week}
+\subsection{Mit nevezünk n-edrendű lineáris differenciálegyenletnek? Fogalmazza meg pontosan, hogy milyen feladatot oldunk meg ebben az esetben! }
+\begin{defi}
+Legyen $n \in \N, I \subset \R$ nyílt intervallum. T.f.h. az
+\[
+a_k : I \to \R \quad \bb{k = 0,1,\ldots,n-1} \quad \text{és a} \quad b : I \to \R
+\]
+adott folytonos függvények. Ekkor az
+\[
+\text{(nLDe)}
+\begin{cases}
+y^{(n)}(x) &+ a_{n-1}(x) \cdot y^{(n-1)}(x) + \ldots + \\
+ &+ a_1(x) \cdot y'(x) + a_{0}(x) \cdot y(x) = b(x) \quad \bb{x \in I}
+\end{cases}
+\]
+feladatot n-edrendű lineáris d.e.-nek nevezzük. Ha $b \equiv 0$, akkor homogén, az ellenkező esetben pedig inhomogén egyenletről beszélünk.
+Most tehát olyan $J \subset I$ nyílt intervallumot és $\psi : J \to \R, \psi \in D^n$ függvényt keresünk, amelyre minden $x \in J$ helyen a
+\[
+\psi^{(n)}(x) + a_{n-1}(x) \cdot \psi^{(n-1)}(x) + \cdot + a_1(x) \cdot \psi'(x) + a_0(x) \cdot \psi(x) = b(x)
+\]
+egyenlőség teljesül. Ekkor $\psi$ a szóban forgó d.e. megoldása a $J$ intervallumon.
+\end{defi}
+\subsection{Fogalmazza meg pontosan mit értünk egy n-edrendű lineáris differenciálegyenletre vonatkoz ó kezdetiérték-problémán!}
+\begin{defi}
+Az nLde fogalmához és a megoldásán tull:
+\[
+\tau \in I \quad \text{hely és a} \quad \varepsilon := \bb{\varepsilon_0,\varepsilon_1,\ldots,\varepsilon_{n-1}} \in \R^n \text{vektor}  
+\]
+Ha a $\psi$ megoldástól azt is elvárjuk, hogy
+\[
+\tau \in J, \quad \psi(\tau)= \varepsilon_0, \psi'(\tau) = \varepsilon_1, \ldots , \psi^{(n-1)}(\tau) = \varepsilon_{n-1}
+\]
+akkor azt mondjuk, hogy a $\psi$ függvény a $J$ intervallumon megoldása a
+\[
+\text{nLkep} \begin{cases}
+y^{(n)}(x) &+ a_{n-1}(x) \cdot y^{(n-1)}(x) + \ldots + \\
+ &+ a_1(x) \cdot y'(x) + a_{0}(x) \cdot y(x) = b(x) \quad \bb{x \in I}\\
+ y(\tau) = &\varepsilon_0, y'(\tau) = \varepsilon_1, \ldots , y^{(n-1)}(\tau) = \varepsilon_{n-1}  
+\end{cases}
+\]
+kezdetiérték-problémának.
+
+Ha $n = 1$, akkor elsőrendű lineáris d.e.-ről van szó.
+\end{defi}
+
+\subsection{Mondja ki az átviteli elvet a benne szereplő egyenletek és megoldásai közötti kapcsolattal együtt!}
+\begin{tet}[Az átviteli elv.]
+T.f.h. a $\psi \in C^n(J,\R)$ függvény a $J$ intervallumon megoldása az (nLkep) k.é.p.-nak. Ekkor a
+\[
+x := (\psi,\psi',\ldots,\psi^{(n-1)}) \in C^1(J,\R)
+\]
+függvény megoldása az (Lkep) k.é.p.-nak.
+Fordítva: ha a $x := \bb{x_1,\ldots,x_n}\in C^1(J,\R)$ függvény megoldása az (Lkep) k.é.p.-nak, akkor a $\psi = x_1$ (első) komponensfüggvény megoldása a szóban forgó n-edrendűlineáris d.e.-re vonatkozó k.é.p.-nak.
+\end{tet}
+
+\subsection{Mit tudunk mondani egy n-edrendű lineáris differenciálegyenletre vonatkozó kezdetiértékprobléma megoldhatóságáról?}
+\begin{tet}[A megoldások létezése és egyértelműsége.]
+Az $n$-edrendű lineáris differenciálegyenletre vonatkozó tetszőleges kezdetiérték-probléma globálisan egyértelműen oldható meg, és minden teljes megoldás értelmezési tartománya az egész $I$ intervallum.
+\end{tet}
+
+\subsection{Mit nevezünk alaprendszernek n-edrendű lineáris differenciálegyenletek esetén?}
+\begin{defi}
+Jelölje $\CM_h$ a homogén $n$-edrendű lineáris d.e. teljes megoldásainak a halmazát ekkor a $\CM_h$ lineáris térnek egy $\f_1, \ldots , \f_n$ bázisát a homogén egyenlet egy
+alaprendszerének nevezük
+\end{defi}
+
+\subsection{Mit nevezünk egy megoldásrendszer Wronski-féle determinánsának n-edrendű lineáris differenciálegyenlet esetén?}
+\begin{defi}
+\[
+W:= det\begin{bmatrix}
+\f_1 & \f_2 & \ldots & \f_n \\
+\f'_1 & \f'_2 & \ldots & \f'_n \
+\vdots & \vdots & \vdots & \vdots \\
+\f^{(n-1)}_1 & \f^{(n-1)}_2 & \ldots  & \f^{(n-1)}_n
+\end{bmatrix} : I \to \R
+\]
+függvényt a $\f_1, \ldots , \f_n$ megoldások Wronski-determinánsának nevezzük.
+\end{defi}
+
+\subsection{Milyen jellegzetes tulajdonsága van egy alaprendszer Wronski-féle determinánsának n-edrendű lineáris differenciálegyenlet esetén?}
+\begin{tet}
+A $\f_1, \ldots , \f_n \in \CM_h$ homogén egyenletnek akkor és csak akkor alaprendszere, ha 
+\[
+\text{valamilyen } x_0 \in I \text{ helyen } W(x_0) \neq 0
+\]
+és ekkor 
+\[
+W(x) \neq 0 \text{ minden } x \in I \text{ esetén}
+\]
+is igaz.
+\end{tet}
+
+\subsection{Milyen alakban írható fel egy n-edrendű inhomogén lineáris differenciálegyenlet általános megoldása bizonyos homogén-inhomogén megoldások ismeretében?}
+\begin{tet}
+\begin{enumerate}
+\item Az $\CM_h$ megoldáshalmaz az $\R$ feletti $C^n(I,R)$ lineáris térnek egy n-dimenziós altere.
+\item Legyen $\psi_p$ az inhomogén n-edrendű lineáris d.e. egy ismert (ún. partikuláris) megoldása. Ekkor
+\[
+\CM_{ih} = \CM_h + \psi_p := \braces{\f+ \psi_p \vert \f \in \CM_h}
+\]
+\end{enumerate}
+\end{tet}
+
+\subsection{Tegyük fel, hogy az n-edrendű állandó együtthatós lineáris differenciálegyenlet karakterisztikus polinomjának pontosan n darab különböző valós gyöke van. Hogyan állíthatunk elő egy alaprendszert ebben az esetben?}
+
+\subsection{Tegyük fel, hogy az másodrendű állandó együtthatós lineáris differenciálegyenlet karakterisztikus polinomjának nincs valós gyöke. Hogyan állíthatunk elő egy alaprendszert ebben az esetben?}
 \end{document}
