@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  22 APR 2024 10:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  29 APR 2024 09:57
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -614,24 +614,24 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 24.
 (C:\Users\palint\Desktop\elte\Tananyagok\Analizis 4\build\AnalAlkZhTet.aux)
 \openout1 = `AnalAlkZhTet.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
 
 (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
 kii
@@ -658,7 +658,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 92.
+Package hyperref Info: Link coloring ON on input line 94.
 
 (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -672,9 +672,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count311
 )
-LaTeX Info: Redefining \ref on input line 92.
-LaTeX Info: Redefining \pageref on input line 92.
-LaTeX Info: Redefining \nameref on input line 92.
+LaTeX Info: Redefining \ref on input line 94.
+LaTeX Info: Redefining \pageref on input line 94.
+LaTeX Info: Redefining \nameref on input line 94.
 
 (C:\Users\palint\Desktop\elte\Tananyagok\Analizis 4\build\AnalAlkZhTet.out)
 (C:\Users\palint\Desktop\elte\Tananyagok\Analizis 4\build\AnalAlkZhTet.out)
@@ -686,13 +686,13 @@ LaTeX Info: Redefining \nameref on input line 92.
 LaTeX Info: Redefining \cal on input line 497.
 LaTeX Info: Redefining \mit on input line 498.
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 93.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 95.
 
 
 (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 93.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 95.
 
 
 (C:\Users\palint\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -756,264 +756,264 @@ Overfull \hbox (39.81448pt too wide) in paragraph at lines 76--76
  homogén-inhomogén 
  []
 
-)
+[5])
 \tf@toc=\write5
 \openout5 = `AnalAlkZhTet.toc'.
 
- [5]
+ [6]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 97.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\varphi' on input line 97.
+(hyperref)                removing `math shift' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 97.
+(hyperref)                removing `\varphi' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 97.
+(hyperref)                removing `math shift' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 97.
+(hyperref)                removing `math shift' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 121.
+(hyperref)                removing `math shift' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 121.
+(hyperref)                removing `math shift' on input line 123.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 126.
+(hyperref)                removing `math shift' on input line 123.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\varphi' on input line 126.
+(hyperref)                removing `math shift' on input line 128.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\leavevmode@ifvmode' on input line 126.
+(hyperref)                removing `\varphi' on input line 128.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\leavevmode@ifvmode' on input line 128.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                \kern 3.26212pt
-(hyperref)                removed on input line 126.
+(hyperref)                removed on input line 128.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\in' on input line 126.
+(hyperref)                removing `\in' on input line 128.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 126.
+(hyperref)                removing `math shift' on input line 128.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 126.
+(hyperref)                removing `math shift' on input line 128.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 126.
+(hyperref)                removing `math shift' on input line 128.
 
-[6]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 136.
-
+[7]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 136.
+(hyperref)                removing `math shift' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightarrow' on input line 136.
+(hyperref)                removing `superscript' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 136.
+(hyperref)                removing `\rightarrow' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 136.
+(hyperref)                removing `superscript' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 147.
+(hyperref)                removing `math shift' on input line 138.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 147.
+(hyperref)                removing `math shift' on input line 149.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\rightarrow' on input line 147.
+(hyperref)                removing `superscript' on input line 149.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 147.
+(hyperref)                removing `\rightarrow' on input line 149.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 147.
-
-[7] [8]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 184.
+(hyperref)                removing `superscript' on input line 149.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 184.
+(hyperref)                removing `math shift' on input line 149.
+
+[8] [9]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 186.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 184.
+(hyperref)                removing `math shift' on input line 186.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 184.
+(hyperref)                removing `math shift' on input line 186.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 196.
+(hyperref)                removing `math shift' on input line 186.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 196.
+(hyperref)                removing `math shift' on input line 198.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 196.
+(hyperref)                removing `math shift' on input line 198.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 196.
+(hyperref)                removing `math shift' on input line 198.
 
-[9] [10] [11]
-Overfull \hbox (33.78737pt too wide) in paragraph at lines 308--308
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 198.
+
+[10] [11] [12]
+Overfull \hbox (33.78737pt too wide) in paragraph at lines 310--310
 \T1/cmr/bx/n/14.4 zet-ni egy egy-vál-to-zós függ-vény széls®érték-problémájára?
  
  []
 
-[12]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 339.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 339.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 339.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 339.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 347.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 347.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 347.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\varphi' on input line 347.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 347.
-
 [13]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 370.
+(hyperref)                removing `math shift' on input line 341.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 370.
+(hyperref)                removing `math shift' on input line 341.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 341.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 341.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 349.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 349.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 349.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\varphi' on input line 349.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 349.
 
 [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 372.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\to' on input line 385.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 385.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 372.
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 417--418
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 387.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\to' on input line 387.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 387.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 387.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 387.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 387.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 387.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 387.
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
 []\T1/cmr/m/it/12 Legye
  []
 
-[16]
+[17]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 422.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 422.
+(hyperref)                removing `math shift' on input line 424.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\to' on input line 422.
+(hyperref)                removing `superscript' on input line 424.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 422.
+(hyperref)                removing `\to' on input line 424.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 422.
+(hyperref)                removing `superscript' on input line 424.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 431--433
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 424.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--435
 []
  []
 
 
-Underfull \hbox (badness 4266) in paragraph at lines 431--433
+Underfull \hbox (badness 4266) in paragraph at lines 433--435
 \T1/cmr/m/it/12 Tekintsük az $\OML/cmm/m/it/12 U \OMS/cmsy/m/n/12 ^^Z \U/msb/m/
 n/12 R[] \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 N
 \OT1/cmr/m/n/12 )$ \T1/cmr/m/it/12 csil-lag-tar-to-má-nyon ér-tel-me-zett
@@ -1021,136 +1021,207 @@ n/12 R[] \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 N
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 438.
+(hyperref)                removing `math shift' on input line 440.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 438.
+(hyperref)                removing `math shift' on input line 440.
 
-[17]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 446.
-
+[18]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 446.
+(hyperref)                removing `math shift' on input line 448.
 
-[18] [19] [20] [21] [22]
-Overfull \hbox (11.09285pt too wide) in paragraph at lines 587--587
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 448.
+
+[19] [20] [21] [22] [23]
+Overfull \hbox (11.09285pt too wide) in paragraph at lines 589--589
 \T1/cmr/bx/n/14.4 zo-nyos homogén-inhomogén meg-ol-dá-sok is-me-re-té-ben? 
  []
 
-[23]
-Overfull \hbox (52.31454pt too wide) in paragraph at lines 612--612
+[24]
+Overfull \hbox (52.31454pt too wide) in paragraph at lines 614--614
 \T1/cmr/bx/n/14.4 dif-fe-ren-ci-ál-egyen-let-re vo-nat-ko-zó kezdetiérték-probl
 émának
  []
 
-[24] [25]
-Overfull \hbox (75.71506pt too wide) in paragraph at lines 633--633
+[25] [26]
+Overfull \hbox (75.71506pt too wide) in paragraph at lines 635--635
 []\T1/cmr/bx/n/14.4 Mit tu-dunk mon-da-ni egy el-s®-ren-d¶ li-ne-á-ris differen
 ciálegyenlet-
  []
 
 
-Overfull \hbox (3.07877pt too wide) in paragraph at lines 633--633
+Overfull \hbox (3.07877pt too wide) in paragraph at lines 635--635
 \T1/cmr/bx/n/14.4 rendszerre vo-nat-ko-zó kezdetiérték-probléma meg-old-
  []
 
 
-Overfull \hbox (114.82047pt too wide) in paragraph at lines 637--637
+Overfull \hbox (114.82047pt too wide) in paragraph at lines 639--639
 []\T1/cmr/bx/n/14.4 Mit ne-ve-zünk alap-rend-szer-nek el-s®-ren-d¶ li-ne-á-ris 
 differenciálegyenlet-
  []
 
 
-Overfull \hbox (103.85942pt too wide) in paragraph at lines 645--645
+Overfull \hbox (103.85942pt too wide) in paragraph at lines 647--647
 []\T1/cmr/bx/n/14.4 Mit ne-ve-zünk alap-mát-rix-nak el-s®-ren-d¶ li-ne-á-ris di
 fferenciálegyenlet-
  []
 
-[26]
-Overfull \hbox (2.41835pt too wide) in paragraph at lines 658--658
+[27]
+Overfull \hbox (2.41835pt too wide) in paragraph at lines 660--660
 []\T1/cmr/bx/n/14.4 Mit ne-ve-zünk egy meg-ol-dás-rend-szer Wronski-féle de-
  []
 
 
-Overfull \hbox (8.70454pt too wide) in paragraph at lines 658--658
+Overfull \hbox (8.70454pt too wide) in paragraph at lines 660--660
 \T1/cmr/bx/n/14.4 ter-mi-nán-sá-nak el-s®-ren-d¶ li-ne-á-ris differenciálegyenl
 et-
  []
 
-[27]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 687.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\in' on input line 687.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 687.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 687.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 687.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 687.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 687.
-
 [28]
-Overfull \hbox (11.49228pt too wide) in paragraph at lines 715--715
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 689.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\in' on input line 689.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 689.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\times' on input line 689.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 689.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 689.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 689.
+
+[29]
+Overfull \hbox (11.49228pt too wide) in paragraph at lines 717--717
 \T1/cmr/bx/n/14.4 li-ne-á-ris dif-fe-ren-ci-ál-egyen-let-re vo-nat-koz ó kezdet
 iérték-
  []
 
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 750--751
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 752--753
 []\T1/cmr/m/it/12 Az $\OML/cmm/m/it/12 n$\T1/cmr/m/it/12 -
  []
 
 
-Underfull \hbox (badness 1406) in paragraph at lines 750--751
+Underfull \hbox (badness 1406) in paragraph at lines 752--753
 \T1/cmr/m/it/12 edrend¶ li-ne-á-ris dif-fe-ren-ci-ál-egyen-let-re vo-nat-ko-zó 
 tet-sz®-le-ges kezdetiérték-
  []
 
-[30]
-Overfull \hbox (4.55876pt too wide) in paragraph at lines 753--753
+[31]
+Overfull \hbox (4.55876pt too wide) in paragraph at lines 755--755
 []\T1/cmr/bx/n/14.4 Mit ne-ve-zünk alap-rend-szer-nek n-edrend¶ li-ne-á-ris dif
 -
  []
 
 
-Overfull \hbox (2.41835pt too wide) in paragraph at lines 759--759
+Overfull \hbox (2.41835pt too wide) in paragraph at lines 761--761
 []\T1/cmr/bx/n/14.4 Mit ne-ve-zünk egy meg-ol-dás-rend-szer Wronski-féle de-
  []
 
-[31] [32]
+[32] [33]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 803.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 803.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 827.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 827.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 827.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 827.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 827.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 827.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 827.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 833.
+
+Missing character: There is no é in font cmr12!
+
+LaTeX Warning: Command \' invalid in math mode on input line 833.
+
+Missing character: There is no é in font cmr12!
+[34]
+
+LaTeX Warning: Command \' invalid in math mode on input line 845.
+
+Missing character: There is no é in font cmr12!
+
+LaTeX Warning: Command \' invalid in math mode on input line 845.
+
+Missing character: There is no é in font cmr12!
+
+Underfull \hbox (badness 3769) in paragraph at lines 849--851
+[]\T1/cmr/m/it/12 T.f.h az $[] \OT1/cmr/m/n/12 : \U/msb/m/n/12 N \OMS/cmsy/m/n/
+12 !
+ []
+
+
+Overfull \hbox (0.93701pt too wide) in paragraph at lines 856--856
+[]\T1/cmr/bx/n/14.4 Adjon pél-dát olyan függ-vény-so-ro-zat-ra, ahol a li-mesz-
+
+ []
+
+<./images//example1.png, id=773, 589.60275pt x 315.579pt>
+File: ./images//example1.png Graphic file (type png)
+<use ./images//example1.png>
+Package pdftex.def Info: ./images//example1.png  used on input line 857.
+(pdftex.def)             Requested size: 390.0pt x 208.74504pt.
+[35] [36 <./images//example1.png>] [37] [38]
 (C:\Users\palint\Desktop\elte\Tananyagok\Analizis 4\build\AnalAlkZhTet.aux)
 Package rerunfilecheck Info: File `AnalAlkZhTet.out' has not changed.
-(rerunfilecheck)             Checksum: 54AF14BA4B152B4B02FF44464911BA21;45915.
+(rerunfilecheck)             Checksum: 501552F55730B57D5FC894D521CBE5D2;50608.
  ) 
 Here is how much of TeX's memory you used:
- 22348 strings out of 478582
- 416747 string characters out of 2843872
- 716662 words of memory out of 3000000
- 39998 multiletter control sequences out of 15000+600000
+ 22414 strings out of 478582
+ 417624 string characters out of 2843872
+ 717682 words of memory out of 3000000
+ 40030 multiletter control sequences out of 15000+600000
  489401 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,12n,80p,1405b,515s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 83i,14n,80p,1405b,515s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcr
 m1200.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi
 600\ecbi1200.pk> <C:\Users\palint\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
@@ -1178,9 +1249,9 @@ m/cmsy10.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
 Output written on "C:\Users\palint\Desktop\elte\Tananyagok\Analizis 4\build\Ana
-lAlkZhTet.pdf" (32 pages, 484159 bytes).
+lAlkZhTet.pdf" (38 pages, 550094 bytes).
 PDF statistics:
- 1227 PDF objects out of 1440 (max. 8388607)
- 177 named destinations out of 1000 (max. 500000)
- 637 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1341 PDF objects out of 1440 (max. 8388607)
+ 208 named destinations out of 1000 (max. 500000)
+ 730 words of extra memory for PDF output out of 10000 (max. 10000000)
 

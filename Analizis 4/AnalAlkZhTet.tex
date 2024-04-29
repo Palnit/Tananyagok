@@ -40,6 +40,8 @@
 \newcommand{\CM}{\mathcal{M}}
 \newcommand{\m}{\varrho}
 \newcommand{\f}{\varphi}
+\newcommand{\fn}{f_n}
+\newcommand{\KH}[1]{\text{KH}(#1)}
 \newcommand{\tf}{\tilde{\f}}
 \newcommand{\met}[1]{\m \left( #1 \right)}
 \newcommand{\bb}[1]{\left( #1 \right)}
@@ -796,4 +798,96 @@ is igaz.
 \subsection{Tegyük fel, hogy az n-edrendű állandó együtthatós lineáris differenciálegyenlet karakterisztikus polinomjának pontosan n darab különböző valós gyöke van. Hogyan állíthatunk elő egy alaprendszert ebben az esetben?}
 
 \subsection{Tegyük fel, hogy az másodrendű állandó együtthatós lineáris differenciálegyenlet karakterisztikus polinomjának nincs valós gyöke. Hogyan állíthatunk elő egy alaprendszert ebben az esetben?}
+\newpage
+\section{week}
+\subsection{Mit értünk azon, hogy egy függvénysorozat pontonként konvergens egy $A$ halmazon?}
+\begin{defi}
+Legyen $A \subset \R$ egy tetszőleges nemüres halmaz.
+Függvénysorozat egy:
+\[
+\bb{f_n} : \N \to \R^A \quad \quad \bb{\R^A:= \braces{f:A\to \R \;\text{ függvény}}}
+\]
+függvény, vagyis $\forall n \in \N$ esetén $f_n: A \to \R$
+Ez akkor pontonként konvergens a Határfüggvény ha a Konvergenciahalmaz nem üres
+\end{defi}
+\subsection{Mit nevezünk konvergenciahalmaznak függvénysorozatok esetén?}
+\begin{defi}
+\[
+\KH{f_n} := \braces{x\in A \vert az \bb{f_n(x)} \; \text{ számsorozat konvergens}}
+\]
+\end{defi}
+\subsection{Adja meg a függvénysorozatok határfüggvényének fogalmát?}
+\begin{defi}
+Határfüggvény vagy limeszfüggvény: $\KH{\fn} \neq \emptyset$
+\[
+f(x) := \lim\limits_{n\to +\infty} \fn(x) \quad \quad \bb{x \in \KH{\fn}}
+\]
+definícióval értelmezett függvény.
+\end{defi}
+\subsection{Mikor mondjuk, hogy az $(f_n)$ függvénysorozat egyenletesen konvergál az $f$ függvényhez egy $H$ halmazon?}
+\begin{defi}
+Azt mondjuk, hogy az $\bb{\fn}$ függvénysorozat a $\emptyset \neq H \subset \KH{\fn}$ halmazon egyenletesen konvergál az $f: H \to \R$ függvényhez, ha
+\begin{align*}
+\forall \varepsilon > 0\text{-hoz } \exists N \in \N, \quad &\text{hogy} \;\; \forall n > N \; \text{index és} \; \forall x \in H esetén \\
+&\abs{\fn(x) - f(x)} < \varepsilon
+\end{align*}
+Jelölés: $\fn \xrightarrow[n \to + \infty]{H} f$
+\end{defi}
+\subsection{Mondjon egy olyan állítást, ami ekvivalens az egyenletes konvergenciával!}
+\[
+r_n := \sup\braces{\abs{\fn(x)-f(x)} \vert x \in H} \to 0, \; \text{ha} \; n\to +\infty
+\]
+\subsection{Hogyan szól a Cauchy-féle kritérium az egyenletes konvergenciára?}
+\begin{defi}
+\begin{align*}
+\forall \varepsilon > 0\text{-hoz } \exists N \in \N, \quad &\text{hogy} \;\; \forall n,m > N \; \text{index és} \; \forall x \in H esetén \\
+&\abs{\fn(x) - f_m(x)} < \varepsilon
+\end{align*}
+\end{defi}
+\subsection{Mondja ki a határfüggvény folytonosságáról szóló tételt!}
+\begin{tet}[határfüggvény folytonossága]
+T.f.h az $\bb{\fn} : \N \to \R^A \; \bb{\emptyset \neq A \subset \R}$ függvénysorozatra a következő feltételek teljesülnek: 
+\begin{enumerate}
+\item $\forall n \in \N$ esetén $\fn \in C(A)$
+\item az $\bb{\fn}$ függvénysorozat az $A$ halmazon egyenletesen tart az $f$ függvényhez, azaz $\fn \xrightarrow[n \to + \infty]{A} f$
+\end{enumerate}
+Ekkor $f \in C(A)$
+\end{tet}
+\subsection{Adjon példát olyan függvénysorozatra, ahol a limeszképzés és az integrálás sorrendjét nem tudjuk felcserélni!}
+\includegraphics[width=\textwidth]{example1}
+\subsection{Mondja ki a határfüggvény integrálhatóságáról szóló tételt!}
+\begin{tet}
+T.f.h. az $\boxes{a,b} \; \bb{a,b \in \R, \; a< b}$ kompakt intervallumon értelmezett $\fn:\boxes{a,b} \to \R \; \bb{n \in \N}$ függvénysorozatra a következő feltételek teljesülnek:
+\begin{itemize}
+\item $\fn \in R \boxes{a,b}$ minden $n \in \N$ indexre
+\item az $\bb{\fn}$ függvénysorozat az $\boxes{a,b}$ intervallumon egyenletesen tart az $f$ függvényhez.
+\end{itemize}
+Ekkor 
+\begin{enumerate}
+\item $f\in R\boxes{a,b}$
+\item az integrálok $\bb{\int\limits_a^b \fn} $ sorozata konvergens, és
+\[
+\int\limits_a^b f = \int\limits_a^b \lim\limits_{n \to +\infty} \fn  = \lim\limits_{n \to +\infty} \int\limits_a^b  \fn
+\]
+vagyis a limeszképzés és az integrálás műveletei felcserélhetők.
+\end{enumerate}
+\end{tet}
+\subsection{Mondja ki a határfüggvény differenciálhatóságáról szóló tételt!}
+\begin{tet}
+T.f.h. az $I \subset \R$ korlátos és nyílt intervallumon értelmezett $\fn : I \to \R \; \bb{n\in \N}$ függvénysorozatra a következő feltételek teljesülnek:
+\begin{itemize}
+\item $\fn \in D\bb{I}$ minden $n \in \N$ indexre
+\item az $\bb{\fn'}$ függvénysorozat egyenletesen konvergens $I$-n
+\item $\exists a \in I:$ az $\bb{\fn(a)}$ számsorozat konvergens.
+\end{itemize}
+Ekkor
+\begin{enumerate}
+\item az $\bb{\fn}$ függvénysorozat egyenletesen konvergens
+\item ha $f$ jelöli az $\bb{\fn}$ sorozat határfüggvényét, akkor $f \in D(I)$, és
+\[
+f' = \bb{\lim\limits_{n \to +\infty}\fn}' = \lim\limits_{n \to +\infty} \fn'
+\]
+vagyis a limeszképzés és a deriválás műveletei felcserélhetők.
+\end{enumerate}
+\end{tet}
 \end{document}
