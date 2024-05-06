@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  29 APR 2024 09:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.26)  6 MAY 2024 08:54
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -756,7 +756,18 @@ Overfull \hbox (39.81448pt too wide) in paragraph at lines 76--76
  homogén-inhomogén 
  []
 
-[5])
+[5]
+Overfull \hbox (3.00256pt too wide) in paragraph at lines 99--99
+ [][] [][][]\T1/cmr/m/n/12 Hogyan szól a hat-vány-so-rok ta-gon-kén-ti in-teg-r
+ál-ha-tó-sá-gá-ról szó- 
+ []
+
+
+Overfull \hbox (3.00198pt too wide) detected at line 100
+\T1/cmr/m/n/12 10.10. 
+ []
+
+)
 \tf@toc=\write5
 \openout5 = `AnalAlkZhTet.toc'.
 
@@ -1204,21 +1215,66 @@ Overfull \hbox (0.93701pt too wide) in paragraph at lines 856--856
 
  []
 
-<./images//example1.png, id=773, 589.60275pt x 315.579pt>
+<./images//example1.png, id=834, 589.60275pt x 315.579pt>
 File: ./images//example1.png Graphic file (type png)
 <use ./images//example1.png>
 Package pdftex.def Info: ./images//example1.png  used on input line 857.
 (pdftex.def)             Requested size: 390.0pt x 208.74504pt.
 [35] [36 <./images//example1.png>] [37] [38]
+Underfull \hbox (badness 10000) in paragraph at lines 900--903
+\T1/cmr/m/it/12 függvénysorozatot. Ek-kor az $[] \OML/cmm/m/it/12 f[]$ \T1/cmr/
+m/it/12 függ-vény-sor Összeg-függ-vé-nye:
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 907.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\sum@' on input line 907.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\slimits@' on input line 907.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 907.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 907.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 907.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 907.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 918--919
+[]
+ []
+
+
+Underfull \hbox (badness 2735) in paragraph at lines 918--919
+\T1/cmr/m/it/12 A $[] \OML/cmm/m/it/12 f[]$ \T1/cmr/m/it/12 függ-vény-sor ak-ko
+r és csak ak-kor egyen-le-te-sen kon-ver-gens a
+ []
+
+[39] [40] [41] [42] [43]
 (C:\Users\palint\Desktop\elte\Tananyagok\Analizis 4\build\AnalAlkZhTet.aux)
 Package rerunfilecheck Info: File `AnalAlkZhTet.out' has not changed.
-(rerunfilecheck)             Checksum: 501552F55730B57D5FC894D521CBE5D2;50608.
+(rerunfilecheck)             Checksum: 2DC297741E851FB779B9CCBBC8CDD9D3;54906.
  ) 
 Here is how much of TeX's memory you used:
- 22414 strings out of 478582
- 417624 string characters out of 2843872
- 717682 words of memory out of 3000000
- 40030 multiletter control sequences out of 15000+600000
+ 22461 strings out of 478582
+ 418245 string characters out of 2843872
+ 718684 words of memory out of 3000000
+ 40051 multiletter control sequences out of 15000+600000
  489401 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,14n,80p,1405b,515s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1249,9 +1305,9 @@ m/cmsy10.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb><C:/Users/palint/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
 Output written on "C:\Users\palint\Desktop\elte\Tananyagok\Analizis 4\build\Ana
-lAlkZhTet.pdf" (38 pages, 550094 bytes).
+lAlkZhTet.pdf" (43 pages, 580006 bytes).
 PDF statistics:
- 1341 PDF objects out of 1440 (max. 8388607)
- 208 named destinations out of 1000 (max. 500000)
- 730 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1447 PDF objects out of 1728 (max. 8388607)
+ 234 named destinations out of 1000 (max. 500000)
+ 818 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -890,4 +890,120 @@ f' = \bb{\lim\limits_{n \to +\infty}\fn}' = \lim\limits_{n \to +\infty} \fn'
 vagyis a limeszképzés és a deriválás műveletei felcserélhetők.
 \end{enumerate}
 \end{tet}
+\newpage
+\section{week}
+\subsection{Adja meg a függvénysorok összegfüggvényének fogalmát?}
+\begin{defi}
+Legyen $A \subset \R $ egy tetszőleges nemüres halmaz, és tekintsünk egy
+\[
+\bb{\fn} : \N \to \R^4
+\]
+függvénysorozatot.
+Ekkor az $\sum \fn$ függvénysor Összegfüggvénye: $\KH{\sum \fn} \neq \emptyset$ esetén a
+\[
+\sum\limits_{n=0}^{+ \infty} \fn : \KH{\sum\fn} \ni x \mapsto \sum\limits_{n=0}^{+ \infty} \fn(x)
+\]
+\end{defi}
+\subsection{Mikor mondjuk, hogy az $\sum \fn$ függvénysor egyenletesen konvergál egy $H$ halmazon?}
+\begin{defi}
+Azt mondjuk, hogy a $\sum \fn$ függvénysor a $\emptyset \neq H \subset \KH{ \sum\fn }$ halmazon egyenletesen konvergál az $f : H\to \R$ függvényhez, ha
+\begin{align*}
+\forall \varepsilon > 0\text{-hoz }\; \exists N \in \N, \quad &\text{ hogy }\; \forall n >N \text{ index és } \forall X \in H \text{ esetén} \\
+&\abs{f(x) - \sum\limits_{k=0}^n f_k(x)} < \varepsilon
+\end{align*}
+Ezt úgy jelöljük, hogy $\sum\limits_{n=0}^{+\infty}\fn = f$ egyenletesen $H$-n. 
+\end{defi}
+\subsection{Hogyan szól az egyenletes Cauchy-kritérium függvénysorokra?}
+\begin{tet}[Egyenletes Cauchy-kritérium függvénysorokra]
+A $\sum\fn$ függvénysor akkor és csak akkor egyenletesen konvergens a $\emptyset \neq H \subset \KH{ \sum\fn }$ halmazon, ha
+\begin{align*}
+\forall \varepsilon > 0\text{-hoz }\; \exists N \in \N, \quad &\text{ hogy }\; \forall m > n >N \text{ index és } \forall X \in H \text{ esetén} \\
+&\abs{\sum\limits_{k=n+1}^m f_k(x)} < \varepsilon
+\end{align*}
+\end{tet}
+
+\subsection{Hogyan szól a Weierstrass-kritérium függvénysorok egyenletes konvergenciájára?}
+\begin{tet}[Weierstrass-kritérium]
+T.f.h. a $\sum\fn$ függvénysorra egy $\emptyset \neq H \subset \KH{ \sum\fn }$ halmazon a következők teljesülnek:
+\[
+M_n : = \sup\limits_{x\in H} \abs{\fn(x)} < + \infty \quad \bb{n \in \N}
+\]
+és a $\sum M_n$ számsor konvergens.
+
+Ekkor a $\sum\fn$függvénysor egyenletesen konvergens a $H$ halmazon
+\end{tet}
+
+\subsection{Mondja ki az összegfüggvény folytonosságáról szóló tételt!}
+\begin{tet}
+T.f.h. a $\sum\fn$ függvénysor tagjai folytonosak a $\emptyset \neq H \subset \KH{ \sum\fn }$ halmazon és a függvénysor egyenletesen konvergens $H$-n. Ekkor a $\sum\limits_{n=0}^{+\infty}\fn$ összegfüggvény is folytonos a $H$ halmazon. 
+\end{tet}
+\subsection{Mondja ki a függvénysorok tagonkénti integrálhatóságáról szóló tételt!}
+\begin{tet}
+T.f.h. az $\boxes{a,b} \; \bb{a,b \in \R a < b}$ intervallumon értelmezett
+\[
+\fn : \boxes{a,b} \to \R \quad \bb{n\in \N}
+\]
+függvényekből képzett $\sum\fn$ függvénysor egyenletesen konvergens a $\boxes{a,b}$ intervallumon. Ha
+\[
+\fn \in R\boxes{a,b} \quad \bb{n\in\N}
+\]
+és $f$ jelöli a $\sum\fn$ sor összegfüggvényét, azaz 
+\[
+f := \sum\limits_{n=0}^{+\infty}\fn
+\] 
+akkor $f\in R\boxes{a,b}$ és az integrálok alkotta $\sum\int\limits_a^b\fn$ számsor konvergens,
+valamint
+\[
+\int\limits_a^b f = \int\limits_a^b \sum\limits_{n=0}^{+\infty} \fn = \sum\limits_{n=0}^{+\infty}\int\limits_a^b\fn
+\]
+vagyis az összegképzés és az integrálás műveleteinek a sorrendje felcserélhető;
+más szóval: a függvénysort tagonként lehet integrálni.
+\end{tet}
+\subsection{Mondja ki a függvénysorok tagonkénti deriválhatóságáról szóló tételt!}
+\begin{tet}
+T.f.h. a korlátos és nyílt $I$ intervallumon differenciálható függvények $\bb{\fn}$ sorozatára a következő feltételek teljesülnek:
+\begin{itemize}
+\item[(a)] $\exists a \in I $ pont hogy a $\sum\fn(a)$ számsor konvergens
+\item[(b)] a $\sum\fn'$ függvénysor egyenletesen konvergens az $I$ intervallumon
+\end{itemize}
+Ekkor
+\begin{itemize}
+\item a $\sum\fn$ függvénysor egyenletesen konvergens az $I$ intervallumon
+\item ha $f:=\sum\limits_{n=0}^{+\infty}\fn$ jelöli a sor összegfüggvényét, akkor $f \in D(I)$, és
+\[
+f'=\bb{\sum\limits_{n=0}^{+\infty}\fn}' = \sum\limits_{n=0}^{+\infty}\fn' \quad \text{ az } I\text{-n}
+\]
+\end{itemize}
+vagyis az összegképzés és a deriválás műveleteinek a sorrendje felcserélhető; más szóval: a függvénysort tagonként lehet deriválni.
+\end{tet}
+\subsection{Mit állít az Abel folytonossági tétele?}
+\begin{tet}[Abel folytonossági tétele]
+T.f.h. a $\sum\limits_{n=0}\alpha_n(x-a)^n $ hatványsor
+$R$ konvergenciasugara pozitív valós szám. Legyen
+\[
+f(x) := \sum\limits_{n=0}^{+\infty} \alpha_n(x-a)^n  \quad \bb{x \in \bb{a-R,a+R}}
+\]
+Ha a hatványsor konvergens az $(a + R)$ helyen is, akkor létezik és véges a
+\[
+\lim\limits_{x\to\bb{a+R}-0} f(x) = \sum\limits_{n=0}^{+\infty} \alpha_n(a+R)^n
+\]
+határérték.
+\end{tet}
+
+\subsection{Hogyan szól a hatványsorok tagonkénti integrálhatóságáról szóló tétel!}
+\begin{tet}
+T.f.h. a $\sum\limits_{n=0}\alpha_n(x-a)^n $ hatványsor $R$ konvergenciasugara pozitív. 
+
+Ekkor a sor összegfüggvénye a konvergenciaintervallum tetszőleges $[a, x]$ részintervallumán Riemann-integrálható, és a hatványsor tagonként integrálható:
+\[
+\int\limits_a^x \sum\limits_{n=0}^{+\infty} \alpha_n(t-a)^n dt= \sum\limits_{n=0}^{+\infty} \frac{\alpha_n}{n+1}(x-a)^{n+1}
+\]
+\end{tet}
+\subsection{Hogyan szól a hatványsorok tagonkénti deriválhatóságáról szóló tétel!}
+\begin{tet}
+A pozitív konvergenciasugarú $\sum\limits_{n=0}\alpha_n(x-a)^n $ hatványsor összegfüggvénye a konvergenciaintervallum minden $x$ belső pontjában deriválható, és a hatványsor tagonként deriválható:
+\[
+\bb{\sum\limits_{n=0}^{+\infty}\alpha_n(x-a)^n}' = \sum\limits_{n=0}^{+\infty}n\alpha_n(x-a)^{n-1}
+\]
+\end{tet}
 \end{document}

@@ -87,3 +87,14 @@
 \select@language {magyar} \contentsline {subsection}{\numberline {9.8}Adjon példát olyan függvénysorozatra, ahol a limeszképzés és az integrálás sorrendjét nem tudjuk felcserélni!}{36}{subsection.9.8}%
 \select@language {magyar} \contentsline {subsection}{\numberline {9.9}Mondja ki a határfüggvény integrálhatóságáról szóló tételt!}{37}{subsection.9.9}%
 \select@language {magyar} \contentsline {subsection}{\numberline {9.10}Mondja ki a határfüggvény differenciálhatóságáról szóló tételt!}{38}{subsection.9.10}%
+\select@language {magyar} \contentsline {section}{\numberline {10}week}{39}{section.10}%
+\select@language {magyar} \contentsline {subsection}{\numberline {10.1}Adja meg a függvénysorok összegfüggvényének fogalmát?}{39}{subsection.10.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {10.2}Mikor mondjuk, hogy az $\DOTSB \sum@ \slimits@ f_n$ függvénysor egyenletesen konvergál egy $H$ halmazon?}{39}{subsection.10.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {10.3}Hogyan szól az egyenletes Cauchy-kritérium függvénysorokra?}{39}{subsection.10.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {10.4}Hogyan szól a Weierstrass-kritérium függvénysorok egyenletes konvergenciájára?}{40}{subsection.10.4}%
+\select@language {magyar} \contentsline {subsection}{\numberline {10.5}Mondja ki az összegfüggvény folytonosságáról szóló tételt!}{40}{subsection.10.5}%
+\select@language {magyar} \contentsline {subsection}{\numberline {10.6}Mondja ki a függvénysorok tagonkénti integrálhatóságáról szóló tételt!}{41}{subsection.10.6}%
+\select@language {magyar} \contentsline {subsection}{\numberline {10.7}Mondja ki a függvénysorok tagonkénti deriválhatóságáról szóló tételt!}{42}{subsection.10.7}%
+\select@language {magyar} \contentsline {subsection}{\numberline {10.8}Mit állít az Abel folytonossági tétele?}{42}{subsection.10.8}%
+\select@language {magyar} \contentsline {subsection}{\numberline {10.9}Hogyan szól a hatványsorok tagonkénti integrálhatóságáról szóló tétel!}{43}{subsection.10.9}%
+\select@language {magyar} \contentsline {subsection}{\numberline {10.10}Hogyan szól a hatványsorok tagonkénti deriválhatóságáról szóló tétel!}{43}{subsection.10.10}%
